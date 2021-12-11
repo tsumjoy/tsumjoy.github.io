@@ -13,10 +13,10 @@ labels:
   - female
   - initial: A
   - initial: U
-  - series: "Little Mermaid"
   - lives in the sea
   - premium box
   - round ears
+  - series: "Little Mermaid"
   - tuft of hair
   - villain
 ---
