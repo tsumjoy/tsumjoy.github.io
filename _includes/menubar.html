@@ -3,14 +3,14 @@
 {% assign essay_pages = site.pages | where: "type", "essay"  | where_exp: "page", "page.draft != true" %}
 {% assign project_pages = site.pages | where: "type", "project" | where_exp: "page", "page.draft != true" %}
 {% assign num_essays = essay_pages.size %}
-{% assign num_tsumtsum = tsumtsum_pages.size %}
+{% assign num_tsumtsum = tsum_pages.size %}
 
 <div class="nonprintable">
   <nav class="ui stackable menu">
     <a href="{{ site.baseurl}}/" class="brand item">
       <img class="ui avatar image" src="{{ site.data.bio.basics.picture }}"><span>{{ site.data.bio.basics.name }}</span>
     </a>
-    {% if num_projects > 0 %}
+    {% if num_tsumtsum > 0 %}
     <a href="{{ site.baseurl }}/tsumtsum" class=" {% if include.active == "tsumtsum" %} active {% endif %}item">ツムツム ({{ num_tsumtsum }})</a>
     {% endif %}
     {% if num_essays > 0 %}
