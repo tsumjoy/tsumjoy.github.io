@@ -3,7 +3,7 @@ layout: tsum
 type: tsum
 image: images/ursula.jpg
 title: アースラ| Ursula
-permalink: tsum/ursula
+permalink: tsumtsum/ursula
 labels:
   - color: blue
   - color: white
