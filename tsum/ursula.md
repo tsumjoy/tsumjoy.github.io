@@ -1,7 +1,7 @@
 ---
 layout: tsum
 type: tsum
-image: images/ursula.PNG
+image: images/ursula.jpg
 title: アースラ| Ursula
 permalink: tsum/ursula
 labels:
