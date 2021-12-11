@@ -19,5 +19,6 @@ labels:
   - "series: &lsqb; Little Mermaid &rsqb;"
   - tuft of hair
   - villain
+  - white hair
 ---
 <img class="ui image" src="../images/ursula.jpg">
