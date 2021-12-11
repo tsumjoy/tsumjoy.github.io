@@ -2,7 +2,7 @@
 layout: tsum
 type: tsum
 image: images/ursula.jpg
-title: アースラ| Ursula
+title: アースラ | Ursula
 permalink: tsumtsum/ursula
 labels:
   - color: blue
