@@ -7,7 +7,7 @@ permalink: tsumtsum/ursula
 labels:
   - "color: blue"
   - "color: white"
-  - skill: burst
+  - "skill: burst"
   - eyebrows
   - eyelashes
   - female
