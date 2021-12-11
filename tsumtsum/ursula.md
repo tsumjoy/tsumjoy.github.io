@@ -13,7 +13,7 @@ labels:
   - female
   - initial: A
   - initial: U
-  - "Little Mermaid"
+  - series: "Little Mermaid"
   - lives in the sea
   - premium box
   - round ears
