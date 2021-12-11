@@ -5,14 +5,14 @@ image: images/ursula.jpg
 title: アースラ | Ursula
 permalink: tsumtsum/ursula
 labels:
-  - color: blue
-  - color: white
+  - "color: blue"
+  - "color: white"
   - skill: burst
   - eyebrows
   - eyelashes
   - female
-  - initial: A
-  - initial: U
+  - "initial: A"
+  - "initial: U"
   - lives in the sea
   - premium box
   - round ears
