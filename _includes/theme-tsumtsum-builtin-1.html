@@ -1,7 +1,7 @@
 <div style="padding-top: 20px" class="ui container ">
 
   <div class="ui stackable centered four cards">
-    {% assign tsumtsum_pages = site.pages | where: "type", "project" | sort: "alphabetical" | reverse %}
+    {% assign tsumtsum_pages = site.pages | where: "type", "tsum" | sort: "permalink" %}
     {% for page in tsumtsum_pages %}
       {% unless page.draft %}
         {% include tsum-card.html page=page %}
