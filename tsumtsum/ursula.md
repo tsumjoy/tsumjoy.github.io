@@ -16,7 +16,7 @@ labels:
   - lives in the sea
   - premium box
   - round ears
-  - "series: [Little Mermaid]"
+  - "series: "[Little Mermaid]" "
   - tuft of hair
   - villain
 ---
