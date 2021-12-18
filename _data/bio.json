@@ -1,3 +1,8 @@
 {
-  
+  "basics":
+  {
+    "name": "tsumjoy",
+    "label": "mission-matching index",
+    "picture": "https://tsumjoy.github.io/favicon_package_v0.16/android-chrome-256x256.png"
+  }
 }
