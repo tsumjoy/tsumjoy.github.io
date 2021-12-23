@@ -1,18 +1,17 @@
 <!-- Used by all builtin themes. Now we list number of essays and projects. -->
 
+{% assign essay_pages = site.pages | where: "type", "essay"  | where_exp: "page", "page.draft != true" %}
 {% assign tsum_pages = site.pages | where: "type", "tsum" | where_exp: "page", "page.draft != true" %}
 {% assign internationalcollection_pages = site.pages | where: "international", "true" | where_exp: "page", "page.draft != true" %}
 {% assign japancollection_pages = site.pages | where: "japan", "true" | where_exp: "page", "page.draft != true" %}
+{% assign num_essays = essay_pages.size %}
 
 {% assign num_tsumtsum = tsum_pages.size %}
 {% assign num_internationaltsum = internationalcollection_pages.size %}
 {% assign num_japantsum = japancollection_pages.size %}
 
 <div class="nonprintable">
-  <nav class="ui stackable menu">
-    <a href="{{ site.baseurl}}/" class="brand item">
-      <img class="ui avatar image" src="{{ site.data.bio.basics.picture }}"><span>{{ site.data.bio.basics.name }}</span>
-    </a>
+@@ -15,12 +16,11 @@
     {% if num_tsumtsum > 0 %}
     <a href="{{ site.baseurl }}/tsumtsum" class=" {% if include.active == "tsumtsum" %} active {% endif %}item">ツムツム ({{ num_tsumtsum }})</a>
     {% endif %}
@@ -20,6 +19,9 @@
     <a href="{{ site.baseurl }}/internationalcollection" class=" {% if include.active == "internationalcollection" %} active {% endif %}item">海外版コレクション ({{ num_internationaltsum }})</a>
     {% if num_japantsum > 0 %}
     <a href="{{ site.baseurl }}/japancollection" class=" {% if include.active == "japancollection" %} active {% endif %}item">日本語版コレクション ({{ num_japantsum }})</a>
+    {% endif %}
+    {% if num_essays > 0 %}
+    <a href="{{ site.baseurl }}/essays" class=" {% if include.active == "essays" %} active {% endif %} item">Essays ({{ num_essays }})</a>
     {% endif %}
     <a href="{{ site.baseurl }}/missions" class=" {% if include.active == "missions" %} active {% endif %} item">{{ site.missions-page-label }}</a>
   </nav>
