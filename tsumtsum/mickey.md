@@ -1,6 +1,8 @@
 ---
 layout: tsum
 type: tsum
+international: true
+japan: true
 image: images/mickey.jpg
 title: ミッキー | Mickey
 permalink: tsumtsum/mickey
