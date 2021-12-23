@@ -1,9 +1,11 @@
 <!-- Home page design with small circular image bisecting card. -->
 
 {% assign tsum_pages = site.pages | where: "type", "tsum" | where_exp: "page", "page.draft != true" %}
+{% assign internationalcollection_pages = site.pages | where: "international", "true"  | where_exp: "page", "page.draft != true" %}
 {% assign japancollection_pages = site.pages | where: "japan", "true"  | where_exp: "page", "page.draft != true" %}
 
 {% assign num_tsumtsum = tsum_pages.size %}
+{% assign num_internationaltsum = internationalcollection_pages.size %}
 {% assign num_japantsum = japancollection_pages.size %}
 
 <div style="height: 100%; margin-top: -75px" class="ui middle aligned grid ">
@@ -43,6 +45,9 @@
       <div class="center aligned content">
         <a href="{{ site.baseurl}}/tsumtsum/">
           <button class="ui basic button">ツムツム ({{ num_tsumtsum }})</button>
+        </a>
+        <a href="{{ site.baseurl}}/internationalcollection/">
+          <button class="ui basic button">海外版コレクション ({{ num_internationaltsum }})</button>
         </a>
         <a href="{{ site.baseurl}}/japancollection/">
           <button class="ui basic button">日本語版コレクション ({{ num_japantsum }})</button>
