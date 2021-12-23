@@ -7,7 +7,6 @@ image: images/tigger.jpg
 title: ティガー | Tigger
 permalink: tsumtsum/tigger
 labels:
-  - black nose
   - cat
   - "color: yellow"
   - eyebrows
