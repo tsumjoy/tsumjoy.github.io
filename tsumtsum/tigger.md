@@ -16,7 +16,7 @@ labels:
   - male
   - pink nose
   - round ears
-  - "series: &lsqb; Mickey & Friends &rsqb;"
+  - "series: &lsqb; Winnie the Pooh &rsqb;"
   - "skill: burst"
   - "skill: random burst"
   - "skill: tail swish"
