@@ -15,7 +15,7 @@ missions-page-label: missions
 # Defining your own custom theme variations is easy. See the documentation.
 theme-home: theme-home-builtin-1.html
 theme-tsumtsum: theme-tsumtsum-builtin-1.html
-theme-essays: theme-essays-builtin-1.html
+theme-japancollection: theme-japan-collection-builtin-1.html
 theme-bio: theme-bio-builtin-1.html
 theme-missions: theme-missions-builtin-1.html
 
