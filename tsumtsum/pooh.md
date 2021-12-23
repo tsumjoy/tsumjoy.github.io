@@ -13,7 +13,7 @@ labels:
   - "initial: P"
   - male
   - round ears
-  - "series: &lsqb; Mickey & Friends &rsqb;"
+  - "series: &lsqb; Winnie the Pooh &rsqb;"
   - "skill: stop time"
   - triangle nose
   - yellow hands
