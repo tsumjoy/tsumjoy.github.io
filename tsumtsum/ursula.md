@@ -9,7 +9,6 @@ permalink: tsumtsum/ursula
 labels:
   - "color: blue"
   - "color: white"
-  - "skill: burst"
   - eyebrows
   - eyelashes
   - female
@@ -19,6 +18,7 @@ labels:
   - premium box
   - round ears
   - "series: &lsqb; Little Mermaid &rsqb;"
+  - "skill: burst"
   - tuft of hair
   - villain
   - white hair
