@@ -9,7 +9,10 @@
 {% assign num_japantsum = japancollection_pages.size %}
 
 <div class="nonprintable">
-  <nav>
+  <nav class="ui stackable menu">
+    <a href="{{ site.baseurl}}/" class="brand item">
+      <img class="ui avatar image" src="{{ site.data.bio.basics.picture }}"><span>{{ site.data.bio.basics.name }}</span>
+    </a>
     {% if num_tsumtsum > 0 %}
     <a href="{{ site.baseurl }}/tsumtsum" class=" {% if include.active == "tsumtsum" %} active {% endif %}item">ツムツム ({{ num_tsumtsum }})</a>
     {% endif %}
