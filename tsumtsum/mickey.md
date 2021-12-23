@@ -9,7 +9,6 @@ permalink: tsumtsum/mickey
 labels:
   - black nose
   - "color: black"
-  - "color: skin"
   - happiness box
   - "initial: M"
   - male
