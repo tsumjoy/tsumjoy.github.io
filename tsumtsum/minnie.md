@@ -10,7 +10,6 @@ labels:
   - black nose
   - call a sweetheart
   - "color: black"
-  - "color: skin"
   - eyelashes
   - female
   - happiness box
