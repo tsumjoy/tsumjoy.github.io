@@ -2,8 +2,10 @@
 
 {% assign essay_pages = site.pages | where: "type", "essay"  | where_exp: "page", "page.draft != true" %}
 {% assign tsum_pages = site.pages | where: "type", "tsum" | where_exp: "page", "page.draft != true" %}
+{% assign japancollection_pages = site.pages | where: "japan", "true" | where_exp: "page", "page.draft != true" %}
 {% assign num_essays = essay_pages.size %}
 {% assign num_tsumtsum = tsum_pages.size %}
+{% assign num_japantsum = japancollection_pages.size %}
 
 <div class="nonprintable">
   <nav class="ui stackable menu">
@@ -12,6 +14,9 @@
     </a>
     {% if num_tsumtsum > 0 %}
     <a href="{{ site.baseurl }}/tsumtsum" class=" {% if include.active == "tsumtsum" %} active {% endif %}item">ツムツム ({{ num_tsumtsum }})</a>
+    {% endif %}
+    {% if num_japantsum > 0 %}
+    <a href="{{ site.baseurl }}/japancollection" class=" {% if include.active == "tsumtsum" %} active {% endif %}item">日本版コレクション ({{ num_japantsum }})</a>
     {% endif %}
     {% if num_essays > 0 %}
     <a href="{{ site.baseurl }}/essays" class=" {% if include.active == "essays" %} active {% endif %} item">Essays ({{ num_essays }})</a>
