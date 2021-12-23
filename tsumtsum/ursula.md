@@ -1,8 +1,8 @@
 ---
 layout: tsum
 type: tsum
-japan: false
 international: true
+japan: false
 image: images/ursula.jpg
 title: アースラ | Ursula
 permalink: tsumtsum/ursula
