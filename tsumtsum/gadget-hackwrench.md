@@ -12,8 +12,8 @@ labels:
   - eyebrows
   - eyelashes
   - female
-  - heart&#45;making
   - "initial: G"
+  - "initial: H"
   - pink ears
   - pink nose
   - pointy ears
