@@ -10,14 +10,14 @@ labels:
   - black nose
   - "color: black"
   - "color: skin"
-  - "skill: burst"
-  - "skill: center burst"
   - happiness box
   - "initial: M"
   - male
   - mickey
   - round ears
   - "series: &lsqb; Mickey & Friends &rsqb;"
+  - "skill: burst"
+  - "skill: center burst"
   - white hands
 ---
 <img class="ui image" src="../images/mickey.jpg">
