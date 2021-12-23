@@ -3,7 +3,7 @@ layout: tsum
 type: tsum
 international: true
 japan: true
-image: images/pumbaa.jpg
+image: images/pumbaa.png
 title: プンバァ | Pumbaa
 permalink: tsumtsum/pumbaa
 labels:
@@ -23,4 +23,4 @@ labels:
   - triangle nose
   - tuft of hair
 ---
-<img class="ui image" src="../images/pumbaa.jpg">
+<img class="ui image" src="../images/pumbaa.png">
