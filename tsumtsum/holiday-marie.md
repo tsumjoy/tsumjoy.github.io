@@ -21,7 +21,7 @@ labels:
   - premium box
   - ribbon
   - rosy cheeks
-  - "series: &lsqb; Aristocats &rsqb;"
+  - "series: &lsqb; The Aristocats &rsqb;"
   - "skill: bubble&#45;making"
   - tied hair
   - triangle nose
