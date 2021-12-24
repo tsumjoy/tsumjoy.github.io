@@ -7,13 +7,13 @@ image: images/tigger.jpg
 title: ティガー | Tigger
 permalink: tsumtsum/tigger
 labels:
+  - boy
   - cat
   - "color: yellow"
   - eyebrows
   - facial hair
   - happiness box
   - "initial: T"
-  - male
   - pink nose
   - round ears
   - "series: &lsqb; Winnie the Pooh &rsqb;"
