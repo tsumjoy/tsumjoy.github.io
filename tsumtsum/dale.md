@@ -7,6 +7,7 @@ image: images/dale.jpg
 title: デール | Dale
 permalink: tsumtsum/dale
 labels:
+  - boy
   - call a friend
   - "color: brown"
   - "color: yellow"
@@ -14,7 +15,6 @@ labels:
   - happiness box
   - heart&#45;making
   - "initial: D"
-  - male
   - pink ears
   - pink nose
   - pointy ears
