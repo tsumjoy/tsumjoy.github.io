@@ -14,6 +14,7 @@ labels:
   - girl
   - hat
   - heart&#45;making
+  - "initial: H"
   - "initial: M"
   - pink ears
   - pink nose
