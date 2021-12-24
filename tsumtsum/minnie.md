@@ -11,7 +11,7 @@ labels:
   - call a sweetheart
   - "color: black"
   - eyelashes
-  - female
+  - girl
   - happiness box
   - heart&#45;making
   - "initial: M"
