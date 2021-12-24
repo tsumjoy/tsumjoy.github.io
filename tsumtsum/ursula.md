@@ -11,7 +11,7 @@ labels:
   - "color: white"
   - eyebrows
   - eyelashes
-  - female
+  - girl
   - "initial: A"
   - "initial: U"
   - lives in the sea
