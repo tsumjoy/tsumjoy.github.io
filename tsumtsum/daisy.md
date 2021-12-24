@@ -11,7 +11,7 @@ labels:
   - call a sweetheart
   - "color: white"
   - eyelashes
-  - female
+  - girl
   - happiness box
   - heart&#45;making
   - "initial: D"
