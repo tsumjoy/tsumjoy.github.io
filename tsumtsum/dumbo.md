@@ -10,7 +10,6 @@ labels:
   - boy
   - "color: blue"
   - droopy ears
-  - eyebrows
   - hat
   - "initial: D"
   - pink ears
