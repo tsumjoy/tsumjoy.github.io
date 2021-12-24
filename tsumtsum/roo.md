@@ -7,11 +7,11 @@ image: images/roo.jpg
 title: ルー | Roo
 permalink: tsumtsum/roo
 labels:
+  - boy
   - "color: brown"
   - eyebrows
   - happiness box
   - "initial: R"
-  - male
   - pink ears
   - pointy ears
   - round ears
