@@ -12,9 +12,9 @@ labels:
   - dog
   - droopy ears
   - eye whites
-  - happiness box
   - "initial: G"
   - male
+  - premium box
   - "series: &lsqb; Mickey & Friends &rsqb;"
   - "skill: burst"
   - "skill: horizontal burst"
