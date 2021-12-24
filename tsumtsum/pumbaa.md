@@ -8,11 +8,11 @@ title: プンバァ | Pumbaa
 permalink: tsumtsum/pumbaa
 labels:
   - black hands
+  - boy
   - call a friend
   - "color: brown"
   - eyebrows
   - "initial: P"
-  - male
   - pink ears
   - pink nose
   - pointy ears
