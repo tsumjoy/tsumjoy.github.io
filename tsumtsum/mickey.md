@@ -8,10 +8,10 @@ title: ミッキー | Mickey
 permalink: tsumtsum/mickey
 labels:
   - black nose
+  - boy
   - "color: black"
   - happiness box
   - "initial: M"
-  - male
   - mickey
   - round ears
   - "series: &lsqb; Mickey & Friends &rsqb;"
