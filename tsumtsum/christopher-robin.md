@@ -7,12 +7,12 @@ image: images/christopher-robin.jpg
 title: クリストファー・ロビン | Christopher Robin
 permalink: tsumtsum/christopher-robin
 labels:
+  - boy
   - "color: brown"
   - eyebrows
   - happiness box
   - "initial: C"
   - "initial: R"
-  - male
   - rosy cheeks
   - round ears
   - "series: &lsqb; Winnie the Pooh &rsqb;"
