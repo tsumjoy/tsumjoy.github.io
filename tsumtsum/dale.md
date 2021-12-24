@@ -11,7 +11,6 @@ labels:
   - call a friend
   - "color: brown"
   - "color: yellow"
-  - eyebrows
   - happiness box
   - heart&#45;making
   - "initial: D"
