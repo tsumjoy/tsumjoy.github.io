@@ -11,7 +11,7 @@ labels:
   - "color: yellow"
   - eyebrows
   - eyelashes
-  - female
+  - girl
   - "initial: G"
   - "initial: H"
   - pink ears
