@@ -8,12 +8,12 @@ title: ドナルド | Donald
 permalink: tsumtsum/donald
 labels:
   - beak
+  - 
   - "color: white"
   - donald
   - happiness box
   - hat
   - "initial: D"
-  - male
   - ribbon
   - rosy cheeks
   - "series: &lsqb; Mickey & Friends &rsqb;"
