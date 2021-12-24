@@ -13,7 +13,7 @@ labels:
   - "initial: A"
   - pointy ears
   - premium box
-  - series: Pixar
+  - "series: Pixar"
   - "series: &lsqb; Toy Story &rsqb;"
   - visible mouth
 ---
