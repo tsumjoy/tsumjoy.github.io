@@ -9,7 +9,6 @@ permalink: tsumtsum/piglet
 labels:
   - boy
   - "color: pink"
-  - "color: red"
   - eyebrows
   - happiness box
   - "initial: P"
