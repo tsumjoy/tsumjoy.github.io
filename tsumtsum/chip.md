@@ -8,13 +8,13 @@ title: チップ | Chip
 permalink: tsumtsum/chip
 labels:
   - black nose
+  - boy
   - call a friend
   - "color: brown"
   - eyebrows
   - happiness box
   - heart&#45;making
   - "initial: C"
-  - male
   - pink ears
   - pointy ears
   - rosy cheeks
