@@ -7,12 +7,12 @@ image: images/dumbo.jpg
 title: ダンボ | Dumbo
 permalink: tsumtsum/dumbo
 labels:
+  - boy
   - "color: blue"
   - droopy ears
   - eyebrows
   - hat
   - "initial: D"
-  - male
   - pink ears
   - premium box
   - rosy cheeks
