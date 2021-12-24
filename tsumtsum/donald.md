@@ -8,7 +8,7 @@ title: ドナルド | Donald
 permalink: tsumtsum/donald
 labels:
   - beak
-  - 
+  - boy
   - "color: white"
   - donald
   - happiness box
