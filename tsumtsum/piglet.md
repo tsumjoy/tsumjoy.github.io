@@ -7,12 +7,12 @@ image: images/piglet.jpg
 title: ピグレット | Piglet
 permalink: tsumtsum/piglet
 labels:
+  - boy
   - "color: pink"
   - "color: red"
   - eyebrows
   - happiness box
   - "initial: P"
-  - male
   - pink ears
   - pink nose
   - pointy ears
