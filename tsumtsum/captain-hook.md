@@ -12,7 +12,8 @@ labels:
   - eyebrows
   - facial hair
   - hat
-  - "initial: G"
+  - "initial: C"
+  - "initial: H"
   - premium box
   - "series: &lsqb; Peter Pan &rsqb;"
   - "skill: burst"
