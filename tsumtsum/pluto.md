@@ -8,13 +8,13 @@ title: グーフィー | Pluto
 permalink: tsumtsum/pluto
 labels:
   - black nose
+  - boy
   - "color: yellow"
   - dog
   - droopy ears
   - eye whites
   - happiness box
   - "initial: P"
-  - male
   - "series: &lsqb; Mickey & Friends &rsqb;"
   - "skill: burst"
   - "skill: horizontal burst"
