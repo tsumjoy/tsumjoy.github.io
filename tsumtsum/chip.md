@@ -11,7 +11,6 @@ labels:
   - boy
   - call a friend
   - "color: brown"
-  - eyebrows
   - happiness box
   - heart&#45;making
   - "initial: C"
