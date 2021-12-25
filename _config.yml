@@ -20,8 +20,10 @@ theme-internationalcollection: theme-international-collection-builtin-1.html
 theme-japancollection: theme-japan-collection-builtin-1.html
 
 theme-missions: theme-missions-builtin-1.html
-theme-mission-series-mickeyandfriends-japan: theme-missions-series-mickey-and-friends-japan-builtin-1.html
 theme-mission-series-mickeyandfriends-international: theme-missions-series-mickey-and-friends-international-builtin-1.html
+theme-mission-series-mickeyandfriends-japan: theme-missions-series-mickey-and-friends-japan-builtin-1.html
+theme-mission-series-chipndale-international: theme-missions-series-chip-n-dale-international-builtin-1.html
+theme-mission-series-chipndale-japan: theme-missions-series-chip-n-dale-japan-builtin-1.html
 
 theme-bio: theme-bio-builtin-1.html
 
