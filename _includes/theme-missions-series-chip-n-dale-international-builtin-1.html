@@ -1,0 +1,12 @@
+<div style="padding-top: 20px" class="ui container ">
+
+  <div class="ui stackable centered four cards">
+    {% assign mission_series_chipndale_pages = site.pages | where: "labels", "series: &lsqb; Chip 'n Dale &rsqb;" | sort: "permalink" %}
+    {% assign chipndale_international_pages = mission_series_chipndale_pages | where: "international", "true" | sort: "permalink" %}
+    {% for page in chipndale_international_pages %}
+      {% unless page.draft %}
+        {% include tsum-card.html page=page %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+</div>
