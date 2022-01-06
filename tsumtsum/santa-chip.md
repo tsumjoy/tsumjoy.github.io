@@ -8,3 +8,5 @@ ID: santa chip
 
 ---
 <img class="ui image" src="../images/santa-chip.png">
+
+* <a href="{{ site.data.series-mickeyandfriends.url }}">{{ site.data.series-mickeyandfriends.tag }}</a>
