@@ -4,11 +4,11 @@
     "gender": [
       {
         "linkLabel": "男の子",
-        "url": { "$ref": "#/tags/gender/onnanoko" }
+        "url": "boy"
       },
       {
         "linkLabel": "女の子",
-        "url": { "$ref": "#/tags/gender/otokonoko" }
+        "url": { "$ref": "#/tags/gender/onnanoko" }
       }
     ]
   },
