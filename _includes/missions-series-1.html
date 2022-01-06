@@ -7,267 +7,29 @@
 
   <div class="fourteen wide column no-bottom">
 
+  {% for entry in site.data.missions.series %}
+    
     <div class="ui grid">
-       <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>ミッキー&フレンズ</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/mickey-and-friends/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/mickey-and-friends/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
+      
+      {% for item in entry.items %}
+      
       <div class="two wide column no-bottom">
         <p class="ui no-bottom">
-          <b>チップとデール</b>
+          <b>{{ item.linkLabel }}</b>
         </p>
         <p class="ui"> 
           <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/chip-n-dale/international">海外版</a></li>
+            <li><a href="https://tsumjoy.github.io/missions/series/{{ item.url }}/international">海外版</a></li>
           </ul> 
           <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/chip-n-dale/japan">日本版</a></li>
-          </ul> 
+            <li><a href="https://tsumjoy.github.io/missions/series/{{ item.url }}/japan">日本版</a></li>
+          </ul>  
         </p>
       </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>くまのプーさん</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/winnie-the-pooh/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/winnie-the-pooh/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-    </div>
-  
-    <div class="ui grid">
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>アラジン</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/aladdin/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/aladdin/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>美女と野獣</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/beauty-and-the-beast/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/beauty-and-the-beast/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>リトルマーメイド</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/little-mermaid/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/little-mermaid/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>ラプンツェル</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/rapunzel/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/rapunzel/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>アナと雪の女王</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/frozen/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/frozen/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-    </div>
-
-    <div class="ui grid">
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>バンビ</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/bambi/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/bambi/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>ライオンキング</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/lion-king/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/lion-king/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>リロ&スティッチ</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/lilo-and-stitch/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/lilo-and-stitch/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>ふしぎの国のアリス</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/alice-in-wonderland/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/alice-in-wonderland/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>ズートピア</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/zootopia/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/zootopia/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-    </div>
-
-    <div class="ui grid">
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>ピクサー</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/pixar/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/pixar/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>トイストーリー</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/toy-story/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/toy-story/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>モンスターズインク</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/monsters-inc/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/monsters-inc/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-    </div>
-
-    <div class="ui grid">
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>スターウォーズ</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/star-wars/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/star-wars/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>マーベル</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/marvel/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/marvel/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>キングダムハーツ</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/kingdom-hearts/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/series/kingdom-hearts/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
+    
+      {% endfor %}
     </div>
     
+  {% endfor %}
   </div>
 </div>
