@@ -8,3 +8,5 @@ ID: donald
 
 ---
 <img class="ui image" src="../images/donald.jpg">
+
+* <a href="{{ site.data.series-mickeyandfriends.url }}">{{ site.data.series-mickeyandfriends.tag }}</a>
