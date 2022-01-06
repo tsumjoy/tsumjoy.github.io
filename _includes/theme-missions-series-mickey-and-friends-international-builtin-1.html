@@ -1,12 +1,12 @@
 <div style="padding-top: 20px" class="ui container ">
 
-  <div class="ui stackable centered four cards">
-    {% assign mission_series_mickeyandfriends_pages = site.pages | where: "labels", "series: &lsqb; Mickey & Friends &rsqb;" | sort: "permalink" %}
-    {% assign mickeyandfriends_international_pages = mission_series_mickeyandfriends_pages | where: "international", "true" | sort: "permalink" %}
-    {% for page in mickeyandfriends_international_pages %}
-      {% unless page.draft %}
-        {% include tsum-card.html page=page %}
-      {% endunless %}
+  <div class="ui stackable centered five cards">
+    {% for entry in site.data.series-mickeyandfriends.tsum %}
+      {% if entry.international %}
+        {% unless page.draft %}
+          {% include tsum-card.html page=site.pages | where: "ID", entry %}
+        {% endunless %}
+      {% endif %}
     {% endfor %}
   </div>
 </div>
