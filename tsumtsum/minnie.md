@@ -8,3 +8,5 @@ ID: minnie
 
 ---
 <img class="ui image" src="../images/minnie.jpg">
+
+* <a href="{{ site.data.series-mickeyandfriends.url }}">{{ site.data.series-mickeyandfriends.tag }}</a>
