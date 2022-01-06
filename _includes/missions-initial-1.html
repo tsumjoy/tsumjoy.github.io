@@ -11,18 +11,18 @@
     
     <div class="ui grid">
       
-      {% for part in entry %}
+      {% for item in entry.items %}
       
       <div class="two wide column no-bottom">
         <p class="ui no-bottom">
-          <b>{{ part.label }}</b>
+          <b>{{ item.label }}</b>
         </p>
         <p class="ui"> 
           <ul>
-            <li><a href="https://tsumjoy.github.io/missions/initial/{{ part.label }}/international">海外版</a></li>
+            <li><a href="https://tsumjoy.github.io/missions/initial/{{ item.label }}/international">海外版</a></li>
           </ul> 
           <ul>
-            <li><a href="https://tsumjoy.github.io/missions/initial/{{ part.label }}/japan">日本版</a></li>
+            <li><a href="https://tsumjoy.github.io/missions/initial/{{ item.label }}/japan">日本版</a></li>
           </ul>  
         </p>
       </div>
