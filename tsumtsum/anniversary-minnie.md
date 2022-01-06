@@ -10,4 +10,5 @@ ID: "anniversary minnie"
 <img class="ui image" src="../images/anniversary-minnie.png">
 
 
-* <a href="{{ site.data.series-mickeyandfriends.url }}" class="brand item">{{ site.data.series-mickeyandfriends.tag }}</a>
+* <a href="{{ site.data.series-mickeyandfriends.url }}">{{ site.data.series-mickeyandfriends.tag }}</a>
+* {{ site.data.series-mickeyandfriends.tag }}
