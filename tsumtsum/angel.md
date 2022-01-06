@@ -10,7 +10,7 @@ labels:
   - call a sweetheart
   - "color: pink"
   - eyelashes
-  {{ site.data.missions.tags.gender.onnanoko }}
+  - girl
   - heart&#45;making
   - "initial: A"
   - pink ears
@@ -21,3 +21,5 @@ labels:
   - visible mouth
 ---
 <img class="ui image" src="../images/angel.jpg">
+
+{{ site.data.missions.tags.gender.onnanoko }}
