@@ -7,11 +7,12 @@
 
   <div class="fourteen wide column no-bottom">
 
-  {% for entry in site.data.missions.initial %}
+  {% assign topInitial = entry in site.data.missions.initial %}
+  {% for topInitial %}
     
     <div class="ui grid">
       
-      {% for entry in site.data.missions.gender.initial.entry %}
+      {% for entry in topInitial %}
       
       <div class="two wide column no-bottom">
         <p class="ui no-bottom">
