@@ -1,91 +1,113 @@
 {
   "tag": "series: &lsqb; Mickey & Friends &rsqb;",
   "tsum": [
-    "anniversary minnie": {
+    {
+       "ID": "anniversary minnie",
        "international": true,
        "japan": false
     },
-    "beanstalk mickey": {
+    {
+       "ID": "beanstalk mickey",
        "international": false,
        "japan": true
     },
-    "chip": {
+    {
+       "ID": "chip",
        "international": true,
        "japan": false
     },
-    "clarice": {
+    {
+       "ID": "clarice",
        "international": true,
        "japan": false
     },
-    "daisy": {
+    {
+       "ID": "daisy",
        "international": true,
        "japan": true
     },
-    "dale": {
+    {
+       "ID": "dale",
        "international": true,
        "japan": true
     },
-    "dancing chip": {
+    {
+       "ID": "dancing chip",
        "international": false,
        "japan": true
     },
-    "dancing dale": {
+    {
+       "ID": "dancing dale",
        "international": false,
        "japan": true
     },
-    "donald": {
+    {
+       "ID": "donald",
        "international": true,
        "japan": true
     },
-    "gadget hackwrench": {
+    {
+       "ID": "gadget hackwrench",
        "international": true,
        "japan": true
     },
-    "goofy": {
+    {
+       "ID": "goofy",
        "international": true,
        "japan": true
     },
-    "holiday daisy": {
+    {
+       "ID": "holiday daisy",
        "international": true,
        "japan": true
     },
-    "holiday donald": {
+    {
+       "ID": "holiday donald",
        "international": true,
        "japan": false
     },
-    "holiday goofy": {
+    {
+       "ID": "holiday goofy",
        "international": true,
        "japan": true
     },
-    "holiday mickey": {
+    {
+       "ID": "holiday mickey",
        "international": true,
        "japan": true
     },
-    "holiday pluto": {
+    {
+       "ID": "holiday pluto",
        "international": true,
        "japan": false
     },
-    "max": {
+    {
+       "ID": "max",
        "international": true,
        "japan": true
     },
-    "mickey": {
+    {
+       "ID": "mickey",
        "international": true,
        "japan": true
     },
-    "minnie": {
+    {
+       "ID": "minnie",
        "international": true,
        "japan": true
     },
-    "parade mickey": {
+    {
+       "ID": "parade mickey",
        "international": false,
        "japan": true
     },
-    "pluto": {
+    {
+       "ID": "pluto",
        "international": true,
        "japan": true
     },
-    "steamboat mickey": {
+    {
+       "ID": "steamboat mickey",
        "international": true,
        "japan": false
     }
