@@ -65,6 +65,10 @@
        "international": true,
        "japan": false
     },
+    "max": {
+       "international": true,
+       "japan": true
+    },
     "mickey": {
        "international": true,
        "japan": true
