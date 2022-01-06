@@ -38,7 +38,8 @@
             "label": "villain"
         }
     ],
-    "initialRow1": [
+    "initial": [
+        "initialRow1": [
         {
             "label": "A"
         },
@@ -57,8 +58,8 @@
         {
             "label": "N"
         }
-    ],
-    "initialRow2": [
+      ],
+      "initialRow2": [
         {
             "label": "P"
         },
@@ -68,6 +69,7 @@
         {
             "label": "T"
         }
+       ]
     ],
     "colorRow1": [
         {
@@ -240,4 +242,154 @@
             "url": "collar"
         }
     ],
-  }
+    "skillTypeRow1": [
+        {
+            "linkLabel": "友達を呼ぶ",
+            "url": "call-a-friend"
+        },
+        {
+            "linkLabel": "恋人を呼ぶ",
+            "url": "call-a-sweetheart"
+        }
+    ],
+    "skillTypeRow2": [
+        {
+            "linkLabel": "大きなツムを出す",
+            "url": "big-tsum"
+        },
+        {
+            "linkLabel": "ボムを出す",
+            "url": "bubble-making"
+        },
+        {
+            "linkLabel": "ハートが出る♡",
+            "url": "heart-making"
+        }
+    ],
+    "skillTypeRow3": [
+        {
+            "linkLabel": "消去系",
+            "url": "burst"
+        },
+        {
+            "linkLabel": "横ライン消去 ━",
+            "url": "horizontal-burst"
+        },
+        {
+            "linkLabel": "縦ライン消去 ┃",
+            "url": "vertical-burst"
+        },
+        {
+            "linkLabel": "＼斜めライン消去／",
+            "url": "diagonal-burst"
+        },
+        {
+            "linkLabel": "中央消去",
+            "url": "center-burst"
+        },
+        {
+            "linkLabel": "ランダム消去",
+            "url": "random-burst"
+        }
+    ],
+    "skillTypeRow4": [
+        {
+            "linkLabel": "しっぽを振る",
+            "url": "tail-swish"
+        },
+        {
+            "linkLabel": "時間を止める",
+            "url": "stop-time"
+        },
+        {
+            "linkLabel": "フィーバー発生",
+            "url": "start-fever"
+        }
+    ],
+    "seriesRow1": [
+        {
+            "linkLabel": "ミッキー&フレンズ",
+            "url": "mickey-and-friends"
+        },
+        {
+            "linkLabel": "チップとデール",
+            "url": "chip-n-dale"
+        },
+        {
+            "linkLabel": "くまのプーさん",
+            "url": "winnie-the-pooh"
+        }
+    ],
+    "seriesRow2": [
+        {
+            "linkLabel": "アラジン",
+            "url": "aladdin"
+        },
+        {
+            "linkLabel": "美女と野獣",
+            "url": "beauty-and-the-beast"
+        },
+        {
+            "linkLabel": "リトルマーメイド",
+            "url": "little-mermaid"
+        },
+        {
+            "linkLabel": "ラプンツェル",
+            "url": "tangled"
+        },
+        {
+            "linkLabel": "アナと雪の女王",
+            "url": "frozen"
+        }
+    ],
+    "seriesRow3": [
+        {
+            "linkLabel": "バンビ",
+            "url": "bambi"
+        },
+        {
+            "linkLabel": "ライオンキング",
+            "url": "lion-king"
+        },
+        {
+            "linkLabel": "リロ&スティッチ",
+            "url": "lilo-and-stitch"
+        },
+        {
+            "linkLabel": "ふしぎの国のアリス",
+            "url": "alice-in-wonderland"
+        },
+        {
+            "linkLabel": "ズートピア",
+            "url": "zootopia"
+        }
+    ],
+    "seriesRow4": [
+        {
+            "linkLabel": "ピクサー",
+            "url": "pixar"
+        },
+        {
+            "linkLabel": "トイストーリー",
+            "url": "toy-story"
+        },
+        {
+            "linkLabel": "モンスターズインク",
+            "url": "monsters-inc"
+        }
+    ],
+    "seriesRow5": [
+        {
+            "linkLabel": "スターウォーズ",
+            "url": "star-wars"
+        },
+        {
+            "linkLabel": "マーベル",
+            "url": "marvel"
+        },
+        {
+            "linkLabel": "キングダムハーツ",
+            "url": "kingdom-hearts"
+        }
+    ]
+}
