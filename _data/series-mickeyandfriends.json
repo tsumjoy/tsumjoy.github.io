@@ -1,0 +1,89 @@
+{
+  "tag": "series: &lsqb; Mickey & Friends &rsqb;",
+  "tsum": [
+    "anniversary minnie": {
+       "international": true,
+       "japan": false
+    },
+    "beanstalk mickey": {
+       "international": false,
+       "japan": true
+    },
+    "chip": {
+       "international": true,
+       "japan": false
+    },
+    "clarice": {
+       "international": true,
+       "japan": false
+    },
+    "daisy": {
+       "international": true,
+       "japan": true
+    },
+    "dale": {
+       "international": true,
+       "japan": true
+    },
+    "dancing chip": {
+       "international": false,
+       "japan": true
+    },
+    "dancing dale": {
+       "international": false,
+       "japan": true
+    },
+    "donald": {
+       "international": true,
+       "japan": true
+    },
+    "gadget hackwrench": {
+       "international": true,
+       "japan": true
+    },
+    "goofy": {
+       "international": true,
+       "japan": true
+    },
+    "holiday daisy": {
+       "international": true,
+       "japan": true
+    },
+    "holiday donald": {
+       "international": true,
+       "japan": false
+    },
+    "holiday goofy": {
+       "international": true,
+       "japan": true
+    },
+    "holiday mickey": {
+       "international": true,
+       "japan": true
+    },
+    "holiday pluto": {
+       "international": true,
+       "japan": false
+    },
+    "mickey": {
+       "international": true,
+       "japan": true
+    },
+    "minnie": {
+       "international": true,
+       "japan": true
+    },
+    "parade mickey": {
+       "international": false,
+       "japan": true
+    },
+    "pluto": {
+       "international": true,
+       "japan": true
+    },
+    "steamboat mickey": {
+       "international": true,
+       "japan": false
+    }
+   ]
+}
