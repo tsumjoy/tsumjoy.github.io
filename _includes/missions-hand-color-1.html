@@ -8,45 +8,23 @@
   <div class="fourteen wide column no-bottom">
 
     <div class="ui grid">
+      {% for entry in site.data.missions.handColor %}
+      
       <div class="two wide column no-bottom">
         <p class="ui no-bottom">
-          <b style="color:black">黒い手</b>
+          <b style={{ entry.style }}>{{ entry.linkLabel }}</b>
         </p>
         <p class="ui"> 
           <ul>
-            <li><a href="https://tsumjoy.github.io/missions/hand-color/black/international">海外版</a></li>
+            <li><a href="https://tsumjoy.github.io/missions/gender/{{ entry.url }}/international">海外版</a></li>
           </ul> 
           <ul>
-            <li><a href="https://tsumjoy.github.io/missions/hand-color/black/japan">日本版</a></li>
-          </ul> 
+            <li><a href="https://tsumjoy.github.io/missions/gender/{{ entry.url }}/japan">日本版</a></li>
+          </ul>  
         </p>
       </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b style="background-color:white">白い手</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/hand-color/white/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/hand-color/white/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b style="background-color:yellow">黄色い手</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/hand-color/yellow/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/hand-color/yellow/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
+    
+      {% endfor %}
     </div>
     
   </div>
