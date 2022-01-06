@@ -39,7 +39,7 @@
         }
     ],
     "initial": [
-        "initialRow1": [
+        "items": [
         {
             "label": "A"
         },
@@ -59,7 +59,7 @@
             "label": "N"
         }
       ],
-      "initialRow2": [
+      "items": [
         {
             "label": "P"
         },
