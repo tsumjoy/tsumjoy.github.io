@@ -22,4 +22,3 @@ labels:
 ---
 <img class="ui image" src="../images/angel.jpg">
 
-{{ site.data.missions.tags.gender.onnanoko }}
