@@ -7,199 +7,29 @@
 
   <div class="fourteen wide column no-bottom">
 
+  {% for entry in site.data.missions.skillType %}
+    
     <div class="ui grid">
+      
+      {% for item in entry.items %}
+      
       <div class="two wide column no-bottom">
         <p class="ui no-bottom">
-          <b>友達を呼ぶ</b>
+          <b>{{ item.linkLabel }}</b>
         </p>
         <p class="ui"> 
           <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/call-a-friend/international">海外版</a></li>
+            <li><a href="https://tsumjoy.github.io/missions/skill-type/{{ item.url }}/international">海外版</a></li>
           </ul> 
           <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/call-a-friend/japan">日本版</a></li>
-          </ul> 
+            <li><a href="https://tsumjoy.github.io/missions/skill-type/{{ item.url }}/japan">日本版</a></li>
+          </ul>  
         </p>
       </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>恋人を呼ぶ</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/call-a-sweetheart/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/call-a-sweetheart/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-    </div>
-
-    <div class="ui grid">
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>大きなツムを出す</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/big-tsum/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/big-tsum/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>ボムを出す</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/bubble-making/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/bubble-making/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>ハートが出る♡</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/heart-making/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/heart-making/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-    </div>
-
-    <div class="ui grid">
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>消去系</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/burst/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/burst/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>横ライン消去 ━</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/horizontal-burst/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/horizontal-burst/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>縦ライン消去 ┃</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/vertical-burst/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/vertical-burst/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>＼斜めライン消去／</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/diagonal-burst/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/diagonal-burst/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>中央消去</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/center-burst/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/center-burst/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>ランダム消去</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/random-burst/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/random-burst/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-    </div>
-
-    <div class="ui grid">
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>しっぽを振る</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/tail-swish/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/tail-swish/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>時間を止める</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/stop-time/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/stop-time/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>フィーバー発生</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/start-fever/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/skill-type/start-fever/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
+    
+      {% endfor %}
     </div>
     
+  {% endfor %}
   </div>
 </div>
