@@ -1,12 +1,10 @@
 {
     "gender": [
       {
-        "linkLabel": "男の子",
-        "url": "site.data.tags.gender.otokonoko"
+        "linkLabel": "男の子"
       },
       {
-        "linkLabel": "女の子",
-        "url": "site.data.tags.gender.onnanoko"
+        "linkLabel": "女の子"
       }
     ]
   }
