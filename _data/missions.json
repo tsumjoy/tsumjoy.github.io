@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "definitions": {
+    "genderTypes": {
+      "properties": {
+        "onnanoko": {
+          "type": "string"
+          "description": "girl"
+         },
+        "otokonoko": {
+          "type": "string"
+          "description": "boy"
+        }
+      }
+    }
+  },
+  "properties":
+  {
+    "gender": {
+      "$ref": "#/definitions/genderTypes"
+    }
+  }
+}
