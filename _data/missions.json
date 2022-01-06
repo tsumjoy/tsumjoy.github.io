@@ -115,7 +115,7 @@
                 "url": "white",
                 "style": "background-color:white"
             }
-        ],
+        ]
     ],
     "handColor": [
         {
@@ -134,264 +134,272 @@
             "style": "background-color:yellow"
         },
     ],
-    "facialFeaturesRow1": [
-        {
-            "linkLabel": "まゆ毛",
-            "url": "eyebrows"
-        },
-        {
-            "linkLabel": "まつ毛",
-            "url": "eyelashes"
-        }
+    "facialFeatures": [
+        "items": [
+            {
+                "linkLabel": "まゆ毛",
+                "url": "eyebrows"
+            },
+            {
+                "linkLabel": "まつ毛",
+                "url": "eyelashes"
+            }
+        ],
+        "items": [
+            {
+                "linkLabel": "白目",
+                "url": "eye-whites"
+            }
+        ],
+        "items": [
+            {
+                "linkLabel": "鼻がピンク",
+                "url": "pink-nose"
+            },
+            {
+                "linkLabel": "鼻が黒い",
+                "url": "black-nose"
+            },
+            {
+                "linkLabel": "鼻が三角",
+                "url": "triangle-nose"
+            }
+        ],
+        "items": [
+            {
+                "linkLabel": "くちばし",
+                "url": "beak"
+            },
+            {
+                "linkLabel": "口が見える",
+                "url": "visible-mouth"
+            },
+            {
+                "linkLabel": "ヒゲ",
+                "url": "facial-hair"
+            }
+        ],
+        "items": [
+            {
+                "linkLabel": "ほっぺが赤い",
+                "url": "rosy-cheeks"
+            }
+        ]
     ],
-    "facialFeaturesRow2": [
-        {
-            "linkLabel": "白目",
-            "url": "eye-whites"
-        }
+    "headBodyFeatures": [
+        "items": [
+            {
+                "linkLabel": "ツノ",
+                "url": "horned"
+            },
+            {
+                "linkLabel": "冠",
+                "url": "crown"
+            },
+            {
+                "linkLabel": "帽子",
+                "url": "hat"
+            }
+        ],
+        "items": [
+            {
+                "linkLabel": "毛が三本",
+                "url": "three-hair"
+            },
+            {
+                "linkLabel": "毛のはねた",
+                "url": "tuft-of-hair"
+            },
+            {
+                "linkLabel": "毛を結んだ",
+                "url": "tied-hair"
+            },
+            {
+                "linkLabel": "白い髪",
+                "url": "white-hair"
+            }
+        ],
+        "items": [
+            {
+                "linkLabel": "耳がピンク",
+                "url": "pink-ears"
+            },
+            {
+                "linkLabel": "耳が丸い",
+                "url": "round-ears"
+            },
+            {
+                "linkLabel": "耳がとがった",
+                "url": "pointy-ears"
+            },
+            {
+                "linkLabel": "耳が垂れた",
+                "url": "droopy-ears"
+            }
+        ],
+        "items": [
+            {
+                "linkLabel": "リボンをつけた🎀",
+                "url": "ribbon"
+            },
+            {
+                "linkLabel": "えりが見える",
+                "url": "collar"
+            }
+        ]
     ],
-    "facialFeaturesRow3": [
-        {
-            "linkLabel": "鼻がピンク",
-            "url": "pink-nose"
-        },
-        {
-            "linkLabel": "鼻が黒い",
-            "url": "black-nose"
-        },
-        {
-            "linkLabel": "鼻が三角",
-            "url": "triangle-nose"
-        }
+    "skillType": [
+        "items": [
+            {
+                "linkLabel": "友達を呼ぶ",
+                "url": "call-a-friend"
+            },
+            {
+                "linkLabel": "恋人を呼ぶ",
+                "url": "call-a-sweetheart"
+            }
+        ],
+        "items": [
+            {
+                "linkLabel": "大きなツムを出す",
+                "url": "big-tsum"
+            },
+            {
+                "linkLabel": "ボムを出す",
+                "url": "bubble-making"
+            },
+            {
+                "linkLabel": "ハートが出る♡",
+                "url": "heart-making"
+            }
+        ],
+        "items": [
+            {
+                "linkLabel": "消去系",
+                "url": "burst"
+            },
+            {
+                "linkLabel": "横ライン消去 ━",
+                "url": "horizontal-burst"
+            },
+            {
+                "linkLabel": "縦ライン消去 ┃",
+                "url": "vertical-burst"
+            },
+            {
+                "linkLabel": "＼斜めライン消去／",
+                "url": "diagonal-burst"
+            },
+            {
+                "linkLabel": "中央消去",
+                "url": "center-burst"
+            },
+            {
+                "linkLabel": "ランダム消去",
+                "url": "random-burst"
+            }
+        ],
+        "items": [
+            {
+                "linkLabel": "しっぽを振る",
+                "url": "tail-swish"
+            },
+            {
+                "linkLabel": "時間を止める",
+                "url": "stop-time"
+            },
+            {
+                "linkLabel": "フィーバー発生",
+                "url": "start-fever"
+            }
+        ]
     ],
-    "facialFeaturesRow4": [
-        {
-            "linkLabel": "くちばし",
-            "url": "beak"
-        },
-        {
-            "linkLabel": "口が見える",
-            "url": "visible-mouth"
-        },
-        {
-            "linkLabel": "ヒゲ",
-            "url": "facial-hair"
-        }
-    ],
-    "facialFeaturesRow5": [
-        {
-            "linkLabel": "ほっぺが赤い",
-            "url": "rosy-cheeks"
-        }
-    ],
-    "headBodyFeaturesRow1": [
-        {
-            "linkLabel": "ツノ",
-            "url": "horned"
-        },
-        {
-            "linkLabel": "冠",
-            "url": "crown"
-        },
-        {
-            "linkLabel": "帽子",
-            "url": "hat"
-        }
-    ],
-    "headBodyFeaturesRow2": [
-        {
-            "linkLabel": "毛が三本",
-            "url": "three-hair"
-        },
-        {
-            "linkLabel": "毛のはねた",
-            "url": "tuft-of-hair"
-        },
-        {
-            "linkLabel": "毛を結んだ",
-            "url": "tied-hair"
-        },
-        {
-            "linkLabel": "白い髪",
-            "url": "white-hair"
-        }
-    ],
-    "headBodyFeaturesRow3": [
-        {
-            "linkLabel": "耳がピンク",
-            "url": "pink-ears"
-        },
-        {
-            "linkLabel": "耳が丸い",
-            "url": "round-ears"
-        },
-        {
-            "linkLabel": "耳がとがった",
-            "url": "pointy-ears"
-        },
-        {
-            "linkLabel": "耳が垂れた",
-            "url": "droopy-ears"
-        }
-    ],
-    "headBodyFeaturesRow4": [
-        {
-            "linkLabel": "リボンをつけた🎀",
-            "url": "ribbon"
-        },
-        {
-            "linkLabel": "えりが見える",
-            "url": "collar"
-        }
-    ],
-    "skillTypeRow1": [
-        {
-            "linkLabel": "友達を呼ぶ",
-            "url": "call-a-friend"
-        },
-        {
-            "linkLabel": "恋人を呼ぶ",
-            "url": "call-a-sweetheart"
-        }
-    ],
-    "skillTypeRow2": [
-        {
-            "linkLabel": "大きなツムを出す",
-            "url": "big-tsum"
-        },
-        {
-            "linkLabel": "ボムを出す",
-            "url": "bubble-making"
-        },
-        {
-            "linkLabel": "ハートが出る♡",
-            "url": "heart-making"
-        }
-    ],
-    "skillTypeRow3": [
-        {
-            "linkLabel": "消去系",
-            "url": "burst"
-        },
-        {
-            "linkLabel": "横ライン消去 ━",
-            "url": "horizontal-burst"
-        },
-        {
-            "linkLabel": "縦ライン消去 ┃",
-            "url": "vertical-burst"
-        },
-        {
-            "linkLabel": "＼斜めライン消去／",
-            "url": "diagonal-burst"
-        },
-        {
-            "linkLabel": "中央消去",
-            "url": "center-burst"
-        },
-        {
-            "linkLabel": "ランダム消去",
-            "url": "random-burst"
-        }
-    ],
-    "skillTypeRow4": [
-        {
-            "linkLabel": "しっぽを振る",
-            "url": "tail-swish"
-        },
-        {
-            "linkLabel": "時間を止める",
-            "url": "stop-time"
-        },
-        {
-            "linkLabel": "フィーバー発生",
-            "url": "start-fever"
-        }
-    ],
-    "seriesRow1": [
-        {
-            "linkLabel": "ミッキー&フレンズ",
-            "url": "mickey-and-friends"
-        },
-        {
-            "linkLabel": "チップとデール",
-            "url": "chip-n-dale"
-        },
-        {
-            "linkLabel": "くまのプーさん",
-            "url": "winnie-the-pooh"
-        }
-    ],
-    "seriesRow2": [
-        {
-            "linkLabel": "アラジン",
-            "url": "aladdin"
-        },
-        {
-            "linkLabel": "美女と野獣",
-            "url": "beauty-and-the-beast"
-        },
-        {
-            "linkLabel": "リトルマーメイド",
-            "url": "little-mermaid"
-        },
-        {
-            "linkLabel": "ラプンツェル",
-            "url": "tangled"
-        },
-        {
-            "linkLabel": "アナと雪の女王",
-            "url": "frozen"
-        }
-    ],
-    "seriesRow3": [
-        {
-            "linkLabel": "バンビ",
-            "url": "bambi"
-        },
-        {
-            "linkLabel": "ライオンキング",
-            "url": "lion-king"
-        },
-        {
-            "linkLabel": "リロ&スティッチ",
-            "url": "lilo-and-stitch"
-        },
-        {
-            "linkLabel": "ふしぎの国のアリス",
-            "url": "alice-in-wonderland"
-        },
-        {
-            "linkLabel": "ズートピア",
-            "url": "zootopia"
-        }
-    ],
-    "seriesRow4": [
-        {
-            "linkLabel": "ピクサー",
-            "url": "pixar"
-        },
-        {
-            "linkLabel": "トイストーリー",
-            "url": "toy-story"
-        },
-        {
-            "linkLabel": "モンスターズインク",
-            "url": "monsters-inc"
-        }
-    ],
-    "seriesRow5": [
-        {
-            "linkLabel": "スターウォーズ",
-            "url": "star-wars"
-        },
-        {
-            "linkLabel": "マーベル",
-            "url": "marvel"
-        },
-        {
-            "linkLabel": "キングダムハーツ",
-            "url": "kingdom-hearts"
-        }
+    "series": [
+        "items": [
+            {
+                "linkLabel": "ミッキー&フレンズ",
+                "url": "mickey-and-friends"
+            },
+            {
+                "linkLabel": "チップとデール",
+                "url": "chip-n-dale"
+            },
+            {
+                "linkLabel": "くまのプーさん",
+                "url": "winnie-the-pooh"
+            }
+        ],
+        "items": [
+            {
+                "linkLabel": "アラジン",
+                "url": "aladdin"
+            },
+            {
+                "linkLabel": "美女と野獣",
+                "url": "beauty-and-the-beast"
+            },
+            {
+                "linkLabel": "リトルマーメイド",
+                "url": "little-mermaid"
+            },
+            {
+                "linkLabel": "ラプンツェル",
+                "url": "tangled"
+            },
+            {
+                "linkLabel": "アナと雪の女王",
+                "url": "frozen"
+            }
+        ],
+        "items": [
+            {
+                "linkLabel": "バンビ",
+                "url": "bambi"
+            },
+            {
+                "linkLabel": "ライオンキング",
+                "url": "lion-king"
+            },
+            {
+                "linkLabel": "リロ&スティッチ",
+                "url": "lilo-and-stitch"
+            },
+            {
+                "linkLabel": "ふしぎの国のアリス",
+                "url": "alice-in-wonderland"
+            },
+            {
+                "linkLabel": "ズートピア",
+                "url": "zootopia"
+            }
+        ],
+        "items": [
+            {
+                "linkLabel": "ピクサー",
+                "url": "pixar"
+            },
+            {
+                "linkLabel": "トイストーリー",
+                "url": "toy-story"
+            },
+            {
+                "linkLabel": "モンスターズインク",
+                "url": "monsters-inc"
+            }
+        ],
+        "items": [
+            {
+                "linkLabel": "スターウォーズ",
+                "url": "star-wars"
+            },
+            {
+                "linkLabel": "マーベル",
+                "url": "marvel"
+            },
+            {
+                "linkLabel": "キングダムハーツ",
+                "url": "kingdom-hearts"
+            }
+        ]
     ]
 }
