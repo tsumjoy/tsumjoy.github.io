@@ -8,3 +8,5 @@ ID: "dancing chip"
 
 ---
 <img class="ui image" src="../images/dancing-chip.jpg">
+
+* <a href="{{ site.data.series-mickeyandfriends.url }}">{{ site.data.series-mickeyandfriends.tag }}</a>
