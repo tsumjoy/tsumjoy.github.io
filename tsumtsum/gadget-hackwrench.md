@@ -1,8 +1,6 @@
 ---
 layout: tsum
 type: tsum
-international: true
-japan: true
 image: images/gadget-hackwrench.png
 title: ガジェット | Gadget Hackwrench
 permalink: tsumtsum/gadget-hackwrench
