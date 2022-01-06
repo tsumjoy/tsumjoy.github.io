@@ -8,22 +8,21 @@
   <div class="fourteen wide column no-bottom">
 
   {% for entry in site.data.missions.initial %}
-    {% assign topInitial = forloop  %}
     
     <div class="ui grid">
       
-      {% for entry in topInitial %}
+      {% for part in entry %}
       
       <div class="two wide column no-bottom">
         <p class="ui no-bottom">
-          <b>{{ entry.label }}</b>
+          <b>{{ part.label }}</b>
         </p>
         <p class="ui"> 
           <ul>
-            <li><a href="https://tsumjoy.github.io/missions/initial/{{ entry.label }}/international">海外版</a></li>
+            <li><a href="https://tsumjoy.github.io/missions/initial/{{ part.label }}/international">海外版</a></li>
           </ul> 
           <ul>
-            <li><a href="https://tsumjoy.github.io/missions/initial/{{ entry.label }}/japan">日本版</a></li>
+            <li><a href="https://tsumjoy.github.io/missions/initial/{{ part.label }}/japan">日本版</a></li>
           </ul>  
         </p>
       </div>
