@@ -78,6 +78,11 @@
        "japan": true
     },
     {
+       "ID": "holiday minnie",
+       "international": true,
+       "japan": false
+    },
+    {
        "ID": "holiday pluto",
        "international": true,
        "japan": false
