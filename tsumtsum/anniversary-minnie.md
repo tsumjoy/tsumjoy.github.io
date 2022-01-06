@@ -12,3 +12,4 @@ ID: "anniversary minnie"
 
 * <a href="{{ site.data.series-mickeyandfriends.url }}">{{ site.data.series-mickeyandfriends.tag }}</a>
 * {{ site.data.series-mickeyandfriends.tag }}
+{{ site.data.series-mickeyandfriends.tag }}
