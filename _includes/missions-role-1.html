@@ -8,46 +8,26 @@
   <div class="fourteen wide column no-bottom">
 
     <div class="ui grid">
+      {% for entry in site.data.missions.role %}
+      
       <div class="two wide column no-bottom">
         <p class="ui no-bottom">
-          <b>prince</b>
+          <b>{{ entry.label }}</b>
         </p>
         <p class="ui"> 
           <ul>
-            <li><a href="https://tsumjoy.github.io/missions/role/prince/international">海外版</a></li>
+            <li><a href="https://tsumjoy.github.io/missions/gender/{{ entry.label }}/international">海外版</a></li>
           </ul> 
           <ul>
-            <li><a href="https://tsumjoy.github.io/missions/role/prince/japan">日本版</a></li>
-          </ul> 
+            <li><a href="https://tsumjoy.github.io/missions/gender/{{ entry.label }}/japan">日本版</a></li>
+          </ul>  
         </p>
       </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>princess</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/role/princess/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/role/princess/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>villain</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/role/villain/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/role/villain/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
+    
+      {% endfor %}
     </div>
     
   </div>
 </div>
+
+© 2022 GitHub, Inc. 
