@@ -8,8 +8,8 @@
     },
     {
        "ID": "beanstalk mickey",
-       "international": false,
-       "japan": true
+       "international": true,
+       "japan": false
     },
     {
        "ID": "chip",
