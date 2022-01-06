@@ -1,10 +1,183 @@
 {
     "gender": [
-      {
-        "linkLabel": "男の子"
-      },
-      {
-        "linkLabel": "女の子"
-      }
-    ]
+        {
+            "linkLabel": "男の子",
+            "url": "boy"
+        },
+        {
+            "linkLabel": "女の子",
+            "url": "girl"
+        }
+    ],
+    "species": [
+        {
+            "linkLabel": "イヌ🐶",
+            "url": "dog"
+        },
+        {
+            "linkLabel": "ネコ😸",
+            "url": "cat"
+        },
+        {
+            "linkLabel": "ウサギ🐰",
+            "url": "rabbit"
+        },
+        {
+            "linkLabel": "海に住む🌊",
+            "url": "lives-in-the-sea"
+        }
+    ],
+    "role": [
+        {
+            "label": "prince"
+        },
+        {
+            "label": "princess"
+        },
+        {
+            "label": "villain"
+        }
+    ],
+    "initialRow1": [
+        {
+            "label": "A"
+        },
+        {
+            "label": "B"
+        },
+        {
+            "label": "D"
+        },
+        {
+            "label": "J"
+        },
+        {
+            "label": "M"
+        },
+        {
+            "label": "N"
+        }
+    ],
+    "initialRow2": [
+        {
+            "label": "P"
+        },
+        {
+            "label": "S"
+        },
+        {
+            "label": "T"
+        }
+    ],
+    "colorRow1": [
+        {
+            "linkLabel": "赤色",
+            "url": "red",
+            "style": "color:red"
+        },
+        {
+            "linkLabel": "黄色",
+            "url": "yellow",
+            "style": "background-color:yellow"
+        },
+        {
+            "linkLabel": "緑色",
+            "url": "green",
+            "style": "color:green"
+        },
+        {
+            "linkLabel": "青色",
+            "url": "blue",
+            "style": "color:blue"
+        },
+        {
+            "linkLabel": "紫色",
+            "url": "purple",
+            "style": "color:purple"
+        }
+    ],
+    "colorRow2": [
+        {
+            "linkLabel": "黒色",
+            "url": "black",
+            "style": "color:black"
+        },
+        {
+            "linkLabel": "茶色",
+            "url": "brown",
+            "style": "color:brown"
+        },
+        {
+            "linkLabel": "白色",
+            "url": "white",
+            "style": "background-color:white"
+        }
+    ],
+    "handColor": [
+        {
+            "linkLabel": "黒い手",
+            "url": "black",
+            "style": "color:black"
+        },
+        {
+            "linkLabel": "白い手",
+            "url": "white",
+            "style": "background-color:white"
+        },
+        {
+            "linkLabel": "茶色",
+            "url": "yellow",
+            "style": "background-color:yellow"
+        },
+    ],
+    "facialFeaturesRow1": [
+        {
+            "linkLabel": "まゆ毛",
+            "url": "eyebrows"
+        },
+        {
+            "linkLabel": "まつ毛",
+            "url": "eyelashes"
+        }
+    ],
+    "facialFeaturesRow2": [
+        {
+            "linkLabel": "白目",
+            "url": "eye-whites"
+        }
+    ],
+    "facialFeaturesRow3": [
+        {
+            "linkLabel": "鼻がピンク",
+            "url": "pink-nose"
+        },
+        {
+            "linkLabel": "鼻が黒い",
+            "url": "black-nose"
+        },
+        {
+            "linkLabel": "鼻が三角",
+            "url": "triangle-nose"
+        }
+    ],
+    "facialFeaturesRow4": [
+        {
+            "linkLabel": "くちばし",
+            "url": "beak"
+        },
+        {
+            "linkLabel": "口が見える",
+            "url": "visible-mouth"
+        },
+        {
+            "linkLabel": "ヒゲ",
+            "url": "facial-hair"
+        }
+    ],
+    "facialFeaturesRow5": [
+        {
+            "linkLabel": "ほっぺが赤い",
+            "url": "rosy-cheeks"
+        }
+    ],
   }
