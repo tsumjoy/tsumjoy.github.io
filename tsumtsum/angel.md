@@ -19,8 +19,7 @@ labels:
   - rosy cheeks
   - "series: &lsqb; Lilo & Stitch &rsqb;"
   - visible mouth
-  - &#123;&#123;&nbsp;site.data.missions.tags.gender.onnanoko&nbsp;&#125;&#125;
-  - hello
+  - "&#123;&#123; site.data.missions.tags.gender.onnanoko &#125;&#125;"
 ---
 <img class="ui image" src="../images/angel.jpg">
 
