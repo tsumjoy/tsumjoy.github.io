@@ -107,6 +107,16 @@
        "japan": true
     },
     {
+       "ID": "reindeer dale",
+       "international": true,
+       "japan": false
+    },
+    {
+       "ID": "santa chip",
+       "international": false,
+       "japan": true
+    },
+    {
        "ID": "steamboat mickey",
        "international": true,
        "japan": false
