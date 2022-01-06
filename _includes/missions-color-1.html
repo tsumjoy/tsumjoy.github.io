@@ -7,115 +7,29 @@
 
   <div class="fourteen wide column no-bottom">
 
+  {% for entry in site.data.missions.color %}
+    
     <div class="ui grid">
+      
+      {% for item in entry.items %}
+      
       <div class="two wide column no-bottom">
         <p class="ui no-bottom">
-          <b style="color:red">赤色</b>
+          <b style={{ item.style }}>{{ item.linkLabel }}</b>
         </p>
         <p class="ui"> 
           <ul>
-            <li><a href="https://tsumjoy.github.io/missions/color/red/international">海外版</a></li>
+            <li><a href="https://tsumjoy.github.io/missions/initial/{{ item.url }}/international">海外版</a></li>
           </ul> 
           <ul>
-            <li><a href="https://tsumjoy.github.io/missions/color/red/japan">日本版</a></li>
-          </ul> 
+            <li><a href="https://tsumjoy.github.io/missions/initial/{{ item.url }}/japan">日本版</a></li>
+          </ul>  
         </p>
       </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b style="background-color:yellow">黄色</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/color/yellow/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/color/yellow/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b style="color:green">緑色</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/color/green/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/color/green/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b style="color:blue">青色</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/color/blue/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/color/blue/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b style="color:purple">紫色</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/color/purple/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/color/purple/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-    </div>
-
-    <div class="ui grid">
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b style="color:black">黒色</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/color/black/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/color/black/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b style="color:brown">茶色</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/color/brown/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/color/brown/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b style="background-color:white">白色</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/color/white/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/color/white/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
+    
+      {% endfor %}
     </div>
     
+  {% endfor %}
   </div>
 </div>
