@@ -1,11 +1,15 @@
 <div style="padding-top: 20px" class="ui container ">
 
   <div class="ui stackable centered five cards">
-    {% assign mickeyandfriends_international = entry in site.data.series-mickeyandfriends.tsum | where: entry.international | sort: entry.ID %}
+    {% assign mickeyandfriends_international = site.data.series-mickeyandfriends.tsum | where: entry.international | sort: entry.ID %}
         {% for entry in mickeyandfriends_international %}
-          {% unless page.draft %}
-            {% include tsum-card.html "ID"=entry.ID %}
-          {% endunless %}
+          {% for page in site.pages %}
+            {% if page.ID == entry.ID %}
+              {% unless page.draft %}
+                {% include tsum-card.html page=page %}
+              {% endunless %}
+             {% endif %}
+          {% endfor %}
         {% endfor %}
   </div>
 </div>
