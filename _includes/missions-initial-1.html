@@ -7,8 +7,8 @@
 
   <div class="fourteen wide column no-bottom">
 
-  {% assign topInitial = entry in site.data.missions.initial %}
-  {% for topInitial %}
+  {% for entry in site.data.missions.initial %}
+    {% assign topInitial = forloop  %}
     
     <div class="ui grid">
       
