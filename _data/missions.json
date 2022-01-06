@@ -71,7 +71,8 @@
         }
        ]
     ],
-    "colorRow1": [
+    "color": [
+        "items": [
         {
             "linkLabel": "赤色",
             "url": "red",
@@ -97,23 +98,24 @@
             "url": "purple",
             "style": "color:purple"
         }
-    ],
-    "colorRow2": [
-        {
-            "linkLabel": "黒色",
-            "url": "black",
-            "style": "color:black"
-        },
-        {
-            "linkLabel": "茶色",
-            "url": "brown",
-            "style": "color:brown"
-        },
-        {
-            "linkLabel": "白色",
-            "url": "white",
-            "style": "background-color:white"
-        }
+       ],
+        "items": [
+            {
+                "linkLabel": "黒色",
+                "url": "black",
+                "style": "color:black"
+            },
+            {
+                "linkLabel": "茶色",
+                "url": "brown",
+                "style": "color:brown"
+            },
+            {
+                "linkLabel": "白色",
+                "url": "white",
+                "style": "background-color:white"
+            }
+        ],
     ],
     "handColor": [
         {
