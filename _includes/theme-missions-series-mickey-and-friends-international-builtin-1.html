@@ -1,7 +1,7 @@
 <div style="padding-top: 20px" class="ui container ">
 
   <div class="ui stackable centered five cards">
-    {% assign mickeyandfriends_international = site.data.series-mickeyandfriends.tsum | where: entry.international, true | sort: entry.ID %}
+    {% assign mickeyandfriends_international = site.data.series-mickeyandfriends.tsum | where: tsum.international, true | sort: entry.ID %}
         {% for entry in mickeyandfriends_international %}
           {% for page in site.pages %}
             {% if page.ID == entry.ID %}
