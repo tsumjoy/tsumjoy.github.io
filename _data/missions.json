@@ -1,0 +1,16 @@
+{
+  "links":
+  {
+    "gender": {
+      "onnanoko": "/gender/girl",
+      "otokonoko": "/gender/boy"
+    }
+  },
+  "tags":
+  {
+    "gender": {
+      "onnanoko": "girl",
+      "otokonoko": "boy"
+    }
+  }
+}
