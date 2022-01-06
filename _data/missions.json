@@ -1,10 +1,16 @@
 {
-  "links":
+  "missions":
   {
-    "gender": {
-      "onnanoko": "/gender/girl",
-      "otokonoko": "/gender/boy"
-    }
+    "gender": [
+      {
+        "linkLabel": "男の子",
+        "url": { "$ref": "#/tags/gender/onnanoko" }
+      },
+      {
+        "linkLabel": "女の子",
+        "url": { "$ref": "#/tags/gender/otokonoko" }
+      }
+    ]
   },
   "tags":
   {
