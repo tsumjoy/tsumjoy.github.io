@@ -8,32 +8,23 @@
   <div class="fourteen wide column no-bottom">
 
     <div class="ui grid">
+      {% for entry in site.data.missions.gender %}
+      
       <div class="two wide column no-bottom">
         <p class="ui no-bottom">
-          <b>男の子</b>
+          <b>{{ entry.linkLabel }}</b>
         </p>
         <p class="ui"> 
           <ul>
-            <li><a href="https://tsumjoy.github.io/missions/gender/boy/international">海外版</a></li>
+            <li><a href="https://tsumjoy.github.io/missions/gender/{{ entry.url }}/international">海外版</a></li>
           </ul> 
           <ul>
-            <li><a href="https://tsumjoy.github.io/missions/gender/boy/japan">日本版</a></li>
+            <li><a href="https://tsumjoy.github.io/missions/gender/{{ entry.url }}/japan">日本版</a></li>
           </ul> 
         </p>
       </div>
-      <div class="two wide column no-bottom">
-        <p class="ui no-bottom">
-          <b>女の子</b>
-        </p>
-        <p class="ui"> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/gender/girl/international">海外版</a></li>
-          </ul> 
-          <ul>
-            <li><a href="https://tsumjoy.github.io/missions/gender/girl/japan">日本版</a></li>
-          </ul> 
-        </p>
-      </div>
+    
+      {% endfor %}
     </div>
     
   </div>
