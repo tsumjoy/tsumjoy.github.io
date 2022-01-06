@@ -7,4 +7,6 @@ permalink: tsumtsum/reindeer-dale
 ID: reindeer dale
 
 ---
-<img class="ui image" src="../images/dale.png">
+<img class="ui image" src="../images/reindeer-dale.png">
+
+* <a href="{{ site.data.series-mickeyandfriends.url }}">{{ site.data.series-mickeyandfriends.tag }}</a>
