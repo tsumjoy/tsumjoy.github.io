@@ -8,3 +8,5 @@ ID: "holiday mickey"
 
 ---
 <img class="ui image" src="../images/holiday-mickey.jpg">
+
+* <a href="{{ site.data.series-mickeyandfriends.url }}">{{ site.data.series-mickeyandfriends.tag }}</a>
