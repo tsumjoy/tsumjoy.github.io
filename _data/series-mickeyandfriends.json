@@ -15,7 +15,7 @@
     {
        "ID": "chip",
        "international": true,
-       "japan": false
+       "japan": true
     },
     {
        "ID": "clarice",
