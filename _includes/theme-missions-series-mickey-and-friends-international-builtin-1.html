@@ -2,10 +2,10 @@
 
   <div class="ui stackable centered five cards">
       {% for entry in site.data.series-mickeyandfriends.tsum %}
-          {% assign filtered_international = site.data.international-collection.tsumID | find: entry.ID %}
+          {% assign filtered_international = site.data.international-collection.tsumID | find: entry %}
             {% if filtered_international != nil %}
               {% for page in site.pages %}
-                {% if page.ID == entry.ID %}
+                {% if page.ID == entry %}
                   {% unless page.draft %}
                     {% include tsum-card.html page=page %}
                   {% endunless %}
