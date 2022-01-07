@@ -2,130 +2,30 @@
   "tag": "series: [ Mickey & Friends ]",
   "url": "https://tsumjoy.github.io/missions/series/mickey-and-friends/",
   "tsum": [
-    {
-       "ID": "anniversary minnie",
-       "international": true,
-       "japan": false
-    },
-    {
-       "ID": "beanstalk mickey",
-       "international": true,
-       "japan": false
-    },
-    {
-       "ID": "chip",
-       "international": true,
-       "japan": true
-    },
-    {
-       "ID": "clarice",
-       "international": true,
-       "japan": false
-    },
-    {
-       "ID": "daisy",
-       "international": true,
-       "japan": true
-    },
-    {
-       "ID": "dale",
-       "international": true,
-       "japan": true
-    },
-    {
-       "ID": "dancing chip",
-       "international": false,
-       "japan": true
-    },
-    {
-       "ID": "dancing dale",
-       "international": false,
-       "japan": true
-    },
-    {
-       "ID": "donald",
-       "international": true,
-       "japan": true
-    },
-    {
-       "ID": "gadget hackwrench",
-       "international": true,
-       "japan": true
-    },
-    {
-       "ID": "goofy",
-       "international": true,
-       "japan": true
-    },
-    {
-       "ID": "holiday daisy",
-       "international": true,
-       "japan": true
-    },
-    {
-       "ID": "holiday donald",
-       "international": true,
-       "japan": false
-    },
-    {
-       "ID": "holiday goofy",
-       "international": true,
-       "japan": true
-    },
-    {
-       "ID": "holiday mickey",
-       "international": true,
-       "japan": true
-    },
-    {
-       "ID": "holiday minnie",
-       "international": true,
-       "japan": false
-    },
-    {
-       "ID": "holiday pluto",
-       "international": true,
-       "japan": false
-    },
-    {
-       "ID": "max",
-       "international": true,
-       "japan": true
-    },
-    {
-       "ID": "mickey",
-       "international": true,
-       "japan": true
-    },
-    {
-       "ID": "minnie",
-       "international": true,
-       "japan": true
-    },
-    {
-       "ID": "parade mickey",
-       "international": false,
-       "japan": true
-    },
-    {
-       "ID": "pluto",
-       "international": true,
-       "japan": true
-    },
-    {
-       "ID": "reindeer dale",
-       "international": true,
-       "japan": false
-    },
-    {
-       "ID": "santa chip",
-       "international": false,
-       "japan": true
-    },
-    {
-       "ID": "steamboat mickey",
-       "international": true,
-       "japan": false
-    }
+    "anniversary minnie",
+    "beanstalk mickey",
+    "chip",
+    "clarice",
+    "daisy",
+    "dale",
+    "dancing chip",
+    "dancing dale",
+    "donald",
+    "gadget hackwrench",
+    "goofy",
+    "holiday daisy",
+    "holiday donald",
+    "holiday goofy",
+    "holiday mickey",
+    "holiday minnie",
+    "holiday pluto",
+    "max",
+    "mickey",
+    "minnie",
+    "parade mickey",
+    "pluto",
+    "reindeer dale",
+    "santa chip",
+    "steamboat mickey"
    ]
 }
