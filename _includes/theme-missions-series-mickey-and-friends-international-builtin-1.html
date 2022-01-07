@@ -5,7 +5,7 @@
           {% assign filtered_international = site.data.international-collection | find: "tsumID", entry %}
             {% if filtered_international != nil %}
               {% for page in site.pages %}
-                {% if page.ID == entry %}
+                {% if page.ID == filtered_international %}
                   {% unless page.draft %}
                     {% include tsum-card.html page=page %}
                   {% endunless %}
