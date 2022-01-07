@@ -2,9 +2,8 @@
 
   <div class="ui stackable centered five cards">
       {% for entry in site.data.series-mickeyandfriends.tsum %}
-        {% assign focusID = entry.ID %}
-          {% for entry in site.data.international-collection.tsumID %}
-            {% if entry == focusID %}
+          {% for i in (1..((site.data.international-collection.tsumID.size)-1)) %}
+            {% if entry.ID == site.data.international-collection.tsumID[i] %}
               {% for page in site.pages %}
                 {% if page.ID == entry.ID %}
                   {% unless page.draft %}
