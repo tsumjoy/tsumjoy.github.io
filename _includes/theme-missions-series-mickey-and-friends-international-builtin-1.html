@@ -2,17 +2,18 @@
 
   <div class="ui stackable centered five cards">
       {% for entry in site.data.series-mickeyandfriends.tsum %}
-        {% for tsumID in site.international-collection.tsumID %}
-          {% if tsum.ID == entry.ID %}
-          {% for page in site.pages %}
-            {% if page.ID == entry.ID %}
-              {% unless page.draft %}
-                {% include tsum-card.html page=page %}
-              {% endunless %}
+        {% assign focusID = entry.ID %}
+          {% for entry in site.data.international-collection.tsumID %}
+            {% if entry == focusID %}
+              {% for page in site.pages %}
+                {% if page.ID == entry.ID %}
+                  {% unless page.draft %}
+                    {% include tsum-card.html page=page %}
+                  {% endunless %}
+                {% endif %}
+              {% endfor %}
              {% endif %}
-          {% endfor %}
-         {% endif %}
+            {% endfor %}
         {% endfor %}
-      {% endfor %}
   </div>
 </div>
