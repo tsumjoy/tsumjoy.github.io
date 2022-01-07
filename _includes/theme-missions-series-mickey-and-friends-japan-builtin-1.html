@@ -2,15 +2,16 @@
 
   <div class="ui stackable centered five cards">
       {% for entry in site.data.series-mickeyandfriends.tsum %}
-        {% if entry.japan == true %}
-          {% for page in site.pages %}
-            {% if page.ID == entry.ID %}
-              {% unless page.draft %}
-                {% include tsum-card.html page=page %}
-              {% endunless %}
+          {% assign filtered_japan = site.data.japan-collection.tsumID | find: entry %}
+            {% if filtered_japan != nil %}
+              {% for page in site.pages %}
+                {% if page.ID == entry %}
+                  {% unless page.draft %}
+                    {% include tsum-card.html page=page %}
+                  {% endunless %}
+                {% endif %}
+              {% endfor %}
              {% endif %}
-          {% endfor %}
-         {% endif %}
-      {% endfor %}
+        {% endfor %}
   </div>
 </div>
