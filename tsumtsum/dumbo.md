@@ -1,11 +1,10 @@
 ---
 layout: tsum
 type: tsum
-international: true
-japan: true
 image: images/dumbo.jpg
 title: ダンボ | Dumbo
 permalink: tsumtsum/dumbo
+ID: "dumbo"
 labels:
   - boy
   - "color: blue"
