@@ -5,18 +5,6 @@ image: images/piglet.jpg
 title: ピグレット | Piglet
 permalink: tsumtsum/piglet
 ID: "piglet"
-labels:
-  - boy
-  - "color: pink"
-  - eyebrows
-  - happiness box
-  - "initial: P"
-  - pink ears
-  - pink nose
-  - pointy ears
-  - rosy cheeks
-  - "series: &lsqb; Winnie the Pooh &rsqb;"
-  - "skill: burst"
-  - triangle nose
+
 ---
 <img class="ui image" src="../images/piglet.jpg">
