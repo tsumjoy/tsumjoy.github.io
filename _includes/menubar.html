@@ -1,8 +1,8 @@
 <!-- Used by all builtin themes. Now we list number of essays and projects. -->
 
 {% assign tsum_pages = site.pages | where: "type", "tsum" | where_exp: "page", "page.draft != true" %}
-{% assign internationalcollection_pages = site.data.international-collection %}
-{% assign japancollection_pages = site.data.japan-collection %}
+{% assign internationalcollection_pages = site.data.international-collection.tsumID %}
+{% assign japancollection_pages = site.data.japan-collection.tsumID %}
 
 {% assign num_tsumtsum = tsum_pages.size %}
 {% assign num_internationaltsum = internationalcollection_pages.size %}
