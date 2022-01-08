@@ -1,11 +1,10 @@
 ---
 layout: tsum
 type: tsum
-international: true
-japan: true
 image: images/tigger.jpg
 title: ティガー | Tigger
 permalink: tsumtsum/tigger
+ID: "tigger"
 labels:
   - boy
   - cat
