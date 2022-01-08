@@ -1,11 +1,10 @@
 ---
 layout: tsum
 type: tsum
-international: true
-japan: true
 image: images/cogsworth.jpg
 title: コグスワース | Cogsworth
 permalink: tsumtsum/cogsworth
+ID: "cogsworth"
 labels:
   - boy
   - call a friend
