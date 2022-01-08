@@ -1,11 +1,10 @@
 ---
 layout: tsum
 type: tsum
-international: true
-japan: true
 image: images/angel.jpg
 title: エンジェル | Angel
 permalink: tsumtsum/angel
+ID: "angel"
 labels:
   - call a sweetheart
   - "color: pink"
