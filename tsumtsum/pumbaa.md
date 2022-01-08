@@ -1,11 +1,10 @@
 ---
 layout: tsum
 type: tsum
-international: true
-japan: true
 image: images/pumbaa.png
 title: プンバァ | Pumbaa
 permalink: tsumtsum/pumbaa
+ID: "pumbaa"
 labels:
   - black hands
   - boy
