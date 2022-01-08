@@ -1,7 +1,7 @@
 {
   "tag": "japan",
   "url": "https://tsumjoy.github.io/japancollection/",
-  "tsumID": {
+  "tsumID": [
     "22",
     "aladdin",
     "alien",
@@ -76,6 +76,6 @@
     "winter cinderella",
     "yen sid",
     "yzma"
-  }
+  ]
 }
     
