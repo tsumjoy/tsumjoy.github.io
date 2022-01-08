@@ -1,11 +1,10 @@
 ---
 layout: tsum
 type: tsum
-international: true
-japan: false
 image: images/christopher-robin.jpg
 title: クリストファー・ロビン | Christopher Robin
 permalink: tsumtsum/christopher-robin
+ID: "christopher robin"
 labels:
   - boy
   - "color: brown"
