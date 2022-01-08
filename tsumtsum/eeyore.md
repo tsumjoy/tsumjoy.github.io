@@ -1,11 +1,10 @@
 ---
 layout: tsum
 type: tsum
-international: true
-japan: true
 image: images/eeyore.jpg
 title: イーヨー | Eeyore
 permalink: tsumtsum/eeyore
+ID: "eeyore"
 labels:
   - boy
   - "color: blue"
