@@ -1,11 +1,10 @@
 ---
 layout: tsum
 type: tsum
-international: true
-japan: true
 image: images/roo.jpg
 title: ルー | Roo
 permalink: tsumtsum/roo
+ID: "roo"
 labels:
   - boy
   - "color: brown"
