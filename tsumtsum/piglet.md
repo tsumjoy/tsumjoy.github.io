@@ -1,11 +1,10 @@
 ---
 layout: tsum
 type: tsum
-international: true
-japan: true
 image: images/piglet.jpg
 title: ピグレット | Piglet
 permalink: tsumtsum/piglet
+ID: "piglet"
 labels:
   - boy
   - "color: pink"
