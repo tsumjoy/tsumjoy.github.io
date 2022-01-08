@@ -1,11 +1,14 @@
 <div style="padding-top: 20px" class="ui container ">
 
-  <div class="ui stackable centered four cards">
-    {% assign internationalcollection_pages = site.pages | where: "international", "true" | sort: "permalink" %}
-    {% for page in internationalcollection_pages %}
-      {% unless page.draft %}
-        {% include tsum-card.html page=page %}
-      {% endunless %}
-    {% endfor %}
+  <div class="ui stackable centered five cards">
+      {% for entry in site.data.japan-collection.tsumID %}
+         {% for page in site.pages %}
+           {% if page.ID == entry %}
+             {% unless page.draft %}
+               {% include tsum-card.html page=page %}
+             {% endunless %}
+            {% endif %}
+         {% endfor %}
+      {% endfor %}
   </div>
 </div>
