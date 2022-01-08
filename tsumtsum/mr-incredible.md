@@ -2,7 +2,7 @@
 layout: tsum
 type: tsum
 image: images/mr-incredible.png
-title: クラリス | Mr. Incredible
+title: ミスター・インクレディブル | Mr. Incredible
 permalink: tsumtsum/mr-incredible
 ID: "mr. incredible"
 
