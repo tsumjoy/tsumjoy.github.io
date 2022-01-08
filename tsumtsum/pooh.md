@@ -1,11 +1,10 @@
 ---
 layout: tsum
 type: tsum
-international: true
-japan: true
 image: images/pooh.jpg
 title: プー | Pooh
 permalink: tsumtsum/pooh
+ID: "pooh"
 labels:
   - boy
   - "color: yellow"
