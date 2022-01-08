@@ -1,11 +1,10 @@
 ---
 layout: tsum
 type: tsum
-international: true
-japan: true
 image: images/captain-hook.jpg
 title: フック船長 | Captain Hook
 permalink: tsumtsum/captain-hook
+ID: "captain hook"
 labels:
   - boy
   - "color: red"
