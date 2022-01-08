@@ -1,9 +1,10 @@
 <div style="padding-top: 20px" class="ui container ">
 
   <div class="ui stackable centered five cards">
+      {% assign total_japan = site.data.japan-collection.tsumID.size %}
       {% for entry in site.data.series-mickeyandfriends.tsum %}
-          {% assign filtered_japan = site.data.japan-collection.tsumID | find: entry %}
-            {% if filtered_japan != nil %}
+          {% for i in (1..total_japan) %}
+            {% if site.data.japan-collection.tsumID[i] == entry %}
               {% for page in site.pages %}
                 {% if page.ID == entry %}
                   {% unless page.draft %}
@@ -12,6 +13,7 @@
                 {% endif %}
               {% endfor %}
              {% endif %}
+           {% endfor %}
         {% endfor %}
   </div>
 </div>
