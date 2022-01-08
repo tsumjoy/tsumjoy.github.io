@@ -1,11 +1,10 @@
 ---
 layout: tsum
 type: tsum
-international: false
-japan: true
 image: images/sisu.png
 title: シスー | Sisu
 permalink: tsumtsum/sisu
+ID: "sisu"
 labels:
   - "color: blue"
   - eyebrows
