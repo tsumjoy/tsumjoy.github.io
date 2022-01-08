@@ -1,11 +1,10 @@
 ---
 layout: tsum
 type: tsum
-international: true
-japan: true
 image: images/timothy.jpg
 title: コグスワース | Timothy
 permalink: tsumtsum/timothy
+ID: "timothy"
 labels:
   - black nose
   - boy
