@@ -3,7 +3,7 @@
   <div class="ui stackable centered five cards">
       {% for entry in site.data.series-mickeyandfriends.tsum %}
          {% for page in site.pages %}
-           {% if page.ID == entry.ID %}
+           {% if page.ID == entry %}
              {% unless page.draft %}
                {% include tsum-card.html page=page %}
              {% endunless %}
