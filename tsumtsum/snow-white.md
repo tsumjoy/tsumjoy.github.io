@@ -1,11 +1,10 @@
 ---
 layout: tsum
 type: tsum
-international: true
-japan: true
 image: images/snow-white.jpg
 title: 白雪姫 | Snow White
 permalink: tsumtsum/snow-white
+ID: "snow white"
 labels:
   - call a friend
   - "color: black"
