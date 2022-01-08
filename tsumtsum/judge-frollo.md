@@ -2,7 +2,7 @@
 layout: tsum
 type: tsum
 image: images/judge-frollo.png
-title: フロロー | judge-frollo
+title: フロロー | 
 permalink: tsumtsum/judge-frollo
 ID: "judge frollo"
 
