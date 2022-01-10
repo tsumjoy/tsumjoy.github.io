@@ -20,8 +20,10 @@ theme-internationalcollection: theme-international-collection-builtin-1.html
 theme-japancollection: theme-japan-collection-builtin-1.html
 
 theme-missions: theme-missions-builtin-1.html
+theme-mission-gender-boy: theme-missions-gender-boy-builtin-1.html
 theme-mission-gender-boy-international: theme-missions-gender-boy-international-builtin-1.html
 theme-mission-gender-boy-japan: theme-missions-gender-boy-japan-builtin-1.html
+theme-mission-gender-girl: theme-missions-gender-girl-builtin-1.html
 theme-mission-gender-girl-international: theme-missions-gender-girl-international-builtin-1.html
 theme-mission-gender-girl-japan: theme-missions-gender-girl-japan-builtin-1.html
 theme-mission-color-green: theme-missions-color-green-builtin-1.html
