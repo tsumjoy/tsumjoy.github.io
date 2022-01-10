@@ -7,4 +7,4 @@ permalink: tsumtsum/rosetta
 ID: "rosetta"
 
 ---
-<img class="ui image" src="../images/rosetta.png">
+
