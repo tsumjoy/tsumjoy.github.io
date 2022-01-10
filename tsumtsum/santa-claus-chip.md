@@ -10,3 +10,4 @@ ID: "santa claus chip"
 <img class="ui image" src="../images/santa-claus-chip.png">
 
 * <a href="{{ site.data.series-mickeyandfriends.url }}">{{ site.data.series-mickeyandfriends.tag }}</a>
+* <a href="{{ site.data.series-chipndale.url }}">{{ site.data.series-chipndale.tag }}</a>
