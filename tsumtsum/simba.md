@@ -7,4 +7,4 @@ permalink: tsumtsum/simba
 ID: "simba"
 
 ---
-<img class="ui image" src="../images/simba.jpg">
+
