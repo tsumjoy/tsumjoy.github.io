@@ -7,4 +7,4 @@ permalink: tsumtsum/mother-gothel
 ID: "mother gothel"
 
 ---
-<img class="ui image" src="../images/mother-gothel.png">
+
