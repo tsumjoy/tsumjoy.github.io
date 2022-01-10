@@ -7,4 +7,4 @@ permalink: tsumtsum/sisu
 ID: "sisu"
 
 ---
-<img class="ui image" src="../images/sisu.png">
+
