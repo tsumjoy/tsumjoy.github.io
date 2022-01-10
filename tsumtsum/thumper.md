@@ -7,4 +7,4 @@ permalink: tsumtsum/thumper
 ID: "thumper"
 
 ---
-<img class="ui image" src="../images/thumper.jpg">
+
