@@ -7,4 +7,3 @@ permalink: tsumtsum/eeyore
 ID: "eeyore"
 
 ---
-<img class="ui image" src="../images/eeyore.jpg">
