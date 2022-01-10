@@ -7,4 +7,4 @@ permalink: tsumtsum/fairy-godmother
 ID: "fairy godmother"
 
 ---
-<img class="ui image" src="../images/fairy-godmother.jpg">
+
