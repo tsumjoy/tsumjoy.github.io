@@ -7,4 +7,4 @@ permalink: tsumtsum/elsa
 ID: "elsa"
 
 ---
-<img class="ui image" src="../images/elsa.jpg">
+
