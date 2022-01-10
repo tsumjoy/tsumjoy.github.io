@@ -7,4 +7,3 @@ permalink: tsumtsum/boo
 ID: "boo"
 
 ---
-<img class="ui image" src="../images/boo.png">
