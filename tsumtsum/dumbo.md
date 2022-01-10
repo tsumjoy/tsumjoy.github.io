@@ -7,4 +7,4 @@ permalink: tsumtsum/dumbo
 ID: "dumbo"
 
 ---
-<img class="ui image" src="../images/dumbo.jpg">
+
