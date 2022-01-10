@@ -7,4 +7,4 @@ permalink: tsumtsum/surprise-elsa
 ID: "surprise elsa"
 
 ---
-<img class="ui image" src="../images/surprise-elsa.jpg">
+
