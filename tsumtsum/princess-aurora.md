@@ -7,4 +7,4 @@ permalink: tsumtsum/princess-aurora
 ID: "princess aurora"
 
 ---
-<img class="ui image" src="../images/princess-aurora.jpg">
+
