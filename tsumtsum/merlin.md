@@ -7,4 +7,3 @@ permalink: tsumtsum/merlin
 ID: "merlin"
 
 ---
-<img class="ui image" src="../images/merlin.png">
