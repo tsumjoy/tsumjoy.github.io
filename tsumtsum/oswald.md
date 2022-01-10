@@ -7,4 +7,4 @@ permalink: tsumtsum/oswald
 ID: "oswald"
 
 ---
-<img class="ui image" src="../images/oswald.jpg">
+
