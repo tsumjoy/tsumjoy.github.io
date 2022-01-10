@@ -7,4 +7,4 @@ permalink: tsumtsum/pluto
 ID: pluto
 
 ---
-<img class="ui image" src="../images/pluto.jpg">
+
