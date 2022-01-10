@@ -7,4 +7,4 @@ permalink: tsumtsum/zurg
 ID: "zurg"
 
 ---
-<img class="ui image" src="../images/zurg.jpg">
+
