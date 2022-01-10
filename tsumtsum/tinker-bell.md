@@ -7,4 +7,4 @@ permalink: tsumtsum/tinker-bell
 ID: "tinker bell"
 
 ---
-<img class="ui image" src="../images/tinker-bell.jpg">
+
