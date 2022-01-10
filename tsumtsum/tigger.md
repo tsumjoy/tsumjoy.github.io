@@ -8,4 +8,4 @@ ID: "tigger"
 labels:
 
 ---
-<img class="ui image" src="../images/tigger.jpg">
+
