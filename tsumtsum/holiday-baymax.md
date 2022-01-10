@@ -7,4 +7,4 @@ permalink: tsumtsum/holiday-baymax
 ID: "holiday baymax"
 
 ---
-<img class="ui image" src="../images/holiday-baymax.jpg">
+
