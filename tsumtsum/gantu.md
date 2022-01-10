@@ -7,4 +7,3 @@ permalink: tsumtsum/gantu
 ID: "gantu"
 
 ---
-<img class="ui image" src="../images/gantu.png">
