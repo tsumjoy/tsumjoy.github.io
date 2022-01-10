@@ -7,4 +7,3 @@ permalink: tsumtsum/mulan
 ID: "mulan"
 
 ---
-<img class="ui image" src="../images/mulan.jpg">
