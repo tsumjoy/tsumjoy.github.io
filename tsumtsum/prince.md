@@ -7,4 +7,4 @@ permalink: tsumtsum/prince
 ID: "prince"
 
 ---
-<img class="ui image" src="../images/prince.jpg">
+
