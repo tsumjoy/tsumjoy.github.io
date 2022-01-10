@@ -7,4 +7,4 @@ permalink: tsumtsum/duchess
 ID: "duchess"
 
 ---
-<img class="ui image" src="../images/duchess.png">
+
