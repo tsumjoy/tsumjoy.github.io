@@ -7,4 +7,4 @@ permalink: tsumtsum/travel-anna
 ID: "travel anna"
 
 ---
-<img class="ui image" src="../images/travel-anna.png">
+
