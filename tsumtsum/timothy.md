@@ -8,4 +8,4 @@ ID: "timothy"
 labels:
 
 ---
-<img class="ui image" src="../images/timothy.jpg">
+
