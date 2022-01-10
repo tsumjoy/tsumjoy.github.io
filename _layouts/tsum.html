@@ -5,11 +5,10 @@ layout: tsumtsum
 <div style="margin-top: 20px; margin-bottom: 20px" class="ui text container">
  <h1>{{ page.title }}</h1>
  <img class="ui image" src="../{{ page.image }}">
- {% assign my_data = site.data %}
- {% for data in my_data %}
-   {% for entry in data.tsum %}
+ {% for rosters_hash in site.data.rosters %}
+   {% for entry in rosters_hash.tsum %}
       {% if page.ID == entry %}
-        {% include <p>* <a href="{{ data.url }}">{{ data.tag }}</a></p> %}
+        {% include <p>* <a href="{{ rosters_hash.url }}">{{ rosters_hash.tag }}</a></p> %}
       {% endif %}
    {% endfor %}
  {% endfor %}
