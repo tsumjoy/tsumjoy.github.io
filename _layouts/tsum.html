@@ -5,6 +5,7 @@ layout: tsumtsum
 <div style="margin-top: 20px; margin-bottom: 20px" class="ui text container">
  <h1>{{ page.title }}</h1>
  <img class="ui image" src="../{{ page.image }}">
+ <p>* <a href="{{ site.data.color-green.url }}">{{ site.data.color-green.tag }}</a></p>
  {% for rosters_hash in site.data.rosters %}
    {% for entry in rosters_hash.tsum %}
       {% if page.ID == entry %}
