@@ -7,4 +7,4 @@ permalink: tsumtsum/evil-queen
 ID: "evil queen"
 
 ---
-<img class="ui image" src="../images/evil-queen.jpg">
+
