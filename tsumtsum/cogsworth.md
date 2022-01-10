@@ -7,4 +7,3 @@ permalink: tsumtsum/cogsworth
 ID: "cogsworth"
 
 ---
-<img class="ui image" src="../images/cogsworth.jpg">
