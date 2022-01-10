@@ -7,4 +7,4 @@ permalink: tsumtsum/yen-sid
 ID: "yen sid"
 
 ---
-<img class="ui image" src="../images/yen-sid.jpg">
+
