@@ -7,4 +7,4 @@ permalink: tsumtsum/piglet
 ID: "piglet"
 
 ---
-<img class="ui image" src="../images/piglet.jpg">
+
