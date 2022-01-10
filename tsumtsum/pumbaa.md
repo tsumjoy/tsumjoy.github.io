@@ -7,4 +7,4 @@ permalink: tsumtsum/pumbaa
 ID: "pumbaa"
 
 ---
-<img class="ui image" src="../images/pumbaa.png">
+
