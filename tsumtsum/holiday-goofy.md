@@ -7,6 +7,3 @@ permalink: tsumtsum/holiday-goofy
 ID: "holiday goofy"
 
 ---
-<img class="ui image" src="../images/holiday-goofy.jpg">
-
-* <a href="{{ site.data.series-mickeyandfriends.url }}">{{ site.data.series-mickeyandfriends.tag }}</a>
