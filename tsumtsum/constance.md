@@ -7,4 +7,3 @@ permalink: tsumtsum/constance
 ID: "constance"
 
 ---
-<img class="ui image" src="../images/constance.png">
