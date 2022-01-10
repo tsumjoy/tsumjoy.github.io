@@ -7,6 +7,4 @@ permalink: tsumtsum/alien
 ID: "alien"
 
 ---
-<img class="ui image" src="../images/alien.jpg">
 
-* <a href="{{ site.data.color-green.url }}">{{ site.data.color-green.tag }}</a>
