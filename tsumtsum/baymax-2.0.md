@@ -7,4 +7,3 @@ permalink: tsumtsum/baymax-2.0
 ID: "baymax 2.0"
 
 ---
-<img class="ui image" src="../images/baymax-2.0.jpg">
