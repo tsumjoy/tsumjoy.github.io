@@ -7,6 +7,3 @@ permalink: tsumtsum/steamboat-mickey
 ID: "steamboat mickey"
 
 ---
-<img class="ui image" src="../images/steamboat-mickey.jpg">
-
-* <a href="{{ site.data.series-mickeyandfriends.url }}">{{ site.data.series-mickeyandfriends.tag }}</a>
