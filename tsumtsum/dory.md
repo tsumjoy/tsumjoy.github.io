@@ -7,4 +7,4 @@ permalink: tsumtsum/dory
 ID: "dory"
 
 ---
-<img class="ui image" src="../images/dory.jpg">
+
