@@ -7,4 +7,4 @@ permalink: tsumtsum/king-triton
 ID: "king triton"
 
 ---
-<img class="ui image" src="../images/king-triton.jpg">
+
