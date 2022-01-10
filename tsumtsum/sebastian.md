@@ -7,4 +7,4 @@ permalink: tsumtsum/sebastian
 ID: "sebastian"
 
 ---
-<img class="ui image" src="../images/sebastian.jpg">
+
