@@ -1,7 +1,7 @@
 <div style="padding-top: 20px" class="ui container ">
 
   <div class="ui stackable centered five cards">
-      {% for entry in site.data.series-mickeyandfriends.tsum %}
+      {% for entry in site.data.rosters.series-mickeyandfriends.tsum %}
          {% for page in site.pages %}
            {% if page.ID == entry %}
              {% unless page.draft %}
