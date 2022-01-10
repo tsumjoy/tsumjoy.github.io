@@ -7,4 +7,4 @@ permalink: tsumtsum/prince-phillip
 ID: "prince phillip"
 
 ---
-<img class="ui image" src="../images/prince-phillip.jpg">
+
