@@ -7,4 +7,3 @@ permalink: tsumtsum/christopher-robin
 ID: "christopher robin"
 
 ---
-<img class="ui image" src="../images/christopher-robin.jpg">
