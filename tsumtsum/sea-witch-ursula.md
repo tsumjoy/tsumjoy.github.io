@@ -7,4 +7,4 @@ permalink: tsumtsum/sea-witch-ursula
 ID: "sea-witch-ursula"
 
 ---
-<img class="ui image" src="../images/sea-witch-ursula.png">
+
