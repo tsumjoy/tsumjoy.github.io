@@ -7,4 +7,3 @@ permalink: tsumtsum/captain-hook
 ID: "captain hook"
 
 ---
-<img class="ui image" src="../images/captain-hook.jpg">
