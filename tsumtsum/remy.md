@@ -7,4 +7,4 @@ permalink: tsumtsum/remy
 ID: "remy"
 
 ---
-<img class="ui image" src="../images/remy.jpg">
+
