@@ -7,4 +7,3 @@ permalink: tsumtsum/birthday-anna
 ID: "birthday anna"
 
 ---
-<img class="ui image" src="../images/birthday-anna.jpg">
