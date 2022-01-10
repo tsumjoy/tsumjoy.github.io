@@ -7,4 +7,4 @@ permalink: tsumtsum/mr-incredible
 ID: "mr. incredible"
 
 ---
-<img class="ui image" src="../images/mr-incredible.png">
+
