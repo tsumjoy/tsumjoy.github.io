@@ -7,4 +7,3 @@ permalink: tsumtsum/belle
 ID: "belle"
 
 ---
-<img class="ui image" src="../images/belle.jpg">
