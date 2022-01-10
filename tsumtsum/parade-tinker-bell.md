@@ -7,4 +7,4 @@ permalink: tsumtsum/parade-tinker-bell
 ID: "parade tinker bell"
 
 ---
-<img class="ui image" src="../images/parade-tinker-bell.jpg">
+
