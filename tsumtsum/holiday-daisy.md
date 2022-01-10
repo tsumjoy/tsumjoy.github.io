@@ -7,6 +7,3 @@ permalink: tsumtsum/holiday-daisy
 ID: "holiday daisy"
 
 ---
-<img class="ui image" src="../images/holiday-daisy.jpg">
-
-* <a href="{{ site.data.series-mickeyandfriends.url }}">{{ site.data.series-mickeyandfriends.tag }}</a>
