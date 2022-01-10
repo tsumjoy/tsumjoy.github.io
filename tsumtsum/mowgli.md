@@ -7,4 +7,3 @@ permalink: tsumtsum/mowgli
 ID: "mowgli"
 
 ---
-<img class="ui image" src="../images/mowgli.jpg">
