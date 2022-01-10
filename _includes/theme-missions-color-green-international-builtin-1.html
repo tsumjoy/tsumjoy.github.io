@@ -2,7 +2,7 @@
 
   <div class="ui stackable centered five cards">
       {% assign total_international = site.data.international-collection.tsumID.size %}
-      {% for entry in site.data.color-green.tsum %}
+      {% for entry in site.data.rosters.color-green.tsum %}
           {% for i in (1..total_international) %}
             {% if site.data.international-collection.tsumID[i] == entry %}
               {% for page in site.pages %}
