@@ -7,4 +7,4 @@ permalink: tsumtsum/jessie
 ID: "jessie"
 
 ---
-<img class="ui image" src="../images/jessie.jpg">
+
