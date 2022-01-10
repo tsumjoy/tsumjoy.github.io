@@ -7,4 +7,3 @@ permalink: tsumtsum/mater
 ID: "mater"
 
 ---
-<img class="ui image" src="../images/mater.jpg">
