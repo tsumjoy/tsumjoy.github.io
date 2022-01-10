@@ -7,4 +7,4 @@ permalink: tsumtsum/flynn-rider
 ID: "flynn rider"
 
 ---
-<img class="ui image" src="../images/flynn-rider.jpg">
+
