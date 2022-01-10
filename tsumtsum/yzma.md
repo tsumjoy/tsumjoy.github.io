@@ -7,4 +7,4 @@ permalink: tsumtsum/yzma
 ID: "yzma"
 
 ---
-<img class="ui image" src="../images/yzma.png">
+
