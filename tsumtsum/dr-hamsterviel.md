@@ -7,4 +7,4 @@ permalink: tsumtsum/dr-hamsterviel
 ID: "dr. hamsterviel"
 
 ---
-<img class="ui image" src="../images/dr-hamsterviel.png">
+
