@@ -7,4 +7,4 @@ permalink: tsumtsum/winter-cinderella
 ID: "winter cinderella"
 
 ---
-<img class="ui image" src="../images/winter-cinderella.jpg">
+
