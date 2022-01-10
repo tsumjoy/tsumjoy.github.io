@@ -7,4 +7,4 @@ permalink: tsumtsum/holiday-marie
 ID: "holiday marie"
 
 ---
-<img class="ui image" src="../images/holiday-marie.jpg">
+
