@@ -8,7 +8,7 @@ layout: tsumtsum
  {% for rosters_hash in site.data.rosters %}
    {% for entry in rosters_hash.tsum %}
       {% if page.ID == entry %}
-        {% include <p>* <a href="{{ rosters_hash.url }}">{{ rosters_hash.tag }}</a></p> %}
+        <p>* <a href="{{ rosters_hash.url }}">{{ rosters_hash.tag }}</a></p>
       {% endif %}
    {% endfor %}
  {% endfor %}
