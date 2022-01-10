@@ -7,4 +7,4 @@ permalink: tsumtsum/sulley
 ID: "sulley"
 
 ---
-<img class="ui image" src="../images/sulley.jpg">
+
