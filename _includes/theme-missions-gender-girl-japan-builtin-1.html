@@ -1,12 +1,19 @@
 <div style="padding-top: 20px" class="ui container ">
 
-  <div class="ui stackable centered four cards">
-    {% assign mission_gender_girl_pages = site.pages | where: "labels", "girl" | sort: "permalink" %}
-    {% assign girl_japan_pages = mission_gender_girl_pages | where: "japan", "true" | sort: "permalink" %}
-    {% for page in girl_japan_pages %}
-      {% unless page.draft %}
-        {% include tsum-card.html page=page %}
-      {% endunless %}
-    {% endfor %}
+  <div class="ui stackable centered five cards">
+      {% assign total_japan = site.data.rosters.japan-collection.tsumID.size %}
+      {% for entry in site.data.rosters.gender-girl.tsum %}
+          {% for i in (1..total_japan) %}
+            {% if site.data.rosters.japan-collection.tsumID[i] == entry %}
+              {% for page in site.pages %}
+                {% if page.ID == entry %}
+                  {% unless page.draft %}
+                    {% include tsum-card.html page=page %}
+                  {% endunless %}
+                {% endif %}
+              {% endfor %}
+             {% endif %}
+           {% endfor %}
+        {% endfor %}
   </div>
 </div>
