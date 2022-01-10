@@ -7,4 +7,4 @@ permalink: tsumtsum/flik
 ID: "flik"
 
 ---
-<img class="ui image" src="../images/flik.png">
+
