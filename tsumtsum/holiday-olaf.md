@@ -7,4 +7,3 @@ permalink: tsumtsum/holiday-olaf
 ID: "holiday olaf"
 
 ---
-<img class="ui image" src="../images/holiday-olaf.jpg">
