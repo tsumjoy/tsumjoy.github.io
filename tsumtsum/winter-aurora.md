@@ -7,4 +7,4 @@ permalink: tsumtsum/winter-aurora
 ID: "winter aurora"
 
 ---
-<img class="ui image" src="../images/winter-aurora.jpg">
+
