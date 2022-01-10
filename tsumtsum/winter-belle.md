@@ -7,4 +7,3 @@ permalink: tsumtsum/winter-belle
 ID: "winter belle"
 
 ---
-<img class="ui image" src="../images/winter-belle.jpg">
