@@ -7,4 +7,4 @@ permalink: tsumtsum/pocahontas
 ID: "pocahontas"
 
 ---
-<img class="ui image" src="../images/pocahontas.jpg">
+
