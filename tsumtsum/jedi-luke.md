@@ -7,4 +7,4 @@ permalink: tsumtsum/jedi-luke
 ID: "jedi luke"
 
 ---
-<img class="ui image" src="../images/jedi-luke.jpg">
+
