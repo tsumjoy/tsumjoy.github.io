@@ -7,4 +7,3 @@ permalink: tsumtsum/beast
 ID: "beast"
 
 ---
-<img class="ui image" src="../images/beast.jpg">
