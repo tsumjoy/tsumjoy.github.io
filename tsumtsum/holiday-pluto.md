@@ -7,6 +7,3 @@ permalink: tsumtsum/holiday-pluto
 ID: "holiday pluto"
 
 ---
-<img class="ui image" src="../images/holiday-pluto.jpg">
-
-* <a href="{{ site.data.series-mickeyandfriends.url }}">{{ site.data.series-mickeyandfriends.tag }}</a>
