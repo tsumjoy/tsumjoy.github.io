@@ -7,6 +7,3 @@ permalink: tsumtsum/holiday-donald
 ID: "holiday donald"
 
 ---
-<img class="ui image" src="../images/holiday-donald.jpg">
-
-* <a href="{{ site.data.series-mickeyandfriends.url }}">{{ site.data.series-mickeyandfriends.tag }}</a>
