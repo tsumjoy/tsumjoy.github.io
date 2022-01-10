@@ -7,4 +7,4 @@ permalink: tsumtsum/pinocchio
 ID: "pinocchio"
 
 ---
-<img class="ui image" src="../images/pinocchio.jpg">
+
