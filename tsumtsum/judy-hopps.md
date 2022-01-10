@@ -7,4 +7,4 @@ permalink: tsumtsum/judy-hopps
 ID: "judy hopps"
 
 ---
-<img class="ui image" src="../images/judy-hopps.jpg">
+
