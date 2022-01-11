@@ -26,9 +26,32 @@ theme-mission-gender-boy-japan: theme-missions-gender-boy-japan-builtin-1.html
 theme-mission-gender-girl: theme-missions-gender-girl-builtin-1.html
 theme-mission-gender-girl-international: theme-missions-gender-girl-international-builtin-1.html
 theme-mission-gender-girl-japan: theme-missions-gender-girl-japan-builtin-1.html
+
+theme-mission-color-red: theme-missions-color-red-builtin-1.html
+theme-mission-color-red-international: theme-missions-color-red-international-builtin-1.html
+theme-mission-color-red-japan: theme-missions-color-red-japan-builtin-1.html
+theme-mission-color-yellow: theme-missions-color-yellow-builtin-1.html
+theme-mission-color-yellow-international: theme-missions-color-yellow-international-builtin-1.html
+theme-mission-color-yellow-japan: theme-missions-color-yellow-japan-builtin-1.html
 theme-mission-color-green: theme-missions-color-green-builtin-1.html
 theme-mission-color-green-international: theme-missions-color-green-international-builtin-1.html
 theme-mission-color-green-japan: theme-missions-color-green-japan-builtin-1.html
+theme-mission-color-blue: theme-missions-color-blue-builtin-1.html
+theme-mission-color-blue-international: theme-missions-color-blue-international-builtin-1.html
+theme-mission-color-blue-japan: theme-missions-color-blue-japan-builtin-1.html
+theme-mission-color-purple: theme-missions-color-purple-builtin-1.html
+theme-mission-color-purple-international: theme-missions-color-purple-international-builtin-1.html
+theme-mission-color-purple-japan: theme-missions-color-purple-japan-builtin-1.html
+theme-mission-color-black: theme-missions-color-black-builtin-1.html
+theme-mission-color-black-international: theme-missions-color-black-international-builtin-1.html
+theme-mission-color-black-japan: theme-missions-color-black-japan-builtin-1.html
+theme-mission-color-brown: theme-missions-color-brown-builtin-1.html
+theme-mission-color-brown-international: theme-missions-color-brown-international-builtin-1.html
+theme-mission-color-brown-japan: theme-missions-color-brown-japan-builtin-1.html
+theme-mission-color-white: theme-missions-color-white-builtin-1.html
+theme-mission-color-white-international: theme-missions-color-white-international-builtin-1.html
+theme-mission-color-white-japan: theme-missions-color-white-japan-builtin-1.html
+
 theme-mission-series-mickeyandfriends: theme-missions-series-mickey-and-friends-builtin-1.html
 theme-mission-series-mickeyandfriends-international: theme-missions-series-mickey-and-friends-international-builtin-1.html
 theme-mission-series-mickeyandfriends-japan: theme-missions-series-mickey-and-friends-japan-builtin-1.html
