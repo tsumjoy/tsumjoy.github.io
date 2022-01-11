@@ -1,0 +1,14 @@
+<div style="padding-top: 20px" class="ui container ">
+
+  <div class="ui stackable centered five cards">
+      {% for entry in site.data.rosters.series-toystory.tsum %}
+         {% for page in site.pages %}
+           {% if page.ID == entry %}
+             {% unless page.draft %}
+               {% include tsum-card.html page=page %}
+             {% endunless %}
+            {% endif %}
+         {% endfor %}
+      {% endfor %}
+  </div>
+</div>
