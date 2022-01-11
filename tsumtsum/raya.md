@@ -1,7 +1,7 @@
 ---
 layout: tsum
 type: tsum
-image: images/raya.md
+image: images/raya.png
 title: ラーヤ | Raya
 permalink: tsumtsum/raya
 ID: "raya"
