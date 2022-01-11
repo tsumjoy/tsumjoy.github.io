@@ -1,8 +1,8 @@
 <!-- Home page design with small circular image bisecting card. -->
 
 {% assign tsum_pages = site.pages | where: "type", "tsum" | where_exp: "page", "page.draft != true" %}
-{% assign internationalcollection_pages = site.data.international-collection.tsumID %}
-{% assign japancollection_pages = site.data.japan-collection.tsumID %}
+{% assign internationalcollection_pages = site.data.rosters.international-collection.tsumID %}
+{% assign japancollection_pages = site.data.rosters.japan-collection.tsumID %}
 
 {% assign num_tsumtsum = tsum_pages.size %}
 {% assign num_internationaltsum = internationalcollection_pages.size %}
