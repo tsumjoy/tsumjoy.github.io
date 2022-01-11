@@ -1,0 +1,19 @@
+<div style="padding-top: 20px" class="ui container ">
+
+  <div class="ui stackable centered five cards">
+      {% assign total_international = site.data.rosters.international-collection.tsumID.size %}
+      {% for entry in site.data.rosters.series-marvel.tsum %}
+          {% for i in (1..total_international) %}
+            {% if site.data.rosters.international-collection.tsumID[i] == entry %}
+              {% for page in site.pages %}
+                {% if page.ID == entry %}
+                  {% unless page.draft %}
+                    {% include tsum-card.html page=page %}
+                  {% endunless %}
+                {% endif %}
+              {% endfor %}
+             {% endif %}
+           {% endfor %}
+        {% endfor %}
+  </div>
+</div>
