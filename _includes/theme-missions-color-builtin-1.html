@@ -3,9 +3,9 @@
   {% assign menuSize = {{ site.data.colors.size }} %}
   
   <div class="ui pointing secondary menu">
-    <a class="active item" data-tab="first">{{ site.data.colors[0].linkLabel }}</a>
+    <a class="active item" data-tab="first">{{ site.data.colors.colorInformation[0].linkLabel }}</a>
     {% for i in (1..menuSize) %}
-      <a class="item" data-tab="{{ site.data.placements[i] }}">{{ site.data.colors[i].linkLabel }}</a>
+      <a class="item" data-tab="{{ site.data.placements[i] }}">{{ site.data.colors.colorInformation[i].linkLabel }}</a>
     {% endfor %}
   </div>
   
@@ -19,15 +19,15 @@
     </div>
 
     <div class="ui bottom attached active tab segment" data-tab="{{ placement }}/a">
-      {% include tab-color-{{ site.data.colors[0].url }}-1.html %}
+      "{{ site.data.colors.colorTabs.base[0] }}"
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/b">
-      {% include tab-color-{{ site.data.colors[0].url }}-international-1.html %}
+      "{{ site.data.colors.colorTabs.international[0] }}"
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/c">
-      {% include tab-color-{{ site.data.colors[0].url }}-japan-1.html %}
+      "{{ site.data.colors.colorTabs.japan[0] }}"
     </div>
   
   </div>
@@ -43,11 +43,11 @@
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/b">
-      {% include tab-color-girl-{{ site.data.colors[i].url }}-1.html %}
+      {% include tab-color-{{ site.data.colors[i].url }}-1.html %}
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/c">
-      {% include tab-color-girl-{{ site.data.colors[i].url }}-1.html %}
+      {% include tab-color-{{ site.data.colors[i].url }}-1.html %}
     </div>
   
   </div>
