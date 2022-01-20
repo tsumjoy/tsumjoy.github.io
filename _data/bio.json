@@ -4,5 +4,11 @@
     "name": "tsumjoy",
     "label": "mission-matching index",
     "picture": "https://tsumjoy.github.io/favicon_package_v0.16/android-chrome-256x256.png",
+  },
+  "tabLabels":
+  {
+    "all": "全て",
+    "international": "海外版",
+    "japan": "日本語版"
   }
 }
