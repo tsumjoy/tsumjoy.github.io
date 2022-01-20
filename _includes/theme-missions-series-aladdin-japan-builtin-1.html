@@ -3,7 +3,7 @@
   <div class="ui stackable centered five cards">
       {% assign total_japan = site.data.rosters.japan-collection.tsumID.size %}
       {% for entry in site.data.rosters.series-aladdin.tsum %}
-          {% for i in (1..total_japan) %}
+          {% for i in (0..total_japan) %}
             {% if site.data.rosters.japan-collection.tsumID[i] == entry %}
               {% for page in site.pages %}
                 {% if page.ID == entry %}
