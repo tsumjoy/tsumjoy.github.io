@@ -15,7 +15,7 @@
 
     <div class="ui bottom attached active tab segment" data-tab="first/a">
       <div class="ui stackable centered five cards">
-        {% for entry in site.data.rosters.gender-girl.tsum %}
+        {% for entry in site.data.rosters.gender-boy.tsum %}
            {% for page in site.pages %}
              {% if page.ID == entry %}
                {% unless page.draft %}
@@ -30,7 +30,7 @@
     <div class="ui bottom attached tab segment" data-tab="first/b">
        <div class="ui stackable centered five cards">
           {% assign total_international = site.data.rosters.international-collection.tsumID.size %}
-          {% for entry in site.data.rosters.gender-girl.tsum %}
+          {% for entry in site.data.rosters.gender-boy.tsum %}
               {% for i in (1..total_international) %}
                 {% if site.data.rosters.international-collection.tsumID[i] == entry %}
                   {% for page in site.pages %}
@@ -49,7 +49,7 @@
     <div class="ui bottom attached tab segment" data-tab="first/c">
        <div class="ui stackable centered five cards">
           {% assign total_japan = site.data.rosters.japan-collection.tsumID.size %}
-          {% for entry in site.data.rosters.gender-girl.tsum %}
+          {% for entry in site.data.rosters.gender-boy.tsum %}
               {% for i in (1..total_japan) %}
                 {% if site.data.rosters.japan-collection.tsumID[i] == entry %}
                   {% for page in site.pages %}
