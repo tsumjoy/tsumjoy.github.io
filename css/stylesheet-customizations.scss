@@ -29,6 +29,6 @@ body {
   background: #fce9f1;
 }
 
-.ui.bottom.attached.tab.segment {
+.ui.bottom.attached.tab.segment:not(.active) {
   background: #fce9f1;
 }
