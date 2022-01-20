@@ -25,45 +25,53 @@
             "url": "purple",
             "style": "color:purple"
         },
-            {
-                "linkLabel": "黒色",
-                "url": "black",
-                "style": "color:black"
-            },
-            {
-                "linkLabel": "茶色",
-                "url": "brown",
-                "style": "color:brown"
-            },
-            {
-                "linkLabel": "白色",
-                "url": "white",
-                "style": "background-color:white"
-            }
-      ],
+        {
+            "linkLabel": "黒色",
+            "url": "black",
+            "style": "color:black"
+        },
+        {
+            "linkLabel": "茶色",
+            "url": "brown",
+            "style": "color:brown"
+        },
+        {
+            "linkLabel": "白色",
+            "url": "white",
+            "style": "background-color:white"
+        }
+        ],
         colorTabs: [
-             "{% include tab-color-red-1.html %}",
-             "{% include tab-color-red-international-1.html %}",
-             "{% include tab-color-red-japan-1.html %}"
-             "{% include tab-color-yellow-1.html %}",
-             "{% include tab-color-yellow-international-1.html %}",
-             "{% include tab-color-yellow-japan-1.html %}",
-             "{% include tab-color-green-1.html %}",
-             "{% include tab-color-green-international-1.html %}",
-             "{% include tab-color-green-japan-1.html %}",
-             "{% include tab-color-blue-1.html %}",
-             "{% include tab-color-blue-international-1.html %}",
-             "{% include tab-color-blue-japan-1.html %}",
-             "{% include tab-color-purple-1.html %}",
-             "{% include tab-color-purple-international-1.html %}",
-             "{% include tab-color-purple-japan-1.html %}",
-             "{% include tab-color-black-1.html %}",
-             "{% include tab-color-black-international-1.html %}",
-             "{% include tab-color-black-japan-1.html %}",
-             "{% include tab-color-brown-1.html %}",
-             "{% include tab-color-brown-international-1.html %}",
-             "{% include tab-color-brown-japan-1.html %}",
-             "{% include tab-color-white-1.html %}",
-             "{% include tab-color-white-international-1.html %}",
-             "{% include tab-color-white-japan-1.html %}"
+                base: {
+                        "{% include tab-color-red-1.html %}",
+                        "{% include tab-color-yellow-1.html %}",
+                        "{% include tab-color-green-1.html %}",
+                        "{% include tab-color-blue-1.html %}",
+                        "{% include tab-color-purple-1.html %}",
+                        "{% include tab-color-black-1.html %}",
+                        "{% include tab-color-brown-1.html %}",
+                        "{% include tab-color-white-1.html %}"
+                },
+                international: {
+                        "{% include tab-color-red-international-1.html %}",
+                        "{% include tab-color-yellow-international-1.html %}",
+                        "{% include tab-color-green-international-1.html %}",
+                        "{% include tab-color-blue-international-1.html %}",
+                        "{% include tab-color-purple-international-1.html %}",
+                        "{% include tab-color-black-international-1.html %}",
+                        "{% include tab-color-brown-international-1.html %}",
+                        "{% include tab-color-white-international-1.html %}"
+                        
+                },
+                japan: {
+                        "{% include tab-color-red-japan-1.html %}"
+                        "{% include tab-color-yellow-japan-1.html %}",
+                        "{% include tab-color-green-japan-1.html %}",
+                        "{% include tab-color-blue-japan-1.html %}", 
+                        "{% include tab-color-purple-japan-1.html %}",
+                        "{% include tab-color-black-japan-1.html %}",
+                        "{% include tab-color-brown-japan-1.html %}",
+                        "{% include tab-color-white-japan-1.html %}"
+                }
+       ]
 }
