@@ -23,8 +23,26 @@
   
   </div>
   
+  <div class="ui active tab segment babypink" data-tab="second">
+  
+    {% include tab-regions-1.html %}
+
+    <div class="ui bottom attached active tab segment" data-tab="second/a">
+      {% include tab-gender-girl-1.html %}
+    </div>
+
+    <div class="ui bottom attached tab segment" data-tab="second/b">
+      {% include tab-gender-girl-international-1.html %}
+    </div>
+
+    <div class="ui bottom attached tab segment" data-tab="second/c">
+      {% include tab-gender-girl-japan-1.html %}
+    </div>
+  
+  </div>
+  
 </div>
 
 <script>
-    $('.menu .item').tab();
+  $('.menu .item').tab();
 </script>
