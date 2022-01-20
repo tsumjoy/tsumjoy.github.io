@@ -1,0 +1,42 @@
+{
+        {
+            "linkLabel": "赤色",
+            "url": "red",
+            "style": "color:red"
+        },
+        {
+            "linkLabel": "黄色",
+            "url": "yellow",
+            "style": "background-color:yellow"
+        },
+        {
+            "linkLabel": "緑色",
+            "url": "green",
+            "style": "color:green"
+        },
+        {
+            "linkLabel": "青色",
+            "url": "blue",
+            "style": "color:blue"
+        },
+        {
+            "linkLabel": "紫色",
+            "url": "purple",
+            "style": "color:purple"
+        },
+            {
+                "linkLabel": "黒色",
+                "url": "black",
+                "style": "color:black"
+            },
+            {
+                "linkLabel": "茶色",
+                "url": "brown",
+                "style": "color:brown"
+            },
+            {
+                "linkLabel": "白色",
+                "url": "white",
+                "style": "background-color:white"
+            }
+}
