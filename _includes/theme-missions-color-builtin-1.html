@@ -1,0 +1,70 @@
+<div style="padding-top: 20px" class="ui container ">
+  
+  {% assign menuSize = {{ site.data.missions.color.size }} %}
+  
+  <div class="ui pointing secondary menu">
+    <a class="active item" data-tab="first">{{ site.data.missions.color[0].linkLabel }}</a>
+    {% for i in (1..menuSize) %}
+      <a class="item" data-tab="{{ site.data.placements[i] }}">{{ site.data.missions.color[i].linkLabel }}</a>
+    {% endfor %}
+  </div>
+  
+  {% assign placement = "first" %}
+  <div class="ui active tab segment babypink" data-tab="{{ placement }}">
+  
+    <div class="ui top attached tabular menu">
+      <a class="active item" data-tab="{{ placement }}/a">{{ site.data.bio.tabLabels.all }}</a>
+      <a class="item" data-tab="{{ placement }}/b">{{ site.data.bio.tabLabels.international }}</a>
+      <a class="item" data-tab="{{ placement }}/c">{{ site.data.bio.tabLabels.japan }}</a>
+    </div>
+
+    <div class="ui bottom attached active tab segment" data-tab="{{ placement }}/a">
+      <div class="ui stackable centered five cards">
+          {% for entry in site.data.rosters.color-black.tsum %}
+             {% for page in site.pages %}
+               {% if page.ID == entry %}
+                 {% unless page.draft %}
+                   {% include tsum-card.html page=page %}
+                 {% endunless %}
+                {% endif %}
+             {% endfor %}
+          {% endfor %}
+      </div>
+    </div>
+
+    <div class="ui bottom attached tab segment" data-tab="{{ placement }}/b">
+      {% include tab-gender-boy-international-1.html %}
+    </div>
+
+    <div class="ui bottom attached tab segment" data-tab="{{ placement }}/c">
+      {% include tab-gender-boy-japan-1.html %}
+    </div>
+  
+  </div>
+  
+  {% for i in (1..menuSize) %}
+  {% assign placement = "{{ site.data.placements[i] }}" %}
+  <div class="ui tab segment babypink" data-tab="second">
+  
+    {% include tab-regionsnotfirst-1.html placement="second" %}
+    
+    <div class="ui bottom attached tab segment" data-tab="{{ placement }}/a">
+      {% include tab-gender-girl-1.html %}
+    </div>
+
+    <div class="ui bottom attached tab segment" data-tab="{{ placement }}/b">
+      {% include tab-gender-girl-international-1.html %}
+    </div>
+
+    <div class="ui bottom attached tab segment" data-tab="{{ placement }}/c">
+      {% include tab-gender-girl-japan-1.html %}
+    </div>
+  
+  </div>
+  {% endfor %}
+  
+</div>
+
+<script>
+  $('.menu .item').tab();
+</script>
