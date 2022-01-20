@@ -39,15 +39,15 @@
     {% include tab-regionsnotfirst-1.html placement="{{ placement }}" %}
     
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/a">
-      {% include tab-color-{{ site.data.colors[i].url }}-1.html %}
+      "{{ site.data.colors.colorTabs.base[i] }}"
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/b">
-      {% include tab-color-{{ site.data.colors[i].url }}-1.html %}
+      "{{ site.data.colors.colorTabs.international[i] }}"
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/c">
-      {% include tab-color-{{ site.data.colors[i].url }}-1.html %}
+      "{{ site.data.colors.colorTabs.japan[i] }}"
     </div>
   
   </div>
