@@ -14,7 +14,7 @@
     </div>
 
     <div class="ui bottom attached active tab segment" data-tab="first/a">
-      <div class="ui stackable centered five cards">
+      <div class="ui centered five cards">
         {% for entry in site.data.rosters.gender-boy.tsum %}
            {% for page in site.pages %}
              {% if page.ID == entry %}
@@ -68,3 +68,10 @@
   </div>
   
 </div>
+
+<script>
+  $('.tab.segment').click(function(){
+   $('.active').removeClass('active');
+   $(this).addClass('active');
+  });
+</script>
