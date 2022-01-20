@@ -5,37 +5,39 @@
     <a class="item" data-tab="second">{{ site.data.rosters.gender-girl.tabLabel }}</a>
   </div>
   
-  <div class="ui active tab segment babypink" data-tab="first">
+  {% assign placement = "first" %}  
+  <div class="ui active tab segment babypink" data-tab={{ placement }}>
   
-    {% include tab-regions-1.html %}
+    {% include tab-regions-1.html placement={{ placement }} %}
 
-    <div class="ui bottom attached active tab segment" data-tab="first/a">
+    <div class="ui bottom attached active tab segment" data-tab={{ placement }}"/a">
       {% include tab-gender-boy-1.html %}
     </div>
 
-    <div class="ui bottom attached tab segment" data-tab="first/b">
+    <div class="ui bottom attached tab segment" data-tab={{ placement }}"/b">
       {% include tab-gender-boy-international-1.html %}
     </div>
 
-    <div class="ui bottom attached tab segment" data-tab="first/c">
+    <div class="ui bottom attached tab segment" data-tab={{ placement }}"/c">
       {% include tab-gender-boy-japan-1.html %}
     </div>
   
   </div>
   
-  <div class="ui active tab segment babypink" data-tab="second">
+  {% assign placement = "second" %}
+  <div class="ui tab segment babypink" data-tab={{ placement }}>
   
-    {% include tab-regions-1.html %}
+    {% include tab-regions-1.html placement={{ placement }} %}
 
-    <div class="ui bottom attached active tab segment" data-tab="second/a">
+    <div class="ui bottom attached tab segment" data-tab={{ placement }}"/a">
       {% include tab-gender-girl-1.html %}
     </div>
 
-    <div class="ui bottom attached tab segment" data-tab="second/b">
+    <div class="ui bottom attached tab segment" data-tab={{ placement }}"/b">
       {% include tab-gender-girl-international-1.html %}
     </div>
 
-    <div class="ui bottom attached tab segment" data-tab="second/c">
+    <div class="ui bottom attached tab segment" data-tab={{ placement }}"/c">
       {% include tab-gender-girl-japan-1.html %}
     </div>
   
