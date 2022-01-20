@@ -19,45 +19,35 @@
     </div>
 
     <div class="ui bottom attached active tab segment" data-tab="{{ placement }}/a">
-      <div class="ui stackable centered five cards">
-          {% for entry in site.data.rosters.color-black.tsum %}
-             {% for page in site.pages %}
-               {% if page.ID == entry %}
-                 {% unless page.draft %}
-                   {% include tsum-card.html page=page %}
-                 {% endunless %}
-                {% endif %}
-             {% endfor %}
-          {% endfor %}
-      </div>
+      {% include tab-color-{{ site.data.missions.color[0].url }}-1.html %}
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/b">
-      {% include tab-gender-boy-international-1.html %}
+      {% include tab-color-{{ site.data.missions.color[0].url }}-international-1.html %}
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/c">
-      {% include tab-gender-boy-japan-1.html %}
+      {% include tab-color-{{ site.data.missions.color[0].url }}-japan-1.html %}
     </div>
   
   </div>
   
   {% for i in (1..menuSize) %}
   {% assign placement = "{{ site.data.placements[i] }}" %}
-  <div class="ui tab segment babypink" data-tab="second">
+  <div class="ui tab segment babypink" data-tab="{{ placement }}">
   
-    {% include tab-regionsnotfirst-1.html placement="second" %}
+    {% include tab-regionsnotfirst-1.html placement="{{ placement }}" %}
     
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/a">
-      {% include tab-gender-girl-1.html %}
+      {% include tab-color-{{ site.data.missions.color[i].url }}-1.html %}
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/b">
-      {% include tab-gender-girl-international-1.html %}
+      {% include tab-color-girl-{{ site.data.missions.color[i].url }}-1.html %}
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/c">
-      {% include tab-gender-girl-japan-1.html %}
+      {% include tab-color-girl-{{ site.data.missions.color[i].url }}-1.html %}
     </div>
   
   </div>
