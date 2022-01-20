@@ -20,3 +20,10 @@ body {
   // color: silver;
 }
 
+.ui.item.menu, .ui.item.menu .item {
+  background: #fce9f1;
+}
+
+.ui.item.menu .active.item {
+  background: #fce9f1;
+}
