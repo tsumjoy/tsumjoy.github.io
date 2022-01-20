@@ -64,7 +64,7 @@
                         
                 },
                 "japan": {
-                        "{% include tab-color-red-japan-1.html %}"
+                        "{% include tab-color-red-japan-1.html %}",
                         "{% include tab-color-yellow-japan-1.html %}",
                         "{% include tab-color-green-japan-1.html %}",
                         "{% include tab-color-blue-japan-1.html %}", 
