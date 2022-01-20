@@ -70,8 +70,8 @@
 </div>
 
 <script>
-  $('.item').click(function(){
-    $(this).siblings('.active').removeClass('active');
-    $(this).siblings.addClass('active');
-  });
+  $('.ui .item').on('click', function() {
+        $('.ui .item').removeClass('active');
+        $(this).addClass('active');
+    });
 </script>
