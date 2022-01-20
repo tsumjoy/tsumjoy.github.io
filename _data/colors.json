@@ -1,5 +1,5 @@
 {
-        colorInformation: [
+        "colorInformation": [
         {
             "linkLabel": "赤色",
             "url": "red",
@@ -41,8 +41,8 @@
             "style": "background-color:white"
         }
         ],
-        colorTabs: [
-                base: {
+        "colorTabs": [
+                "base": {
                         "{% include tab-color-red-1.html %}",
                         "{% include tab-color-yellow-1.html %}",
                         "{% include tab-color-green-1.html %}",
@@ -52,7 +52,7 @@
                         "{% include tab-color-brown-1.html %}",
                         "{% include tab-color-white-1.html %}"
                 },
-                international: {
+                "international": {
                         "{% include tab-color-red-international-1.html %}",
                         "{% include tab-color-yellow-international-1.html %}",
                         "{% include tab-color-green-international-1.html %}",
@@ -63,7 +63,7 @@
                         "{% include tab-color-white-international-1.html %}"
                         
                 },
-                japan: {
+                "japan": {
                         "{% include tab-color-red-japan-1.html %}"
                         "{% include tab-color-yellow-japan-1.html %}",
                         "{% include tab-color-green-japan-1.html %}",
