@@ -43,7 +43,7 @@
         ],
         "colorTabs": [
                 "base": {
-                        "{% include tab-color-red-1.html %}",
+                        "tab-color-red-1.html",
                         "{% include tab-color-yellow-1.html %}",
                         "{% include tab-color-green-1.html %}",
                         "{% include tab-color-blue-1.html %}",
