@@ -20,6 +20,10 @@ body {
   // color: silver;
 }
 
-.ui.tabular.menu, .ui.tabular.menu .active.item {
+.ui.tabular.menu .active.item {
+  background: #fce9f1;
+}
+
+.ui.tabular.menu > .item:not(.active) {
   background: #fce9f1;
 }
