@@ -7,62 +7,18 @@
   
   <div class="ui active tab segment babypink" data-tab="first">
   
-    <div class="ui top attached tabular menu">
-      <a class="active item" data-tab="first/a">{{ site.data.bio.tabLabels.all }}</a>
-      <a class="item" data-tab="first/b">{{ site.data.bio.tabLabels.international }}</a>
-      <a class="item" data-tab="first/c">{{ site.data.bio.tabLabels.japan }}</a>
-    </div>
+    {% include tab-regions-1.html %}
 
     <div class="ui bottom attached active tab segment" data-tab="first/a">
-      <div class="ui centered five cards">
-        {% for entry in site.data.rosters.gender-boy.tsum %}
-           {% for page in site.pages %}
-             {% if page.ID == entry %}
-               {% unless page.draft %}
-                 {% include tsum-card.html page=page %}
-               {% endunless %}
-              {% endif %}
-           {% endfor %}
-        {% endfor %}
-      </div>
+      {% include tab-gender-boy-1.html %}
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="first/b">
-       <div class="ui stackable centered five cards">
-          {% assign total_international = site.data.rosters.international-collection.tsumID.size %}
-          {% for entry in site.data.rosters.gender-boy.tsum %}
-              {% for i in (1..total_international) %}
-                {% if site.data.rosters.international-collection.tsumID[i] == entry %}
-                  {% for page in site.pages %}
-                    {% if page.ID == entry %}
-                      {% unless page.draft %}
-                        {% include tsum-card.html page=page %}
-                      {% endunless %}
-                    {% endif %}
-                  {% endfor %}
-                 {% endif %}
-               {% endfor %}
-            {% endfor %}
-        </div>
+      {% include tab-gender-boy-international-1.html %}
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="first/c">
-       <div class="ui stackable centered five cards">
-          {% assign total_japan = site.data.rosters.japan-collection.tsumID.size %}
-          {% for entry in site.data.rosters.gender-boy.tsum %}
-              {% for i in (1..total_japan) %}
-                {% if site.data.rosters.japan-collection.tsumID[i] == entry %}
-                  {% for page in site.pages %}
-                    {% if page.ID == entry %}
-                      {% unless page.draft %}
-                        {% include tsum-card.html page=page %}
-                      {% endunless %}
-                    {% endif %}
-                  {% endfor %}
-                 {% endif %}
-               {% endfor %}
-            {% endfor %}
-        </div>
+      {% include tab-gender-boy-japan-1.html %}
     </div>
   
   </div>
