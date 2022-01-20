@@ -17,14 +17,21 @@
     <a href="{{ site.baseurl }}/tsumtsum" class=" {% if include.active == "tsumtsum" %} active {% endif %}item">ツムツム ({{ num_tsumtsum }})</a>
     {% endif %}
     {% if num_internationaltsum > 0 %}
-    <a href="{{ site.baseurl }}/internationalcollection" class=" {% if include.active == "internationalcollection" %} active {% endif %}item">海外版コレクション ({{ num_internationaltsum }})</a>
+    <a href="{{ site.data.rosters.international-collection.url }}" class=" {% if include.active == "internationalcollection" %} active {% endif %}item">海外版コレクション ({{ num_internationaltsum }})</a>
     {% endif %}
     {% if num_japantsum > 0 %}
-    <a href="{{ site.baseurl }}/japancollection" class=" {% if include.active == "japancollection" %} active {% endif %}item">日本語版コレクション ({{ num_japantsum }})</a>
-    {% endif %}
-    {% if num_essays > 0 %}
-    <a href="{{ site.baseurl }}/essays" class=" {% if include.active == "essays" %} active {% endif %} item">Essays ({{ num_essays }})</a>
+    <a href="{{ site.data.rosters.japan-collection.url }}" class=" {% if include.active == "japancollection" %} active {% endif %}item">日本語版コレクション ({{ num_japantsum }})</a>
     {% endif %}
     <a href="{{ site.baseurl }}/missions" class=" {% if include.active == "missions" %} active {% endif %} item">{{ site.missions-page-label }}</a>
+    <a href="{{ site.baseurl }}/missions/gender" class=" {% if include.active == "gender" %} active {% endif %} item">性別</a>
+    <a href="{{ site.baseurl }}/missions/species" class=" {% if include.active == "species" %} active {% endif %} item">種族</a>
+    <a href="{{ site.baseurl }}/missions/role" class=" {% if include.active == "role" %} active {% endif %} item">役</a>
+    <a href="{{ site.baseurl }}/missions/initial" class=" {% if include.active == "initial" %} active {% endif %} item">initial</a>
+    <a href="{{ site.baseurl }}/missions/color" class=" {% if include.active == "color" %} active {% endif %} item">🎨</a>
+    <a href="{{ site.baseurl }}/missions/hand-color" class=" {% if include.active == "hand-color" %} active {% endif %} item">手色</a>
+    <a href="{{ site.baseurl }}/missions/facial-features" class=" {% if include.active == "facial-features" %} active {% endif %} item">顔</a>
+    <a href="{{ site.baseurl }}/missions/head-body-features" class=" {% if include.active == "head-body-features" %} active {% endif %} item">頭・体</a>
+    <a href="{{ site.baseurl }}/missions/skill-type" class=" {% if include.active == "skill-type" %} active {% endif %} item">スキル</a>
+    <a href="{{ site.baseurl }}/missions/series" class=" {% if include.active == "series" %} active {% endif %} item">🎞️</a>
   </nav>
 </div>
