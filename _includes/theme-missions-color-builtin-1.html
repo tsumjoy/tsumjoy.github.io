@@ -7,7 +7,7 @@
   <div class="ui pointing secondary menu">
     <a class="active item" data-tab="{{ site.data.placements[0] }}">{{ site.data.colors.colorInformation[0].linkLabel }}</a>
     <a class="item" data-tab="{{ site.data.placements[{{ menuSize }}] }}">{{ site.data.colors.colorInformation[{{ menuSize }}].linkLabel }}</a>
-    {% for i in (1..menuSize) %}
+    {% for i in (1..9) %}
       <a class="item" data-tab="{{ site.data.placements[i] }}">{{ site.data.colors.colorInformation[i].linkLabel }}</a>
     {% endfor %}
   </div>
