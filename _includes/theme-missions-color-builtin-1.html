@@ -1,4 +1,7 @@
-{% assign menuSize = {{ site.data.colors.colorInformation[0] | size }} %}
+{% assign menuSize = 0 %}
+{% for entry in = site.data.colors.colorInformation %}
+  {{ {{ menuSize }} | plus: 1 }}
+{% endfor %}
   <p>"Menu size is {{ menuSize }}"</p>
 
 <div style="padding-top: 20px" class="ui container ">
