@@ -1,4 +1,4 @@
-{% assign menuSize = {{ site.data.colors | size }} %}
+{% assign menuSize = {{ site.data.colors.size }} %}
   <p>"Menu size is {{ menuSize }}"</p>
 
 <div style="padding-top: 20px" class="ui container ">
@@ -21,7 +21,7 @@
     </div>
 
     <div class="ui bottom attached active tab segment" data-tab="{{ placement }}/a">
-      {{ site.data.colors.colorTabs.base[0] }}
+      hello {{ site.data.colors.colorTabs.base[0] }}
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/b">
