@@ -53,7 +53,7 @@
           <button class="ui basic button">日本語版コレクション ({{ num_japantsum }})</button>
         </a>
         <a href="{{ site.baseurl}}/missions/">
-          <button class="ui basic button">{{ site.missions-page-label }}</button>
+          <button class="ui basic button">{{ site.missions-page-label | remove: ": {" }}</button>
         </a>
       </div>
     </div>
