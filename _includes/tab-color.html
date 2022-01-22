@@ -3,8 +3,15 @@
     {% capture colorRoster %} rosters.color-{{ include.color }}.tsum {% endcapture %}
 {% endcase %}
 <p> {{ colorRoster }} </p>
+
 <div class="ui centered five cards">
-    {% for entry in site.data[rosters.color-red.tsum] %}
+{% case {{ include.color }} %}
+  {% when "red" %}
+    {% for entry in site.data.rosters.color-red.tsum. %}
+  {% when "yellow" %}
+    {% for entry in site.data.rosters.color-yellow.tsum. %}
+{% endcase %}
+   
        {% for page in site.pages %}
          {% if page.ID == entry %}
            {% unless page.draft %}
