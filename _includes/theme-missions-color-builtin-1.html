@@ -1,5 +1,6 @@
 {% assign menuSize = 5 %}
   <p>"Menu size is {{ menuSize }}"</p>
+{% assign firstColorBase = tab-color-red-1.html %}
 
 <div style="padding-top: 20px" class="ui container ">
   
@@ -21,7 +22,7 @@
     </div>
 
     <div class="ui bottom attached active tab segment" data-tab="{{ placement }}/a">
-      hello {{ site.data.colors.colorTabs.base[0] }}
+      {% include {{ firstColorBase }} %}
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/b">
@@ -35,7 +36,7 @@
   </div>
   
   {% for i in (1..menuSize) %}
-  {% assign placement = "{{ site.data.placements[i] }}" %}
+  {% assign placement = {{ site.data.placements[i] }} %}
   <div class="ui tab segment babypink" data-tab="{{ placement }}">
   
     {% include tab-regionsnotfirst-1.html placement="{{ placement }}" %}
