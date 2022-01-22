@@ -8,8 +8,6 @@
 {% case {{ include.color }} %}
   {% when "red" %}
     {% for entry in site.data.rosters.color-red.tsum %}
-  {% when "yellow" %}
-    {% for entry in site.data.rosters.color-yellow.tsum %}
 {% endcase %}
    
        {% for page in site.pages %}
