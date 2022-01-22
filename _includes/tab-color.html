@@ -1,7 +1,7 @@
 {% case {{ include.color }} %}
   {% when "red" %}
     {% assign colorRoster = site.data.rosters.color-red.tsum %}
-{% endcapture %}
+{% endcase %}
 
 <div class="ui centered five cards">
   <p>{{ colorRoster }}</p>
