@@ -1,6 +1,18 @@
 {% assign menuSize = 5 %}
   <p>"Menu size is {{ menuSize }}"</p>
-{% assign firstColorBase = tab-color-red-1.html %}
+{% assign thisColor = "red" %}
+
+{% capture colorBaseTab %}
+  tab-{{ thisColor }}.tsum
+{% endcapture %}
+
+{% capture colorInternationalTab %}
+  tab-color-{{ thisColor }}-international-1.html
+{% endcapture %}
+
+{% capture colorJapanTab %}
+  tab-color-{{ thisColor }}-japan-1.html
+{% endcapture %}
 
 <div style="padding-top: 20px" class="ui container ">
   
@@ -26,7 +38,7 @@
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/b">
-      "{{ site.data.colors.colorTabs.international[0] }}"
+      {% include colorInternationalTab %}
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/c">
