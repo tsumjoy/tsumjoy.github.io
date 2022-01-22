@@ -36,20 +36,22 @@
   </div>
   
   {% for i in (1..menuSize) %}
-  {% assign placement = {{ site.data.placements[i] }} %}
-  <div class="ui tab segment babypink" data-tab="{{ placement }}">
+  {% capture placeName %} 
+    "{{ site.data.placements[i] }}"
+  {% endcapture %}
+  <div class="ui tab segment babypink" data-tab=placeName>
   
-    {% include tab-regionsnotfirst-1.html placement="{{ placement }}" %}
+    {% include tab-regionsnotfirst-1.html placement=placeName %}
     
-    <div class="ui bottom attached tab segment" data-tab="{{ placement }}/a">
+    <div class="ui bottom attached tab segment" data-tab="placeName/a">
       "{{ site.data.colors.colorTabs.base[i] }}"
     </div>
 
-    <div class="ui bottom attached tab segment" data-tab="{{ placement }}/b">
+    <div class="ui bottom attached tab segment" data-tab="placeName/b">
       "{{ site.data.colors.colorTabs.international[i] }}"
     </div>
 
-    <div class="ui bottom attached tab segment" data-tab="{{ placement }}/c">
+    <div class="ui bottom attached tab segment" data-tab="placeName/c">
       "{{ site.data.colors.colorTabs.japan[i] }}"
     </div>
   
