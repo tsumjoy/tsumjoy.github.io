@@ -2,7 +2,19 @@
   <p>"Menu size is {{ menuSize }}"</p>
 {% assign thisColor = "red" %}
 
+<!--
+{% capture colorBaseTab %}
+  tab-{{ thisColor }}.tsum
+{% endcapture %}
 
+{% capture colorInternationalTab %}
+  tab-color-{{ thisColor }}-international-1.html
+{% endcapture %}
+
+{% capture colorJapanTab %}
+  tab-color-{{ thisColor }}-japan-1.html
+{% endcapture %}
+-->
 
 <div style="padding-top: 20px" class="ui container ">
   
@@ -14,28 +26,7 @@
     {% endfor %}
   </div>
   
-  {% assign placement = "{{ site.data.placements[0] }}" %}
-  <div class="ui active tab segment babypink" data-tab="{{ placement }}">
   
-    <div class="ui top attached tabular menu">
-      <a class="active item" data-tab="{{ placement }}/a">{{ site.data.bio.tabLabels.all }}</a>
-      <a class="item" data-tab="{{ placement }}/b">{{ site.data.bio.tabLabels.international }}</a>
-      <a class="item" data-tab="{{ placement }}/c">{{ site.data.bio.tabLabels.japan }}</a>
-    </div>
-
-    <div class="ui bottom attached active tab segment" data-tab="{{ placement }}/a">
-      <!-- {% include tab-color.html color="red" %} -->
-    </div>
-
-    <div class="ui bottom attached tab segment" data-tab="{{ placement }}/b">
-      <!-- {% include {{ colorInternationalTab }} %} -->
-    </div>
-
-    <div class="ui bottom attached tab segment" data-tab="{{ placement }}/c">
-      "{{ site.data.colors.colorTabs.japan[0] }}"
-    </div>
-  
-  </div>
   
   
   
