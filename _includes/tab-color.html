@@ -1,0 +1,16 @@
+{% assign color = {{ include.color }} %}
+{% capture colorRoster %}
+  site.data.rosters.color-{{ color }}.tsum
+{% end capture %}
+
+<div class="ui centered five cards">
+    {% for entry in colorRoster %}
+       {% for page in site.pages %}
+         {% if page.ID == entry %}
+           {% unless page.draft %}
+             {% include tsum-card.html page=page %}
+           {% endunless %}
+          {% endif %}
+       {% endfor %}
+    {% endfor %}
+</div>
