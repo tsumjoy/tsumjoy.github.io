@@ -4,7 +4,7 @@
 {% endcapture %}
 
 <div class="ui centered five cards">
-  <p>{{ include.color }}</p>
+  <p>{{ colorRoster }}</p>
     {% for entry in colorRoster %}
        {% for page in site.pages %}
          {% if page.ID == entry %}
