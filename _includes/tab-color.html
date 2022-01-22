@@ -4,8 +4,6 @@
 {% endcase %}
 
 <div class="ui centered five cards">
-  <p>{{ colorRoster }}</p>
-  <p>{{ colorRoster }}[0]</p>
     {% for entry in site.data.rosters.color-red.tsum %}
        {% for page in site.pages %}
          {% if page.ID == entry %}
