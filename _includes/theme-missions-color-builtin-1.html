@@ -1,10 +1,11 @@
 {% assign menuSize = 5 %}
   <p>"Menu size is {{ menuSize }}"</p>
 {% assign thisColor = "red" %}
+{% assign thisFile = "tab-color-red-1.html" %}
 
 <!--
 {% capture colorBaseTab %}
-  tab-{{ thisColor }}.tsum
+  tab-color-{{ thisColor }}-1.html
 {% endcapture %}
 
 {% capture colorInternationalTab %}
@@ -40,7 +41,7 @@
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/b">
-      <!-- {{ colorInternationalTab }} -->
+      {% include {{thisFile}} %}
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/c">
