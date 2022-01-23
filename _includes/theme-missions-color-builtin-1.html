@@ -13,7 +13,7 @@
 {% endcapture %}
 
 {% capture colorJapanTab %}
-  tab-color-{{ thisColor }}-japan-1.html
+  tab-color-{{thisColor}}-japan-1.html
 {% endcapture %}
 -->
 
@@ -45,7 +45,8 @@
     </div>
 
     <div class="ui bottom attached tab segment" data-tab="{{ placement }}/c">
-      "{{ site.data.colors.colorTabs.japan[0] }}"
+      <!-- "{{ site.data.colors.colorTabs.japan[0] }}" -->
+      {% include {{colorJapanTab}} %}
     </div>
   
   </div>
