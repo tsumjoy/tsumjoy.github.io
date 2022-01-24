@@ -2,7 +2,8 @@
   {% when "red" %}
     {% capture colorRoster %} rosters.color-{{include.color}}.tsum {% endcapture %}
 {% endcase %}
-<p> {{ colorRoster }} </p>
+{% assign thisPlace = site.data[rosters.color-red.tsum] %}
+<p> {{ thisPlace }} </p>
 
 <div class="ui centered five cards">
     {% for entry in site.data[rosters.color-red.tsum] %}
