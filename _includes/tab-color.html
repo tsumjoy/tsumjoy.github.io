@@ -6,10 +6,10 @@
 <p> {{ thisPlace }} </p>
 
 <div class="ui centered five cards">
-    {% for item in site.data[rosters.color-red.tsum] %}
+    {% for entry in site.data[rosters.color-red.tsum] %}
         <p> {{ colorRoster }} </p>
        {% for page in site.pages %}
-         {% if page.ID == item %}
+         {% if page.ID == entry %}
            {% unless page.draft %}
              {% include tsum-card.html page=page %}
            {% endunless %}
