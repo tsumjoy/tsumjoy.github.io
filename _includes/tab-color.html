@@ -1,6 +1,6 @@
-{% case {{ include.color }} %}
+{% case {{include.color}} %}
   {% when "red" %}
-    {% capture colorRoster %} rosters.color-{{ include.color }}.tsum {% endcapture %}
+    {% capture colorRoster %} rosters.color-{{include.color}}.tsum {% endcapture %}
 {% endcase %}
 <p> {{ colorRoster }} </p>
 
