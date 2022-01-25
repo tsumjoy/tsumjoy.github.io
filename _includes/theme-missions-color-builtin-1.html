@@ -63,7 +63,7 @@
   {% assign placeName = site.data.placements[placeIncrement] %}
 
   {% for rosters_hash in site.data.rosters %}
-    {% assign category = {{ rosters_hash[1].tag | split: ": " | first }} %}
+    {% assign category = {{ rosters_hash[1].tag }} %}
     {% assign rosterGroup = {{ rosters_hash[1].tag | split: ": " | second }} %}
 
     <p> category is {{ category }}, missionCategory is {{ missionCategory }} </p>
