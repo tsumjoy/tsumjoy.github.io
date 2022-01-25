@@ -57,18 +57,14 @@
   {% assign missionCategory = "color" %}
   {% assign total_japan = site.data.rosters.japan-collection.tsumID.size %}
   {% assign total_international = site.data.rosters.international-collection.tsumID.size %}
-  {% assign placeIteration = 1 %}
-  {% capture placeName %}
-     "{{ site.data.placements[{{ placeIteration }}] }}" 
-  {% endcapture %}
-
-<p> Placement iteration is {{ placeIteration }} </p>
-<p> Placement is "{{ placeName }}" </p>
   
+  {% assign rosters = rosters_hash[1] %}
+  {% assign category = {{ rosters_hash[1].tag | split: ": " | first }} %}
+  {% assign rosterGroup = {{ rosters_hash[1].tag | split: ": " | second }} %}
+
   {% for rosters_hash in site.data.rosters %}
-    {% assign rosters = rosters_hash[1] %}
-    {% assign category = {{ rosters_hash[1].tag | split: ": " | first }} %}
-    {% assign rosterGroup = {{ rosters_hash[1].tag | split: ": " | second }} %}
+    
+    {% assign placeName = {{ site.data.placements[forloop.index0] }} %}
 
     <div class="ui tab segment babypink" data-tab=placeName>
     {% include tab-regionsnotfirst-1.html placement=placeName %}
@@ -135,7 +131,6 @@
     {% endif %}
     {% endif %}
 
-    {{ placeIteration | plus: 1 }}
     </div>
   {% endfor %}
 
