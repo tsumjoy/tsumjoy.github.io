@@ -52,6 +52,87 @@
   
   </div>
   
+  </div>
+  
+  {% assign missionCategory = "color" %}
+  {% assign total_japan = site.data.rosters.japan-collection.tsumID.size %}
+  {% assign total_international = site.data.rosters.international-collection.tsumID.size %}
+  {% assign placeIteration = 1 %}
+  {% assign placeName = "{{ site.data.placements[placeIteration] }}" %}
+
+  <div class="ui tab segment babypink" data-tab=placeName>
+  {% include tab-regionsnotfirst-1.html placement=placeName %}
+
+  {% for rosters_hash in site.data.rosters %}
+    {% assign rosters = rosters_hash[1] %}
+    {% assign category = {{ rosters_hash[1].tag | split: ": " | first }} %}
+    {% assign rosterGroup = {{ rosters_hash[1].tag | split: ": " | second }} %}
+    {% if category == missionCategory %}
+    {% if rosterGroup != "red" %}
+      
+    <div class="ui bottom attached tab segment" data-tab="placeName/a">
+    <div class="ui centered five cards">
+     {% for entry in rosters_hash[1].tsum %}
+        
+        {% for page in site.pages %}
+         {% if page.ID == entry %}
+           {% unless page.draft %}
+             {% include tsum-card.html page=page %}
+           {% endunless %}
+          {% endif %}
+       {% endfor %}
+      
+     {% endfor %} 
+    </div>
+    </div>
+
+    <div class="ui bottom attached tab segment" data-tab="placeName/b">
+    <div class="ui centered five cards">
+     {% for entry in rosters_hash[1].tsum %}
+        
+        {% for i in (0..total_japan) %}
+          {% if site.data.rosters.international-collection.tsumID[i] == entry %}
+           {% for page in site.pages %}
+             {% if page.ID == entry %}
+               {% unless page.draft %}
+                 {% include tsum-card.html page=page %}
+               {% endunless %}
+             {% endif %}
+           {% endfor %}
+          {% endif %}
+        {% endfor %}
+      
+     {% endfor %} 
+    </div>
+    </div>
+
+    <div class="ui bottom attached tab segment" data-tab="placeName/c">
+    <div class="ui centered five cards">
+     {% for entry in rosters_hash[1].tsum %}
+        
+        {% for i in (0..total_japan) %}
+          {% if site.data.rosters.japan-collection.tsumID[i] == entry %}
+           {% for page in site.pages %}
+             {% if page.ID == entry %}
+               {% unless page.draft %}
+                 {% include tsum-card.html page=page %}
+               {% endunless %}
+             {% endif %}
+           {% endfor %}
+          {% endif %}
+        {% endfor %}
+      
+     {% endfor %} 
+    </div>
+    </div>
+    
+    {% endif %}
+    {% endif %}
+
+    {{ placeIteration | plus: 1 }}
+  {% endfor %}
+  </div>
+
   
   
 </div>
