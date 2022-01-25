@@ -68,6 +68,7 @@
     {% if category contains missionCategory %}
       <p> {{ missionCategory }}
     {% unless rosterGroup contains "red" %}
+      <p> noRed </p>
       <div class="ui tab segment babypink" data-tab=placeName>
       {% include tab-regionsnotfirst-1.html placement=placeName %}
       {{ placeIncrement | plus: 1 }}
