@@ -62,8 +62,8 @@
      "{{ site.data.placements[placeIteration] }}" 
   {% endcapture %}
 
+<p> Placement is {{ placeName }} </p>
   
-
   {% for rosters_hash in site.data.rosters %}
     {% assign rosters = rosters_hash[1] %}
     {% assign category = {{ rosters_hash[1].tag | split: ": " | first }} %}
