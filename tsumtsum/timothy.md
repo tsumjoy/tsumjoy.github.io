@@ -2,10 +2,9 @@
 layout: tsum
 type: tsum
 image: images/timothy.jpg
-title: コグスワース | Timothy
+title: ティモシー | Timothy
 permalink: tsumtsum/timothy
 ID: "timothy"
-labels:
 
 ---
 
