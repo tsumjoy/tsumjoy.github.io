@@ -70,8 +70,8 @@
     {% if category contains missionCategory %}
     {% if category contains item.url %}
       <p> {{ category }} </p>
-      <div class="ui tab segment babypink" data-tab=placeName>
-      {% include tab-regionsnotfirst-1.html placement=placeName %}
+      <div class="ui tab segment babypink" data-tab={{ placeName }}>
+      {% include tab-regionsnotfirst-1.html placement={{ placeName }} %}
       {{ placeIncrement | plus: 1 }}
         <p> placeName is {{ site.data.placements[placeIncrement] }} with {{ placeIncrement }} </p>
       
