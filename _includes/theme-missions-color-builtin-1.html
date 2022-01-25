@@ -62,13 +62,16 @@
      "{{ site.data.placements[placeIteration] }}" 
   {% endcapture %}
 
-  <div class="ui tab segment babypink" data-tab=placeName>
-  {% include tab-regionsnotfirst-1.html placement=placeName %}
+  
 
   {% for rosters_hash in site.data.rosters %}
     {% assign rosters = rosters_hash[1] %}
     {% assign category = {{ rosters_hash[1].tag | split: ": " | first }} %}
     {% assign rosterGroup = {{ rosters_hash[1].tag | split: ": " | second }} %}
+
+    <div class="ui tab segment babypink" data-tab=placeName>
+    {% include tab-regionsnotfirst-1.html placement=placeName %}
+
     {% if category == missionCategory %}
     {% if rosterGroup != "red" %}
       
@@ -132,8 +135,8 @@
     {% endif %}
 
     {{ placeIteration | plus: 1 }}
+    </div>
   {% endfor %}
-  </div>
 
   
   
