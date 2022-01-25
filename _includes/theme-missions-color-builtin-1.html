@@ -61,20 +61,19 @@
   {% assign rosters = rosters_hash[1] %}
   {% assign items = site.data.colors.colorInformation %}
   {% assign placeIncrement = 0 %}
-  {% assign placeName = "second" %}
+  {% assign placeName = "{{ site.data.placements[placeIncrement] }}" %}
 
   {% for item in items offset:1 %}
+    {% assign placeIncrement = forloop.index0 %}
   {% for rosters_hash in site.data.rosters %}
     {% assign category = rosters_hash[1].tag %}
 
     {% if category contains missionCategory %}
     {% if category contains item.url %}
-      <p> {{ category }} </p>
+      <p> {{ category }}, placeIncrement {{ placeIncrement }} </p>
       
-      {% assign placeIncrement = {{ placeIncrement | plus:1 }} %}
-        <p> placeName is {{ placeName }} with {{ placeIncrement }} </p>
 
-      <div class="ui tab segment babypink" data-tab="second">
+      <div class="ui tab segment babypink" data-tab="{{ placeName }}">
       
         <div class="ui top attached tabular menu">
           <a class="item" data-tab="{{ placeName }}/a">{{ site.data.bio.tabLabels.all }}</a>
