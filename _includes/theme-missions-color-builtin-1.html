@@ -71,7 +71,7 @@
     {% if category contains item.url %}
       <p> {{ category }} </p>
       
-      {{ placeIncrement }} = {{ placeIncrement | plus: 1 }}
+      {% assign placeIncrement = {{ placeIncrement | plus: 1 }} %}
         <p> placeName is "{{ site.data.placements[1] }}" with {{ placeIncrement }} </p>
 
       <div class="ui tab segment babypink" data-tab="second">
