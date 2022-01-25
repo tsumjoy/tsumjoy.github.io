@@ -66,6 +66,7 @@
     {% assign category = rosters_hash[1].tag %}
 
     {% if category contains missionCategory %}
+      <p> {{ missionCategory }}
     {% unless rosterGroup contains "red" %}
       <div class="ui tab segment babypink" data-tab=placeName>
       {% include tab-regionsnotfirst-1.html placement=placeName %}
