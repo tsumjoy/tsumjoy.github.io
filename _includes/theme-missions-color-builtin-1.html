@@ -65,6 +65,7 @@
 
   {% for item in items offset:1 %}
     {% assign placeIncrement = forloop.index0 %}
+    {% assign placeName = "{{ site.data.placements[forloop.index0] }}" %}
   {% for rosters_hash in site.data.rosters %}
     {% assign category = rosters_hash[1].tag %}
 
