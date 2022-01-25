@@ -59,12 +59,14 @@
   {% assign total_international = site.data.rosters.international-collection.tsumID.size %}
   
   {% assign rosters = rosters_hash[1] %}
-    {% assign placeIncrement = 0 %}
-    {% assign placeName = site.data.placements[placeIncrement] %}
+  {% assign placeIncrement = 0 %}
+  {% assign placeName = site.data.placements[placeIncrement] %}
 
   {% for rosters_hash in site.data.rosters %}
     {% assign category = {{ rosters_hash[1].tag | split: ": " | first }} %}
     {% assign rosterGroup = {{ rosters_hash[1].tag | split: ": " | second }} %}
+
+    <p> category is {{ category }}, missionCategory is {{ missionCategory }} </p>
 
     {% if category == missionCategory %}
     {% if rosterGroup != "red" %}
