@@ -70,6 +70,9 @@
     {% if category contains missionCategory %}
     {% if category contains item.url %}
       <p> {{ category }} </p>
+      
+      {{ placeIncrement | plus: 1 }}
+        <p> placeName is {{ site.data.placements[placeIncrement] }} with {{ placeIncrement }} </p>
 
       <div class="ui tab segment babypink" data-tab="second">
       
@@ -80,8 +83,7 @@
         </div>
         
         
-      {{ placeIncrement | plus: 1 }}
-        <p> placeName is {{ site.data.placements[placeIncrement] }} with {{ placeIncrement }} </p>
+      
       
     <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/a">
     <div class="ui centered five cards">
