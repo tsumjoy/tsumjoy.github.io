@@ -58,7 +58,9 @@
   {% assign total_japan = site.data.rosters.japan-collection.tsumID.size %}
   {% assign total_international = site.data.rosters.international-collection.tsumID.size %}
   {% assign placeIteration = 1 %}
-  {% assign placeName = "{{ site.data.placements[placeIteration] }}" %}
+  {% capture placeName %}
+     "{{ site.data.placements[placeIteration] }}" 
+  {% endCapture %}
 
   <div class="ui tab segment babypink" data-tab=placeName>
   {% include tab-regionsnotfirst-1.html placement=placeName %}
