@@ -61,7 +61,7 @@
   {% assign rosters = rosters_hash[1] %}
   {% assign items = site.data.colors.colorInformation %}
   {% assign placeIncrement = 0 %}
-  {% assign placeName = "{{ site.data.placements[1] }}" %}
+  {% assign placeName = "second" %}
 
   {% for item in items offset:1 %}
   {% for rosters_hash in site.data.rosters %}
@@ -71,7 +71,7 @@
     {% if category contains item.url %}
       <p> {{ category }} </p>
       
-      {% assign placeIncrement = forloop.index0 %}
+      {% assign placeIncrement = {{ placeIncrement | plus:1 }} %}
         <p> placeName is {{ placeName }} with {{ placeIncrement }} </p>
 
       <div class="ui tab segment babypink" data-tab="second">
