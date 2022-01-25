@@ -59,7 +59,7 @@
   {% assign total_international = site.data.rosters.international-collection.tsumID.size %}
   {% assign placeIteration = 1 %}
   {% capture placeName %}
-     "{{ site.data.placements[placeIteration] }}" 
+     "{{ site.data.placements[{{ placeIteration }}] }}" 
   {% endcapture %}
 
 <p> Placement iteration is {{ placeIteration }} </p>
