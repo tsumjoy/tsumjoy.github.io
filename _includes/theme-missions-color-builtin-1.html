@@ -65,8 +65,6 @@
   {% for rosters_hash in site.data.rosters %}
     {% assign category = rosters_hash[1].tag %}
 
-    <p> category is {{ category }}, missionCategory is {{ missionCategory }}, rosterGroup is {{ rosterGroup }} </p>
-
     {% if category contains missionCategory %}
     {% unless rosterGroup contains "red" %}
       <div class="ui tab segment babypink" data-tab=placeName>
