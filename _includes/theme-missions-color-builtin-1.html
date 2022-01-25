@@ -64,7 +64,7 @@
 
   {% for rosters_hash in site.data.rosters %}
     
-    {% assign placeName = {{ site.data.placements[forloop.index0] }} %}
+    {% assign placeName = {{ site.data.placements[{{ forloop.index0 }}] }} with {{ forloop.index0 }} %}
     <p> placeName is {{ placeName }} </p>
 
     <div class="ui tab segment babypink" data-tab=placeName>
