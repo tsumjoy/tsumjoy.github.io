@@ -66,85 +66,85 @@
   {% for item in items offset:1 %}
     {% assign placeIncrement = forloop.index %}
     {% assign placeName = "{{ site.data.placements[forloop.index] }}" %}
-  {% for rosters_hash in site.data.rosters %}
-    {% assign category = rosters_hash[1].tag %}
+    {% for rosters_hash in site.data.rosters %}
+      {% assign category = rosters_hash[1].tag %}
 
-    {% if category contains missionCategory %}
-    {% if category contains item.url %}
-      <p> {{ category }}, placeIncrement {{ placeIncrement }}, {{ placeName }} </p>
-      
+      {% if category contains missionCategory %}
+        {% if category contains item.url %}
+        <!-- <p> {{ category }}, placeIncrement {{ placeIncrement }}, {{ placeName }} </p> -->
 
-      <div class="ui tab segment babypink" data-tab="{{ placeName }}">
-      
-        <div class="ui top attached tabular menu">
-          <a class="item" data-tab="second/a">{{ site.data.bio.tabLabels.all }}</a>
-          <a class="item" data-tab="{{ placeName }}/b">{{ site.data.bio.tabLabels.international }}</a>
-          <a class="item" data-tab="{{ placeName }}/c">{{ site.data.bio.tabLabels.japan }}</a>
-        </div>
-        
-     
-      
-    <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/a">
-    <div class="ui centered five cards">
-     {% for entry in rosters_hash[1].tsum %}
-        
-        {% for page in site.pages %}
-         {% if page.ID == entry %}
-           {% unless page.draft %}
-             {% include tsum-card.html page=page %}
-           {% endunless %}
-          {% endif %}
-       {% endfor %}
-      
-     {% endfor %} 
-    </div>
-    </div>
 
-    <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/b">
-    <div class="ui centered five cards">
-     {% for entry in rosters_hash[1].tsum %}
-        
-        {% for i in (0..total_japan) %}
-          {% if site.data.rosters.international-collection.tsumID[i] == entry %}
-           {% for page in site.pages %}
-             {% if page.ID == entry %}
-               {% unless page.draft %}
-                 {% include tsum-card.html page=page %}
-               {% endunless %}
-             {% endif %}
-           {% endfor %}
-          {% endif %}
-        {% endfor %}
-      
-     {% endfor %} 
-    </div>
-    </div>
+          <div class="ui tab segment babypink" data-tab="{{ placeName }}">
 
-    <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/c">
-    <div class="ui centered five cards">
-     {% for entry in rosters_hash[1].tsum %}
-        
-        {% for i in (0..total_japan) %}
-          {% if site.data.rosters.japan-collection.tsumID[i] == entry %}
-           {% for page in site.pages %}
-             {% if page.ID == entry %}
-               {% unless page.draft %}
-                 {% include tsum-card.html page=page %}
-               {% endunless %}
-             {% endif %}
-           {% endfor %}
-          {% endif %}
-        {% endfor %}
-      
-     {% endfor %} 
-    </div>
-    </div>
-    
-      </div>
-    {% endif %}
-    {% endif %}
+            <div class="ui top attached tabular menu">
+              <a class="item" data-tab="second/a">{{ site.data.bio.tabLabels.all }}</a>
+              <a class="item" data-tab="{{ placeName }}/b">{{ site.data.bio.tabLabels.international }}</a>
+              <a class="item" data-tab="{{ placeName }}/c">{{ site.data.bio.tabLabels.japan }}</a>
+            </div>
 
-  {% endfor %}
+
+
+            <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/a">
+              <div class="ui centered five cards">
+               {% for entry in rosters_hash[1].tsum %}
+
+                  {% for page in site.pages %}
+                   {% if page.ID == entry %}
+                     {% unless page.draft %}
+                       {% include tsum-card.html page=page %}
+                     {% endunless %}
+                    {% endif %}
+                 {% endfor %}
+
+               {% endfor %} 
+              </div>
+            </div>
+<!-- 
+            <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/b">
+              <div class="ui centered five cards">
+               {% for entry in rosters_hash[1].tsum %}
+
+                  {% for i in (0..total_japan) %}
+                    {% if site.data.rosters.international-collection.tsumID[i] == entry %}
+                     {% for page in site.pages %}
+                       {% if page.ID == entry %}
+                         {% unless page.draft %}
+                           {% include tsum-card.html page=page %}
+                         {% endunless %}
+                       {% endif %}
+                     {% endfor %}
+                    {% endif %}
+                  {% endfor %}
+
+               {% endfor %} 
+              </div>
+            </div>
+
+            <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/c">
+              <div class="ui centered five cards">
+               {% for entry in rosters_hash[1].tsum %}
+
+                  {% for i in (0..total_japan) %}
+                    {% if site.data.rosters.japan-collection.tsumID[i] == entry %}
+                     {% for page in site.pages %}
+                       {% if page.ID == entry %}
+                         {% unless page.draft %}
+                           {% include tsum-card.html page=page %}
+                         {% endunless %}
+                       {% endif %}
+                     {% endfor %}
+                    {% endif %}
+                  {% endfor %}
+
+               {% endfor %} 
+              </div>
+            </div>
+-->
+          </div>
+        {% endif %}
+      {% endif %}
+
+    {% endfor %}
   {% endfor %}
 
   
