@@ -70,8 +70,16 @@
     {% if category contains missionCategory %}
     {% if category contains item.url %}
       <p> {{ category }} </p>
+
       <div class="ui tab segment babypink" data-tab="second">
-      {% include tab-regionsnotfirst-1.html placement={{placeName}} %}
+      
+        <div class="ui top attached tabular menu">
+          <a class="item" data-tab="{{ placeName }}/a">{{ site.data.bio.tabLabels.all }}</a>
+          <a class="item" data-tab="{{ placeName }}/b">{{ site.data.bio.tabLabels.international }}</a>
+          <a class="item" data-tab="{{ placeName }}/c">{{ site.data.bio.tabLabels.japan }}</a>
+        </div>
+        
+        
       {{ placeIncrement | plus: 1 }}
         <p> placeName is {{ site.data.placements[placeIncrement] }} with {{ placeIncrement }} </p>
       
