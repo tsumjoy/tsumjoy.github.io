@@ -65,16 +65,13 @@
     {% assign placeName = site.data.placements[placeIncrement] %}
 
   {% for rosters_hash in site.data.rosters %}
-    
-    <p> placeName is {{ site.data.placements[placeIncrement] }} with {{ placeIncrement }} </p>
-
-    
 
     {% if category == missionCategory %}
     {% if rosterGroup != "red" %}
       <div class="ui tab segment babypink" data-tab=placeName>
       {% include tab-regionsnotfirst-1.html placement=placeName %}
       {{ placeIncrement | plus: 1 }}
+        <p> placeName is {{ site.data.placements[placeIncrement] }} with {{ placeIncrement }} </p>
       
     <div class="ui bottom attached tab segment" data-tab="placeName/a">
     <div class="ui centered five cards">
