@@ -66,7 +66,7 @@
     {% assign category = rosters_hash[1].tag %}
     {% assign rosterGroup = {{ rosters_hash[1].tag | split: ": " | second }} %}
 
-    <p> category is {{ category }}, missionCategory is {{ missionCategory }} </p>
+    <p> category is {{ category }}, missionCategory is {{ missionCategory }}, rosterGroup is {{ rosterGroup }} </p>
 
     {% if category == missionCategory %}
     {% if rosterGroup != "red" %}
