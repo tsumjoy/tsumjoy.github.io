@@ -1,0 +1,60 @@
+{
+  "skillInformation": [
+            {
+                "linkLabel": "友達を呼ぶ",
+                "url": "call-a-friend"
+            },
+            {
+                "linkLabel": "恋人を呼ぶ",
+                "url": "call-a-sweetheart"
+            },
+            {
+                "linkLabel": "大きなツムを出す",
+                "url": "big-tsum"
+            },
+            {
+                "linkLabel": "ボムを出す",
+                "url": "bubble-making"
+            },
+            {
+                "linkLabel": "ハートが出る♡",
+                "url": "heart-making"
+            },
+            {
+                "linkLabel": "消去系",
+                "url": "burst"
+            },
+            {
+                "linkLabel": "横ライン消去 ━",
+                "url": "horizontal-burst"
+            },
+            {
+                "linkLabel": "縦ライン消去 ┃",
+                "url": "vertical-burst"
+            },
+            {
+                "linkLabel": "＼斜めライン消去／",
+                "url": "diagonal-burst"
+            },
+            {
+                "linkLabel": "中央消去",
+                "url": "center-burst"
+            },
+            {
+                "linkLabel": "ランダム消去",
+                "url": "random-burst"
+            },
+            {
+                "linkLabel": "しっぽを振る",
+                "url": "tail-swish"
+            },
+            {
+                "linkLabel": "時間を止める",
+                "url": "stop-time"
+            },
+            {
+                "linkLabel": "フィーバー発生",
+                "url": "start-fever"
+            }
+  ]
+}
