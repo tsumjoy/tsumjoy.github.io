@@ -1,0 +1,19 @@
+{
+  "handColorInformation": [
+        {
+            "linkLabel": "黒い手",
+            "url": "black",
+            "style": "color:black"
+        },
+        {
+            "linkLabel": "白い手",
+            "url": "white",
+            "style": "background-color:white"
+        },
+        {
+            "linkLabel": "茶色",
+            "url": "yellow",
+            "style": "background-color:yellow"
+        }
+    ]
+}
