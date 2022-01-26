@@ -20,6 +20,7 @@
 
   {% for item in items offset:0 %}
     {% assign placeName = site.data.placements[forloop.index0] %}
+    {% assign firstCheck = forloop.index0 %}
     {% for rosters_hash in site.data.rosters %}
       {% assign category = rosters_hash[1].tag %}
 
@@ -30,7 +31,7 @@
           <div class="ui tab segment babypink" data-tab="{{ placeName }}">
 
             <div class="ui top attached tabular menu">
-              {% if forloop.index0 == 0 %}
+              {% if firstCheck == 0 %}
                 <p> zero </p>
                 <a class="active item" data-tab="{{ placeName }}/a">{{ site.data.bio.tabLabels.all }}</a>
               {% else %}
@@ -42,7 +43,7 @@
             </div>
 
 
-           {% if forloop.index0 == 0 %}
+           {% if firstCheck == 0 %}
             <p> zero </p>
             <div class="ui bottom attached active tab segment" data-tab="{{ placeName }}/a">
            {% else %}
