@@ -42,10 +42,13 @@
               <a class="item" data-tab="{{ placeName }}/b">{{ site.data.bio.tabLabels.international }}</a>
               <a class="item" data-tab="{{ placeName }}/c">{{ site.data.bio.tabLabels.japan }}</a>
             </div>
-            {% assign first = false %}
 
            
-            <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/a">
+            {% if first %}
+              <div class="ui bottom attached active tab segment" data-tab="{{ placeName }}/a">
+            {% else %}
+              <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/a">
+            {% endif %}
               <div class="ui centered five cards">
                {% for entry in rosters_hash[1].tsum %}
                   {% for page in site.pages %}
@@ -58,6 +61,7 @@
                {% endfor %} 
               </div>
             </div>
+            {% assign first = false %}
 
             <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/b">
               <div class="ui centered five cards">
