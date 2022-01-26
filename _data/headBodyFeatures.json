@@ -1,0 +1,56 @@
+{
+  "headBodyFeatureInformation": [
+            {
+                "linkLabel": "ツノ",
+                "url": "horned"
+            },
+            {
+                "linkLabel": "冠",
+                "url": "crown"
+            },
+            {
+                "linkLabel": "帽子",
+                "url": "hat"
+            },
+            {
+                "linkLabel": "毛が三本",
+                "url": "three-hair"
+            },
+            {
+                "linkLabel": "毛のはねた",
+                "url": "tuft-of-hair"
+            },
+            {
+                "linkLabel": "毛を結んだ",
+                "url": "tied-hair"
+            },
+            {
+                "linkLabel": "白い髪",
+                "url": "white-hair"
+            },
+            {
+                "linkLabel": "耳がピンク",
+                "url": "pink-ears"
+            },
+            {
+                "linkLabel": "耳が丸い",
+                "url": "round-ears"
+            },
+            {
+                "linkLabel": "耳がとがった",
+                "url": "pointy-ears"
+            },
+            {
+                "linkLabel": "耳が垂れた",
+                "url": "droopy-ears"
+            },
+            {
+                "linkLabel": "リボンをつけた🎀",
+                "url": "ribbon"
+            },
+            {
+                "linkLabel": "えりが見える",
+                "url": "collar"
+            }
+   ]
+}
