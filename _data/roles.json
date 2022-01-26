@@ -1,13 +1,13 @@
 {
     "roleInformation": [
         {
-            "label": "prince"
+            "linkLabel": "prince"
         },
         {
-            "label": "princess"
+            "linkLabel": "princess"
         },
         {
-            "label": "villain"
+            "linkLabel": "villain"
         }
     ]
 }
