@@ -1,0 +1,80 @@
+{
+  "seriesInformation": [
+            {
+                "linkLabel": "ミッキー&フレンズ",
+                "url": "mickey-and-friends"
+            },
+            {
+                "linkLabel": "チップとデール",
+                "url": "chip-n-dale"
+            },
+            {
+                "linkLabel": "くまのプーさん",
+                "url": "winnie-the-pooh"
+            },
+            {
+                "linkLabel": "アラジン",
+                "url": "aladdin"
+            },
+            {
+                "linkLabel": "美女と野獣",
+                "url": "beauty-and-the-beast"
+            },
+            {
+                "linkLabel": "リトルマーメイド",
+                "url": "little-mermaid"
+            },
+            {
+                "linkLabel": "ラプンツェル",
+                "url": "tangled"
+            },
+            {
+                "linkLabel": "アナと雪の女王",
+                "url": "frozen"
+            },
+            {
+                "linkLabel": "バンビ",
+                "url": "bambi"
+            },
+            {
+                "linkLabel": "ライオンキング",
+                "url": "lion-king"
+            },
+            {
+                "linkLabel": "リロ&スティッチ",
+                "url": "lilo-and-stitch"
+            },
+            {
+                "linkLabel": "ふしぎの国のアリス",
+                "url": "alice-in-wonderland"
+            },
+            {
+                "linkLabel": "ズートピア",
+                "url": "zootopia"
+            },
+            {
+                "linkLabel": "ピクサー",
+                "url": "pixar"
+            },
+            {
+                "linkLabel": "トイストーリー",
+                "url": "toy-story"
+            },
+            {
+                "linkLabel": "モンスターズインク",
+                "url": "monsters-inc"
+            },
+            {
+                "linkLabel": "スターウォーズ",
+                "url": "star-wars"
+            },
+            {
+                "linkLabel": "マーベル",
+                "url": "marvel"
+            },
+            {
+                "linkLabel": "キングダムハーツ",
+                "url": "kingdom-hearts"
+            }
+   ]
+}
