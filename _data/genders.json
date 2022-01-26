@@ -1,0 +1,12 @@
+{
+    "genderInformation": [
+        {
+            "linkLabel": "男の子",
+            "url": "boy"
+        },
+        {
+            "linkLabel": "女の子",
+            "url": "girl"
+        }
+    ]
+}
