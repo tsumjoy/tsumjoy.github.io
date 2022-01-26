@@ -74,7 +74,7 @@
           <div class="ui tab segment babypink" data-tab="{{ placeName }}">
 
             <div class="ui top attached tabular menu">
-              <a class="item" data-tab="second/a">{{ site.data.bio.tabLabels.all }}</a>
+              <a class="item" data-tab="{{ placeName }}/a">{{ site.data.bio.tabLabels.all }}</a>
               <a class="item" data-tab="{{ placeName }}/b">{{ site.data.bio.tabLabels.international }}</a>
               <a class="item" data-tab="{{ placeName }}/c">{{ site.data.bio.tabLabels.japan }}</a>
             </div>
@@ -114,6 +114,7 @@
                {% endfor %} 
               </div>
             </div>
+            
             <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/c">
               <div class="ui centered five cards">
                {% for entry in rosters_hash[1].tsum %}
