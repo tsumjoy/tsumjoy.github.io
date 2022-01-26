@@ -21,9 +21,7 @@
 
 <div style="padding-top: 20px" class="ui container ">
   
-  {% for entry in site.data.placements %}
-    {{ entry }}
-  {% endfor %}
+  
   <div class="ui pointing secondary menu">
     <a class="active item" data-tab="first">{{ site.data.colors.colorInformation[0].linkLabel }}</a>
     <a class="item" data-tab=site.data.placements[1]>{{ site.data.colors.colorInformation[1].linkLabel }}</a>
@@ -34,6 +32,11 @@
   </div>
   
   {% assign placement = "first" %}
+  {% if site.data.placements[0] == placement %}
+  {% for entry in site.data.placements %}
+    {{ entry }}
+  {% endfor %}
+  {% endif %}
   <div class="ui active tab segment babypink" data-tab="{{ placement }}">
   
     <div class="ui top attached tabular menu">
