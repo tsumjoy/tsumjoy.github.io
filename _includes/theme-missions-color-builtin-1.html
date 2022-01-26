@@ -23,7 +23,7 @@
   
   
   <div class="ui pointing secondary menu">
-    <a class="active item" data-tab="{{ site.data.placements[0] }}">{{ site.data.colors.colorInformation[0].linkLabel }}</a>
+    <a class="active item" data-tab="first">{{ site.data.colors.colorInformation[0].linkLabel }}</a>
     <a class="item" data-tab="second">{{ site.data.colors.colorInformation[1].linkLabel }}</a>
     {% for i in (2..menuSize) %}
       <p> placement {{ site.data.placements[i] }} </p>
@@ -31,7 +31,7 @@
     {% endfor %}
   </div>
   
-  {% assign placement = "{{ site.data.placements[0] }}" %}
+  {% assign placement = "first" %}
   <div class="ui active tab segment babypink" data-tab="{{ placement }}">
   
     <div class="ui top attached tabular menu">
