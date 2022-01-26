@@ -1,23 +1,14 @@
-{% assign thisColor = "red" %}
 
-{% assign colorNumber = 0 %}
-{% assign thisFile = "tab-color-red-international-1.html" %}
+{% assign missionCategory = "color" %}
+{% assign items = site.data.colors.colorInformation %}
 
-<!--
-{% capture colorBaseTab %}
-  tab-color-{{ thisColor }}-1.html
-{% endcapture %}
-{% capture colorInternationalTab %}
-  tab-color-{{ thisColor }}-international-1.html
-{% endcapture %}
-{% capture colorJapanTab %}
-  tab-color-{{thisColor}}-japan-1.html
-{% endcapture %}
--->
 {% assign menuSize = site.data.placements.size %}
+{% assign total_japan = site.data.rosters.japan-collection.tsumID.size %}
+{% assign total_international = site.data.rosters.international-collection.tsumID.size %}
+{% assign rosters = rosters_hash[1] %}
+
 
 <div style="padding-top: 20px" class="ui container ">
-  
   
   <div class="ui pointing secondary menu">
     <a class="active item" data-tab={{site.data.placements[0]}}>{{ site.data.colors.colorInformation[0].linkLabel }}</a>
@@ -25,42 +16,10 @@
       <a class="item" data-tab="{{ site.data.placements[i] }}">{{ site.data.colors.colorInformation[i].linkLabel }}</a>
     {% endfor %}
   </div>
-  
-  {% assign placement = site.data.placements[0] %}
-  <div class="ui active tab segment babypink" data-tab="{{ placement }}">
-  
-    <div class="ui top attached tabular menu">
-      <a class="active item" data-tab="{{ placement }}/a">{{ site.data.bio.tabLabels.all }}</a>
-      <a class="item" data-tab="{{ placement }}/b">{{ site.data.bio.tabLabels.international }}</a>
-      <a class="item" data-tab="{{ placement }}/c">{{ site.data.bio.tabLabels.japan }}</a>
-    </div>
-
-    <div class="ui bottom attached active tab segment" data-tab="{{ placement }}/a">
-      {% include tab-color.html color="red" %}
-    </div>
-
-    <div class="ui bottom attached tab segment" data-tab="{{ placement }}/b">
-      {% include {{thisFile}} %}
-    </div>
-
-    <div class="ui bottom attached tab segment" data-tab="{{ placement }}/c">
-      <!-- {{ site.data.colors.colorTabs.japan[0] }} -->
-    </div>
-  
-  </div>
-  
-  
-  {% assign missionCategory = "color" %}
-  {% assign total_japan = site.data.rosters.japan-collection.tsumID.size %}
-  {% assign total_international = site.data.rosters.international-collection.tsumID.size %}
-  
-  {% assign rosters = rosters_hash[1] %}
-  {% assign items = site.data.colors.colorInformation %}
 
 
-  {% for item in items offset:1 %}
-    {% assign placeIncrement = forloop.index %}
-    {% assign placeName = site.data.placements[forloop.index] %}
+  {% for item in items offset:0 %}
+    {% assign placeName = site.data.placements[forloop.index0] %}
     {% for rosters_hash in site.data.rosters %}
       {% assign category = rosters_hash[1].tag %}
 
@@ -71,14 +30,21 @@
           <div class="ui tab segment babypink" data-tab="{{ placeName }}">
 
             <div class="ui top attached tabular menu">
-              <a class="item" data-tab="{{ placeName }}/a">{{ site.data.bio.tabLabels.all }}</a>
+              {% if forloop.index0 == 0 %}
+                <a class="active item" data-tab="{{ placement }}/a">{{ site.data.bio.tabLabels.all }}</a>
+              {% else %}
+                <a class="item" data-tab="{{ placeName }}/a">{{ site.data.bio.tabLabels.all }}</a>
+              {% endif %}
               <a class="item" data-tab="{{ placeName }}/b">{{ site.data.bio.tabLabels.international }}</a>
               <a class="item" data-tab="{{ placeName }}/c">{{ site.data.bio.tabLabels.japan }}</a>
             </div>
 
 
-
+           {% if forloop.index0 == 0 %}
+            <div class="ui bottom attached active tab segment" data-tab="{{ placement }}/a">
+           {% else %}
             <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/a">
+           {% endif %}
               <div class="ui centered five cards">
                {% for entry in rosters_hash[1].tsum %}
 
