@@ -1,7 +1,7 @@
 {% assign missionCategory = "color" %}
 {% assign items = site.data.colors.colorInformation %}
 
-{% assign menuSize = site.data.placements.size %}
+{% assign menuSize = items.size %}
 {% assign total_japan = site.data.rosters.japan-collection.tsumID.size %}
 {% assign total_international = site.data.rosters.international-collection.tsumID.size %}
 {% assign rosters = rosters_hash[1] %}
@@ -10,9 +10,8 @@
 <div style="padding-top: 20px" class="ui container ">
   
   <div class="ui pointing secondary menu">
-    <a class="item" data-tab={{site.data.placements[0]}}>{{ site.data.colors.colorInformation[0].linkLabel }}</a>
-    {% for i in (1..menuSize) %}
-      <a class="item" data-tab="{{ site.data.placements[i] }}">{{ site.data.colors.colorInformation[i].linkLabel }}</a>
+    {% for i in (0..menuSize) %}
+      <a class="item" data-tab="{{ site.data.placements[i] }}">{{ items[i].linkLabel }}</a>
     {% endfor %}
   </div>
 
@@ -40,7 +39,6 @@
             <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/a">
               <div class="ui centered five cards">
                {% for entry in rosters_hash[1].tsum %}
-
                   {% for page in site.pages %}
                    {% if page.ID == entry %}
                      {% unless page.draft %}
@@ -48,7 +46,6 @@
                      {% endunless %}
                     {% endif %}
                  {% endfor %}
-
                {% endfor %} 
               </div>
             </div>
