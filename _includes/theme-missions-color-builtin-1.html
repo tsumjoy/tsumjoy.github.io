@@ -30,7 +30,11 @@
           <div class="ui tab segment babypink" data-tab="{{ placeName }}">
 
             <div class="ui top attached tabular menu">
-              <a class="item" data-tab="{{ placeName }}/a">{{ site.data.bio.tabLabels.all }}</a>
+              {% if {{ placeName }} == {{ first }} %}
+                <a class="active item" data-tab="{{ placeName }}/a">{{ site.data.bio.tabLabels.all }}</a>
+              {% else %}
+                <a class="item" data-tab="{{ placeName }}/a">{{ site.data.bio.tabLabels.all }}</a>
+              {% endif %}
               <a class="item" data-tab="{{ placeName }}/b">{{ site.data.bio.tabLabels.international }}</a>
               <a class="item" data-tab="{{ placeName }}/c">{{ site.data.bio.tabLabels.japan }}</a>
             </div>
