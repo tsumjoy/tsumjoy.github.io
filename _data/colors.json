@@ -1,77 +1,44 @@
 {
         "colorInformation": [
-        {
-            "linkLabel": "赤色",
-            "url": "red",
-            "style": "color:red"
-        },
-        {
-            "linkLabel": "黄色",
-            "url": "yellow",
-            "style": "background-color:yellow"
-        },
-        {
-            "linkLabel": "緑色",
-            "url": "green",
-            "style": "color:green"
-        },
-        {
-            "linkLabel": "青色",
-            "url": "blue",
-            "style": "color:blue"
-        },
-        {
-            "linkLabel": "紫色",
-            "url": "purple",
-            "style": "color:purple"
-        },
-        {
-            "linkLabel": "黒色",
-            "url": "black",
-            "style": "color:black"
-        },
-        {
-            "linkLabel": "茶色",
-            "url": "brown",
-            "style": "color:brown"
-        },
-        {
-            "linkLabel": "白色",
-            "url": "white",
-            "style": "background-color:white"
-        }
-        ],
-        "colorTabs": [
-                "base": {
-                        "tab-color-red-1.html",
-                        "{% include tab-color-yellow-1.html %}",
-                        "{% include tab-color-green-1.html %}",
-                        "{% include tab-color-blue-1.html %}",
-                        "{% include tab-color-purple-1.html %}",
-                        "{% include tab-color-black-1.html %}",
-                        "{% include tab-color-brown-1.html %}",
-                        "{% include tab-color-white-1.html %}"
+                {
+                    "linkLabel": "赤色",
+                    "url": "red",
+                    "style": "color:red"
                 },
-                "international": {
-                        "{% include tab-color-red-international-1.html %}",
-                        "{% include tab-color-yellow-international-1.html %}",
-                        "{% include tab-color-green-international-1.html %}",
-                        "{% include tab-color-blue-international-1.html %}",
-                        "{% include tab-color-purple-international-1.html %}",
-                        "{% include tab-color-black-international-1.html %}",
-                        "{% include tab-color-brown-international-1.html %}",
-                        "{% include tab-color-white-international-1.html %}"
-                        
+                {
+                    "linkLabel": "黄色",
+                    "url": "yellow",
+                    "style": "background-color:yellow"
                 },
-                "japan": {
-                        "{% include tab-color-red-japan-1.html %}",
-                        "{% include tab-color-yellow-japan-1.html %}",
-                        "{% include tab-color-green-japan-1.html %}",
-                        "{% include tab-color-blue-japan-1.html %}", 
-                        "{% include tab-color-purple-japan-1.html %}",
-                        "{% include tab-color-black-japan-1.html %}",
-                        "{% include tab-color-brown-japan-1.html %}",
-                        "{% include tab-color-white-japan-1.html %}"
+                {
+                    "linkLabel": "緑色",
+                    "url": "green",
+                    "style": "color:green"
+                },
+                {
+                    "linkLabel": "青色",
+                    "url": "blue",
+                    "style": "color:blue"
+                },
+                {
+                    "linkLabel": "紫色",
+                    "url": "purple",
+                    "style": "color:purple"
+                },
+                {
+                    "linkLabel": "黒色",
+                    "url": "black",
+                    "style": "color:black"
+                },
+                {
+                    "linkLabel": "茶色",
+                    "url": "brown",
+                    "style": "color:brown"
+                },
+                {
+                    "linkLabel": "白色",
+                    "url": "white",
+                    "style": "background-color:white"
                 }
-       ]
+        ]
 }
