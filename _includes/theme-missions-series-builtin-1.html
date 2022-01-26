@@ -1,5 +1,6 @@
 {% assign missionCategory = "series" %}
 {% assign items = site.data.series.seriesInformation %}
+{% assign menuBreakPoint = 8 %}
 
 {% assign menuSize = items.size %}
 {% assign total_japan = site.data.rosters.japan-collection.tsumID.size %}
@@ -11,7 +12,13 @@
   
   <div class="ui pointing secondary menu">
     <a class="active item" data-tab="{{ site.data.placements[0] }}">{{ items[0].linkLabel }}</a>
-    {% for i in (1..menuSize) %}
+    {% for i in (1..menuBreakPoint) %}
+      <a class="item" data-tab="{{ site.data.placements[i] }}">{{ items[i].linkLabel }}</a>
+    {% endfor %}
+  </div>
+  
+  <div class="ui pointing secondary menu">
+    {% for i in (9..menuSize) %}
       <a class="item" data-tab="{{ site.data.placements[i] }}">{{ items[i].linkLabel }}</a>
     {% endfor %}
   </div>
