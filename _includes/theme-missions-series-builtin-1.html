@@ -17,7 +17,7 @@
     {% endfor %}
   </div>
   
-  {% assign menuContinuePoint = {{ {{menuBreakPoint}} | plus:1 }} %}
+  {% assign menuContinuePoint = {{ {{menuBreakPoint}} | plus: 1 }} %}
   {{ {{menuBreakPoint}} | plus:1 }}
   <div class="ui pointing secondary menu">
     {% for i in (menuContinuePoint..menuSize) %}
