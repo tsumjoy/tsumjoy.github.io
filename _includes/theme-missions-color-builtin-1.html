@@ -10,15 +10,16 @@
 <div style="padding-top: 20px" class="ui container ">
   
   <div class="ui pointing secondary menu">
-    {% for i in (0..menuSize) %}
+    <a class="active item" data-tab="{{ site.data.placements[0] }}">{{ items[0].linkLabel }}</a>
+    {% for i in (1..menuSize) %}
       <a class="item" data-tab="{{ site.data.placements[i] }}">{{ items[i].linkLabel }}</a>
     {% endfor %}
   </div>
 
-
+  
+  {% assign first = site.data.placements[0] %}
   {% for item in items offset:0 %}
     {% assign placeName = site.data.placements[forloop.index0] %}
-    {% assign firstCheck = forloop.index0 %}
     {% for rosters_hash in site.data.rosters %}
       {% assign category = rosters_hash[1].tag %}
 
