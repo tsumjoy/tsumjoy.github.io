@@ -63,21 +63,12 @@
   {% assign placeIncrement = 0 %}
   {% assign placeName = "{{ site.data.placements["{{ placeIncrement }}"] }}" %}
 
-  {% for item in items offset:1 %}
-    {% assign placeIncrement = forloop.index %}
-    {% assign placeName = "{{ site.data.placements[forloop.index] }}" %}
-    {% for rosters_hash in site.data.rosters %}
-      {% assign category = rosters_hash[1].tag %}
-
-      {% if category contains missionCategory %}
-        {% if category contains item.url %}
-        <!-- <p> {{ category }}, placeIncrement {{ placeIncrement }}, {{ placeName }} </p> -->
 
 
           <div class="ui tab segment babypink" data-tab="{{ placeName }}">
-
+{% assign placeName = "second" %}
             <div class="ui top attached tabular menu">
-              <a class="item" data-tab="second/a">{{ site.data.bio.tabLabels.all }}</a>
+              <a class="item" data-tab="{{ placeName }}/a">{{ site.data.bio.tabLabels.all }}</a>
               <a class="item" data-tab="{{ placeName }}/b">{{ site.data.bio.tabLabels.international }}</a>
               <a class="item" data-tab="{{ placeName }}/c">{{ site.data.bio.tabLabels.japan }}</a>
             </div>
@@ -86,17 +77,7 @@
 
             <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/a">
               <div class="ui centered five cards">
-               {% for entry in rosters_hash[1].tsum %}
-
-                  {% for page in site.pages %}
-                   {% if page.ID == entry %}
-                     {% unless page.draft %}
-                       {% include tsum-card.html page=page %}
-                     {% endunless %}
-                    {% endif %}
-                 {% endfor %}
-
-               {% endfor %} 
+                
               </div>
             </div>
 <!-- 
@@ -141,11 +122,7 @@
             </div>
 -->
           </div>
-        {% endif %}
-      {% endif %}
 
-    {% endfor %}
-  {% endfor %}
 
   
   
