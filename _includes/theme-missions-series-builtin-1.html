@@ -18,6 +18,7 @@
   </div>
   
   {% assign menuContinuePoint = {{ menuBreakPoint | plus: 1 }} %}
+  {{ menuContinuePoint }}
   <div class="ui pointing secondary menu">
     {% for i in (menuContinuePoint..menuSize) %}
       <a class="item" data-tab="{{ site.data.placements[i] }}">{{ items[i].linkLabel }}</a>
