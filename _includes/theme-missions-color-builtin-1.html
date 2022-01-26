@@ -31,8 +31,10 @@
 
             <div class="ui top attached tabular menu">
               {% if forloop.index0 == 0 %}
+                <p> zero </p>
                 <a class="active item" data-tab="{{ placeName }}/a">{{ site.data.bio.tabLabels.all }}</a>
               {% else %}
+                <p> not zero </p>
                 <a class="item" data-tab="{{ placeName }}/a">{{ site.data.bio.tabLabels.all }}</a>
               {% endif %}
               <a class="item" data-tab="{{ placeName }}/b">{{ site.data.bio.tabLabels.international }}</a>
@@ -41,8 +43,10 @@
 
 
            {% if forloop.index0 == 0 %}
+            <p> zero </p>
             <div class="ui bottom attached active tab segment" data-tab="{{ placeName }}/a">
            {% else %}
+            <p> not zero </p>
             <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/a">
            {% endif %}
               <div class="ui centered five cards">
