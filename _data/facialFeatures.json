@@ -1,0 +1,44 @@
+{
+  "facialFeatureInformation": [
+            {
+                "linkLabel": "まゆ毛",
+                "url": "eyebrows"
+            },
+            {
+                "linkLabel": "まつ毛",
+                "url": "eyelashes"
+            },
+            {
+                "linkLabel": "白目",
+                "url": "eye-whites"
+            },
+            {
+                "linkLabel": "鼻がピンク",
+                "url": "pink-nose"
+            },
+            {
+                "linkLabel": "鼻が黒い",
+                "url": "black-nose"
+            },
+            {
+                "linkLabel": "鼻が三角",
+                "url": "triangle-nose"
+            },
+            {
+                "linkLabel": "くちばし",
+                "url": "beak"
+            },
+            {
+                "linkLabel": "口が見える",
+                "url": "visible-mouth"
+            },
+            {
+                "linkLabel": "ヒゲ",
+                "url": "facial-hair"
+            },
+            {
+                "linkLabel": "ほっぺが赤い",
+                "url": "rosy-cheeks"
+            }
+  ]
+}
