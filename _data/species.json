@@ -1,0 +1,20 @@
+{
+    "speciesInformation": [
+        {
+            "linkLabel": "イヌ🐶",
+            "url": "dog"
+        },
+        {
+            "linkLabel": "ネコ😸",
+            "url": "cat"
+        },
+        {
+            "linkLabel": "ウサギ🐰",
+            "url": "rabbit"
+        },
+        {
+            "linkLabel": "海に住む🌊",
+            "url": "lives-in-the-sea"
+        }
+    ]
+}
