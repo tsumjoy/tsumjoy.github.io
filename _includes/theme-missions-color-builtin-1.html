@@ -24,7 +24,7 @@
   
   <div class="ui pointing secondary menu">
     <a class="active item" data-tab="first">{{ site.data.colors.colorInformation[0].linkLabel }}</a>
-    <a class="item" data-tab="second">{{ site.data.colors.colorInformation[1].linkLabel }}</a>
+    <a class="item" data-tab={{site.data.placements[1]}}>{{ site.data.colors.colorInformation[1].linkLabel }}</a>
     {% for i in (2..menuSize) %}
       <p> placement {{ site.data.placements[i] }} </p>
       <a class="item" data-tab="{{ site.data.placements[i] }}">{{ site.data.colors.colorInformation[i].linkLabel }}</a>
