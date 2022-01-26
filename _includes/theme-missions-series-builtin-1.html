@@ -24,7 +24,7 @@
       {% assign category = rosters_hash[1].tag %}
 
       {% if category contains missionCategory %}
-        {% if category contains item.url %}
+        {% if category contains {{ item.url | remove: "-" }} %}
 
 
           {% if first %}
