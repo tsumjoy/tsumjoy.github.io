@@ -30,7 +30,7 @@
           <div class="ui tab segment babypink" data-tab="{{ placeName }}">
 
             <div class="ui top attached tabular menu">
-              {% if {{ placeName }} == {{ first }} %}
+              {% if "{{ placeName }}" == "{{ first }}" %}
                 <a class="active item" data-tab="{{ placeName }}/a">{{ site.data.bio.tabLabels.all }}</a>
               {% else %}
                 <a class="item" data-tab="{{ placeName }}/a">{{ site.data.bio.tabLabels.all }}</a>
