@@ -32,6 +32,8 @@ theme-mission-species: theme-missions-species-builtin-1.html
 
 theme-mission-role: theme-missions-role-builtin-1.html
 
+theme-mission-initial: theme-missions-initial-builtin-1.html
+
 theme-mission-color: theme-missions-color-builtin-1.html
 theme-mission-color-red: theme-missions-color-red-builtin-1.html
 theme-mission-color-red-international: theme-missions-color-red-international-builtin-1.html
