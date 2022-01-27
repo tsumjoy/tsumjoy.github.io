@@ -18,7 +18,7 @@
   </div>
   
   {% assign menuContinuePoint = menuBreakPoint | plus: 1 %}
-  <div class="ui stackable pointing secondary menu">
+  <div class="ui pointing secondary menu">
     {% for i in (menuContinuePoint..menuSize) %}
       <a class="item" data-tab="{{ site.data.placements[i] }}">{{ items[i].linkLabel }}</a>
     {% endfor %}
@@ -75,7 +75,7 @@
             <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/b">
               <div class="ui centered five cards">
                {% for entry in rosters_hash[1].tsum %}
-                  {% for i in (0..total_japan) %}
+                  {% for i in (0..total_international) %}
                     {% if site.data.rosters.international-collection.tsumID[i] == entry %}
                      {% for page in site.pages %}
                        {% if page.ID == entry %}
