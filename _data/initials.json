@@ -1,31 +1,40 @@
 {
     "initialInformation": [
         {
-            "linkLabel": "A"
+            "linkLabel": "A",
+            "url": "A"
         },
         {
-            "linkLabel": "B"
+            "linkLabel": "B",
+            "url": "B"
         },
         {
-            "linkLabel": "D"
+            "linkLabel": "D",
+            "url": "D"
         },
         {
-            "linkLabel": "J"
+            "linkLabel": "J",
+            "url": "J"
         },
         {
-            "linkLabel": "M"
+            "linkLabel": "M",
+            "url": "M"
         },
         {
-            "linkLabel": "N"
+            "linkLabel": "N",
+            "url": "N"
         },
         {
-            "linkLabel": "P"
+            "linkLabel": "P",
+            "url": "P"
         },
         {
-            "linkLabel": "S"
+            "linkLabel": "S",
+            "url": "S"
         },
         {
-            "linkLabel": "T"
+            "linkLabel": "T",
+            "url": "T"
         }
     ]
 }
