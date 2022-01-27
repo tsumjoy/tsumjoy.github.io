@@ -1,7 +1,7 @@
 {% assign missionCategory = "facial feature" %}
 {% assign items = site.data.facialFeature.facialFeatureInformation %}
 {% assign menuBreakPoint = 8 %}
-hello
+
 {% assign menuSize = items.size %}
 {% assign total_japan = site.data.rosters.japan-collection.tsumID.size %}
 {% assign total_international = site.data.rosters.international-collection.tsumID.size %}
@@ -9,7 +9,7 @@ hello
 
 
 <div style="padding-top: 20px" class="ui container ">
-  
+ hello 
   <div class="ui pointing secondary menu">
     <a class="active item" data-tab="{{ site.data.placements[0] }}">{{ items[0].linkLabel }}</a>
     {% for i in (1..menuBreakPoint) %}
