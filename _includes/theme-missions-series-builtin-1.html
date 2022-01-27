@@ -10,20 +10,20 @@
 
 <div style="padding-top: 20px" class="ui container ">
   
-  <div class="ui pointing secondary menu">
+  <div class="ui pointing secondary menu" style="display:block">
     <a class="active item" data-tab="{{ site.data.placements[0] }}">{{ items[0].linkLabel }}</a>
-    {% for i in (1..menuBreakPoint) %}
+    {% for i in (1..menuSize) %}
       <a class="item" data-tab="{{ site.data.placements[i] }}">{{ items[i].linkLabel }}</a>
     {% endfor %}
   </div>
-  
+  {% comment %}
   {% assign menuContinuePoint = menuBreakPoint | plus: 1 %}
   <div class="ui pointing secondary menu">
     {% for i in (menuContinuePoint..menuSize) %}
       <a class="item" data-tab="{{ site.data.placements[i] }}">{{ items[i].linkLabel }}</a>
     {% endfor %}
   </div>
-
+{% endcomment %}
   
   {% assign first = true %}
   {% for item in items offset:0 %}
