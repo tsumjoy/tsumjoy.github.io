@@ -27,13 +27,14 @@
   
   {% assign first = true %}
   {% for item in items offset:0 %}
-    {% assign jsonItem = item.url | remove: "-" | downcase %}
+    {% assign jsonItem = item.url | remove: "-" %}
     {% assign placeName = site.data.placements[forloop.index0] %}
     {% for rosters_hash in site.data.rosters %}
       {% assign category = rosters_hash[1].tag %}
 
       {% if category contains missionCategory %}
-          <p> {{ category }} and {{ jsonItem }} </p>
+        {% assign simpleCategory = category | remove: "." | remove: "," | remove: "'" | remove: " " | replace: "&","and" | downcase %}
+        <p> {{ category }} and {{ jsonItem }} </p>
         {% if category contains jsonItem %}
 
           {% if first %}
