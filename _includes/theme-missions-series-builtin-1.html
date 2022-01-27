@@ -33,8 +33,8 @@
       {% assign category = rosters_hash[1].tag %}
 
       {% if category contains missionCategory %}
-            <p> hello </p>
-        {% if category contains "{{jsonItem}}" %}
+          <p> {{ category }} and {{ jsonItem }} </p>
+        {% if category contains jsonItem %}
 
           {% if first %}
             <div class="ui active tab segment babypink" data-tab="{{ placeName }}">
