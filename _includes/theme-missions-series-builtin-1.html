@@ -27,7 +27,7 @@
   
   {% assign first = true %}
   {% for item in items offset:0 %}
-    {% assign jsonItem = item.url | remove: "-" | remove: " " | remove: "," | remove "'" | downcase %}
+    {% assign jsonItem = item.url | remove: "-" | downcase %}
     {% assign placeName = site.data.placements[forloop.index0] %}
     {% for rosters_hash in site.data.rosters %}
       {% assign category = rosters_hash[1].tag %}
