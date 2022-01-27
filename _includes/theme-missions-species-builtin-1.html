@@ -22,9 +22,10 @@
     {% assign placeName = site.data.placements[forloop.index0] %}
     {% for rosters_hash in site.data.rosters %}
       {% assign category = rosters_hash[1].tag %}
-
+     
       {% if category contains missionCategory %}
-        {% if category contains item.url %}
+        {% assign simpleCategory = category | replace: " ","-" %}
+        {% if simpleCategory contains item.url %}
 
 
           {% if first %}
