@@ -10,7 +10,7 @@
 
 <div style="padding-top: 20px" class="ui container ">
   
-  <div class="ui stackable pointing secondary menu">
+  <div class="ui pointing secondary menu">
     <a class="active item" data-tab="{{ site.data.placements[0] }}">{{ items[0].linkLabel }}</a>
     {% for i in (1..menuBreakPoint) %}
       <a class="item" data-tab="{{ site.data.placements[i] }}">{{ items[i].linkLabel }}</a>
@@ -32,7 +32,7 @@
       {% assign category = rosters_hash[1].tag %}
 
       {% if category contains missionCategory %}
-        {% if category contains "{{ item.url | remove: "-" }}" %}
+        {% if category contains item.url | remove: "-" %}
 
 
           {% if first %}
