@@ -34,8 +34,8 @@
 
       {% if category contains missionCategory %}
         {% assign simpleCategory = category | remove: "." | remove: "," | remove: "'" | remove: " " | replace: "&","and" | downcase %}
-        <p> {{ category }} and {{ jsonItem }} </p>
-        {% if category contains jsonItem %}
+        <p> {{ simpleCategory }} and {{ jsonItem }} </p>
+        {% if simpleCategory contains jsonItem %}
 
           {% if first %}
             <div class="ui active tab segment babypink" data-tab="{{ placeName }}">
