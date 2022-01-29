@@ -128,5 +128,20 @@
 </div>
 
 <script>
-  $('.menu .item').tab();
+  
+  // get the current path the user is on and extract the route name
+    var path = window.location.pathname.split("/").pop();
+
+    // loop through each item
+    $('.pointing.menu .item').each(function(i, obj){
+
+        // extract the href (route) for the current item
+        var href = obj.href.split("/").pop();
+
+        // if the href and the path are the same, make that 
+        // item the active tab
+        if (href === path){
+            $(this).addClass("active");
+        }
+    });
 </script>
