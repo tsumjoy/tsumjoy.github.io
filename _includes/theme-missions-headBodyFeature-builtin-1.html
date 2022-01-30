@@ -1,7 +1,6 @@
-{% assign missionCategory = "series" %}
+{% assign missionCategory = "head/body feature" %}
 {% assign items = site.data.headBodyFeatures.headBodyFeatureInformation %}
-{% assign menuBreakPoint1 = 8 %}
-{% assign menuBreakPoint2 = 16 %}
+{% assign menuBreakPoint = 10 %}
 
 {% assign menuSize = items.size %}
 {% assign total_japan = site.data.rosters.japan-collection.tsumID.size %}
@@ -13,21 +12,14 @@
   
   <div class="ui stackable pointing secondary menu">
     <a class="active item" data-tab="{{ site.data.placements[0] }}">{{ items[0].linkLabel }}</a>
-    {% for i in (1..menuBreakPoint1) %}
+    {% for i in (1..menuBreakPoint) %}
       <a class="item" data-tab="{{ site.data.placements[i] }}">{{ items[i].linkLabel }}</a>
     {% endfor %}
   </div>
   
-  {% assign menuContinuePoint1to2 = menuBreakPoint1 | plus: 1 %}
+  {% assign menuContinuePoint = menuBreakPoint | plus: 1 %}
   <div class="ui stackable pointing secondary menu">
-    {% for i in (menuContinuePoint1to2..menuBreakPoint2) %}
-      <a class="item" data-tab="{{ site.data.placements[i] }}">{{ items[i].linkLabel }}</a>
-    {% endfor %}
-  </div>
-  
-  {% assign menuContinuePoint2toEnd = menuBreakPoint2 | plus: 1 %}
-  <div class="ui stackable pointing secondary menu">
-    {% for i in (menuContinuePoint2toEnd..menuSize) %}
+    {% for i in (menuContinuePoint..menuSize) %}
       <a class="item" data-tab="{{ site.data.placements[i] }}">{{ items[i].linkLabel }}</a>
     {% endfor %}
   </div>
