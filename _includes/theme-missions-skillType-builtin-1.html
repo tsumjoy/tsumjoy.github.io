@@ -62,10 +62,14 @@
   {% assign first = true %}
   {% for item in items offset:0 %}
     {% assign jsonItem = item.url | remove: "-" %}
+    
     {% assign placeName = site.data.placements[forloop.index0] %}
     {% for rosters_hash in site.data.rosters %}
       {% assign category = rosters_hash[1].tag %}
-
+{% if jsonItem == "burst" %}
+              <p> {{ placeName }} </p>
+              <p> hi </p>
+  {% endif %}
       {% if category contains missionCategory %}
         {% assign simpleCategory = category | remove: " " | remove: "-" %}
         {% if simpleCategory contains jsonItem %}
