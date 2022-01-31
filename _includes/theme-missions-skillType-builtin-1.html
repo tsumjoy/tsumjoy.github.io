@@ -41,7 +41,7 @@
         {% if simpleCategory contains "burst" %}
           {% if firstBurstRun %}
             {% assign burstTsum = rosters_hash[1].tsum %}
-            {{ burstTsum }}
+            {{ simpleCategory }}
           {% else %}
             {% assign burstTsum = burstTsum | concat: rosters_hash[1].tsum %}
           {% endif %}
