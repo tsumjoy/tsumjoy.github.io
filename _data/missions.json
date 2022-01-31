@@ -297,6 +297,14 @@
             {
                 "linkLabel": "ランダム消去",
                 "url": "random-burst"
+            },
+            {
+                "linkLabel": "数カ所消去 ✨",
+                "url": "multiple-area-burst"
+            },
+            {
+                "linkLabel": "その他の消去系 (ハート状・クロスライン状・Z字状・など)",
+                "url": "shape-burst"
             }
         ],
         "items": [
