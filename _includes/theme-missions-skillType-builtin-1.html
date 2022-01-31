@@ -69,7 +69,7 @@
 
       {% if category contains missionCategory %}
         {% assign simpleCategory = category | remove: "-" | remove: " " %}
-        {% if simpleCategory contains jsonItem or jsonItem == "burst" %}
+        {% if simpleCategory contains jsonItem or category contains "burst" %}
   <a> {{ jsonItem }} | </a>
           {% if first %}
             <div class="ui active tab segment babypink" data-tab="{{ placeName }}">
