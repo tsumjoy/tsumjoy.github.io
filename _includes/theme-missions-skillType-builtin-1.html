@@ -51,7 +51,7 @@
   
   {% assign burstTsum = burstTsum | uniq %}
   {% assign burstTsum = burstTsum | sort %}
-  {% for entry in burstTsum %}
+  {% for item in burstTsum %}
     <a> {{ burstTsum[i] }} | </a>
   {% endfor %}
  
@@ -97,7 +97,7 @@
               <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/a">
             {% endif %}
               <div class="ui centered five cards">
-               {% for i in (0..rosterTsum[i]) %}
+               {% for i in (0..rosterTsum[i].size) %}
                   {% for page in site.pages %}
                    {% if page.ID == rosterTsum[i] %}
                      {% unless page.draft %}
@@ -112,7 +112,7 @@
 
             <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/b">
               <div class="ui centered five cards">
-               {% for j in (0..rosterTsum[j]) %}
+               {% for j in (0..rosterTsum[j].size) %}
                   {% for i in (0..total_international) %}
                     {% if site.data.rosters.international-collection.tsumID[i] == rosterTsum[j] %}
                      {% for page in site.pages %}
@@ -130,7 +130,7 @@
             
             <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/c">
               <div class="ui centered five cards">
-               {% for j in (0..rosterTsum[j]) %}
+               {% for j in (0..rosterTsum[j].size) %}
                   {% for i in (0..total_japan) %}
                     {% if site.data.rosters.japan-collection.tsumID[i] == rosterTsum[j] %}
                      {% for page in site.pages %}
