@@ -60,6 +60,7 @@
   
   
   {% assign first = true %}
+  {% assign oneBurstRun = true %}
   {% for item in items offset:0 %}
     {% assign jsonItem = item.url | remove: "-" %}
     
@@ -69,8 +70,14 @@
 
       {% if category contains missionCategory %}
         {% assign simpleCategory = category | remove: "-" | remove: " " %}
-        {% if simpleCategory contains jsonItem or category contains "burst" and jsonItem == "burst" %}
+        {% if simpleCategory contains jsonItem or oneBurstRun and jsonItem == "burst" %}
   <p> category {{ category }}, jsonItem {{ jsonItem }} </p>
+          
+          {% if oneBurstRun and jsonItem == "burst" %}
+            <p> oneBurstRun all done </p>
+            {% assign oneBurstRun = false %}
+          {% endif %}
+          
           {% if first %}
             <div class="ui active tab segment babypink" data-tab="{{ placeName }}">
           {% else %}
