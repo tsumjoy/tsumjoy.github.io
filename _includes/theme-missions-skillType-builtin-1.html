@@ -35,13 +35,14 @@
   
   {% assign first = true %}
   {% for item in items offset:0 %}
-    {% assign jsonItem = item.url | replace: "-"," " %}
+    {% assign jsonItem = item.url | remove: "-" %}
     {% assign placeName = site.data.placements[forloop.index0] %}
     {% for rosters_hash in site.data.rosters %}
       {% assign category = rosters_hash[1].tag %}
 
       {% if category contains missionCategory %}
-        {% if category contains jsonItem %}
+        {% assign simpleCategory = category | remove: " " | remove: "-" %}
+        {% if simpleCategory contains jsonItem %}
 
           {% if first %}
             <div class="ui active tab segment babypink" data-tab="{{ placeName }}">
