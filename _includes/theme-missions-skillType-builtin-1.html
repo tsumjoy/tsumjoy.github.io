@@ -72,7 +72,7 @@
         {% assign simpleCategory = category | remove: "-" | remove: " " %}
         {% if jsonItem == "burst" and oneBurstRun == false %}
             break
-        {% elsif simpleCategory contains jsonItem or burstCheck %}
+        {% elsif simpleCategory contains jsonItem %}
   <p> category {{ category }}, jsonItem {{ jsonItem }}, placeName {{ placeName }} </p>
           
           {% if oneBurstRun and jsonItem == "burst" %}
