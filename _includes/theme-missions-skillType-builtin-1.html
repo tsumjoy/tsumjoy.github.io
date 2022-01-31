@@ -76,6 +76,7 @@
 
           
           {% if jsonItem == "burst" %}
+              <p> {{ placeName }} </p>
             {% assign rosterTsum = burstTsum %}
           {% else %}
             {% assign rosterTsum = rosters_hash[1].tsum %}
