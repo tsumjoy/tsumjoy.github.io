@@ -51,7 +51,7 @@
   
   {% assign burstTsum = burstTsum | uniq %}
   {% assign burstTsum = burstTsum | sort %}
-  {% for entry in burstTsum %}
+  {% for i in (0..burstTsum) %}
     <a> {{ burstTsum[i] }} | </a>
   {% endfor %}
  
@@ -73,12 +73,6 @@
           {% else %}
             <div class="ui tab segment babypink" data-tab="{{ placeName }}">
           {% endif %}
-
-          {% if jsonItem == "burst" %}
-            {% assign rosterTsum = burstTsum %}
-          {% else %}
-            {% assign rosterTsum = rosters_hash[1].tsum %}
-          {% endif %}
               
             <div class="ui top attached tabular menu">
               {% if first %}
@@ -97,9 +91,15 @@
               <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/a">
             {% endif %}
               <div class="ui centered five cards">
-               {% for entry in rosterTsum %}
+            {% if jsonItem == "burst" %}
+               {% for i in (0..burstTsum.size) %}
+                  {% for page in site.pages %}
+                   {% if page.ID == burstTsum[i] %}
+            {% else %}
+               {% for entry in rosters_hash[1].tsum %}
                   {% for page in site.pages %}
                    {% if page.ID == entry %}
+            {% endfor %}
                      {% unless page.draft %}
                        {% include tsum-card.html page=page %}
                      {% endunless %}
@@ -112,11 +112,19 @@
 
             <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/b">
               <div class="ui centered five cards">
-               {% for entry in rosterTsum %}
+            {% if jsonItem == "burst" %}
+               {% for i in (0..burstTsum.size) %}
+                  {% for i in (0..total_international) %}
+                    {% if site.data.rosters.international-collection.tsumID[i] == burstTsum[i] %}
+                     {% for page in site.pages %}
+                       {% if page.ID == burstTsum[i] %}
+            {% else %}
+               {% for entry in rosters_hash[1].tsum %}
                   {% for i in (0..total_international) %}
                     {% if site.data.rosters.international-collection.tsumID[i] == entry %}
                      {% for page in site.pages %}
                        {% if page.ID == entry %}
+            {% endfor %}
                          {% unless page.draft %}
                            {% include tsum-card.html page=page %}
                          {% endunless %}
@@ -130,11 +138,19 @@
             
             <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/c">
               <div class="ui centered five cards">
-               {% for entry in rosterTsum %}
+            {% if jsonItem == "burst" %}
+               {% for i in (0..burstTsum.size) %}
+                  {% for i in (0..total_japan) %}
+                    {% if site.data.rosters.japan-collection.tsumID[i] == burstTsum[i] %}
+                     {% for page in site.pages %}
+                       {% if page.ID == burstTsum[i] %}
+            {% else %}
+               {% for entry in rosters_hash[1].tsum %}
                   {% for i in (0..total_japan) %}
                     {% if site.data.rosters.japan-collection.tsumID[i] == entry %}
                      {% for page in site.pages %}
                        {% if page.ID == entry %}
+            {% endfor %}
                          {% unless page.draft %}
                            {% include tsum-card.html page=page %}
                          {% endunless %}
