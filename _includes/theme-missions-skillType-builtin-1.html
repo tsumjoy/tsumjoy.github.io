@@ -51,9 +51,11 @@
   
   {% assign burstTsum = burstTsum | uniq %}
   {% assign burstTsum = burstTsum | sort %}
+  {% comment %}
   {% for item in burstTsum %}
     <a> {{ item }} | </a>
   {% endfor %}
+  {% endcomment %}
  
   
   
@@ -77,6 +79,7 @@
           
           {% if jsonItem == "burst" %}
               <p> {{ placeName }} </p>
+              <p> hi </p>
             {% assign rosterTsum = burstTsum %}
           {% else %}
             {% assign rosterTsum = rosters_hash[1].tsum %}
