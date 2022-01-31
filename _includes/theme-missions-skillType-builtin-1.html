@@ -1,7 +1,7 @@
 {% assign missionCategory = "skill type" %}
 {% assign items = site.data.skillTypes.skillTypeInformation %}
 {% assign menuBreakPoint1 = 4 %}
-{% assign menuBreakPoint2 = 10 %}
+{% assign menuBreakPoint2 = 12 %}
 
 {% assign menuSize = items.size %}
 {% assign total_japan = site.data.rosters.japan-collection.tsumID.size %}
@@ -33,6 +33,24 @@
   </div>
 
   
+  {% assign firstBurstRun = true %}
+  {% for rosters_hash in site.data.rosters %}
+    {% assign category = rosters_hash[1].tag %}
+      {% if category contains missionCategory %}
+        {% assign simpleCategory = category | remove: " " | remove: "-" %}
+        {% if simpleCategory contains "burst" %}
+          {% if firstBurstRun %}
+            {% assign burstTsum = rosters_hash[1].tsum %}
+          {% else %}
+            {% assign burstTsum = burstTsum | concat: rosters_hash[1].tsum %}
+          {% endif %}
+        {% endif %}
+      {% endif %}
+  {% endfor %}
+  
+  {% burstTsum = burstTsum | sort %}
+  
+  
   {% assign first = true %}
   {% for item in items offset:0 %}
     {% assign jsonItem = item.url | remove: "-" %}
@@ -43,13 +61,19 @@
       {% if category contains missionCategory %}
         {% assign simpleCategory = category | remove: " " | remove: "-" %}
         {% if simpleCategory contains jsonItem %}
-{% if jsonItem == "burst" %} hi {% endif %}
+     
           {% if first %}
             <div class="ui active tab segment babypink" data-tab="{{ placeName }}">
           {% else %}
             <div class="ui tab segment babypink" data-tab="{{ placeName }}">
           {% endif %}
 
+          {% if jsonItem == "burst" %}
+            {% assign rosterTsum = burstTsum %}
+          {% else %}
+            {% assign rosterTsum = rosters_hash[1].tsum %}
+          {% endif %}
+              
             <div class="ui top attached tabular menu">
               {% if first %}
                 <a class="active item" data-tab="{{ placeName }}/a">{{ site.data.bio.tabLabels.all }}</a>
@@ -67,7 +91,7 @@
               <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/a">
             {% endif %}
               <div class="ui centered five cards">
-               {% for entry in rosters_hash[1].tsum %}
+               {% for entry in rosterTsum %}
                   {% for page in site.pages %}
                    {% if page.ID == entry %}
                      {% unless page.draft %}
@@ -82,7 +106,7 @@
 
             <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/b">
               <div class="ui centered five cards">
-               {% for entry in rosters_hash[1].tsum %}
+               {% for entry in rosterTsum %}
                   {% for i in (0..total_international) %}
                     {% if site.data.rosters.international-collection.tsumID[i] == entry %}
                      {% for page in site.pages %}
@@ -100,7 +124,7 @@
             
             <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/c">
               <div class="ui centered five cards">
-               {% for entry in rosters_hash[1].tsum %}
+               {% for entry in rosterTsum %}
                   {% for i in (0..total_japan) %}
                     {% if site.data.rosters.japan-collection.tsumID[i] == entry %}
                      {% for page in site.pages %}
