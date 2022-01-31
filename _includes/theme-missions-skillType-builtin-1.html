@@ -71,12 +71,9 @@
       {% if category contains missionCategory %}
         {% assign simpleCategory = category | remove: "-" | remove: " " %}
         {% if jsonItem == "burst" and oneBurstRun == false %}
-            break
         {% elsif simpleCategory contains jsonItem %}
-  <p> category {{ category }}, jsonItem {{ jsonItem }}, placeName {{ placeName }} </p>
           
           {% if oneBurstRun and jsonItem == "burst" %}
-            <p> oneBurstRun all done </p>
             {% assign oneBurstRun = false %}
             {% assign rosterTsum = burstTsum %}
           {% else %}
