@@ -42,7 +42,6 @@
           {% if firstBurstRun %}
             {% assign burstTsum = rosters_hash[1].tsum %}
             {% assign firstBurstRun = false %}
-            {{ simpleCategory }}
           {% else %}
             {% assign burstTsum = burstTsum | concat: rosters_hash[1].tsum %}
           {% endif %}
@@ -50,7 +49,10 @@
       {% endif %}
   {% endfor %}
   
+  {% assign burstTsum = burstTsum | uniq %}
   {% assign burstTsum = burstTsum | sort %}
+  {{ burstTsum }}
+ 
   
   
   {% assign first = true %}
