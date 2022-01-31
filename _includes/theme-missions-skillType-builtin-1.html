@@ -51,7 +51,9 @@
   
   {% assign burstTsum = burstTsum | uniq %}
   {% assign burstTsum = burstTsum | sort %}
-  {{ burstTsum }}
+  {% for i in (0..burstTsum.size) %}
+    <a> {{ burstTsum[i] }} | </a>
+  {% endfor %}
  
   
   
