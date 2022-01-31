@@ -74,6 +74,7 @@
             <div class="ui tab segment babypink" data-tab="{{ placeName }}">
           {% endif %}
 
+          
           {% if jsonItem == "burst" %}
             {% assign rosterTsum = burstTsum %}
           {% else %}
@@ -97,9 +98,9 @@
               <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/a">
             {% endif %}
               <div class="ui centered five cards">
-               {% for i in (0..rosterTsum[i].size) %}
+               {% for item in rosterTsum %}
                   {% for page in site.pages %}
-                   {% if page.ID == rosterTsum[i] %}
+                   {% if page.ID == item %}
                      {% unless page.draft %}
                        {% include tsum-card.html page=page %}
                      {% endunless %}
@@ -112,11 +113,11 @@
 
             <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/b">
               <div class="ui centered five cards">
-               {% for j in (0..rosterTsum[j].size) %}
+               {% for entry in rosterTsum %}
                   {% for i in (0..total_international) %}
-                    {% if site.data.rosters.international-collection.tsumID[i] == rosterTsum[j] %}
+                    {% if site.data.rosters.international-collection.tsumID[i] == entry %}
                      {% for page in site.pages %}
-                       {% if page.ID == rosterTsum[j] %}
+                       {% if page.ID == entry %}
                          {% unless page.draft %}
                            {% include tsum-card.html page=page %}
                          {% endunless %}
@@ -130,11 +131,11 @@
             
             <div class="ui bottom attached tab segment" data-tab="{{ placeName }}/c">
               <div class="ui centered five cards">
-               {% for j in (0..rosterTsum[j].size) %}
+               {% for entry in rosterTsum %}
                   {% for i in (0..total_japan) %}
-                    {% if site.data.rosters.japan-collection.tsumID[i] == rosterTsum[j] %}
+                    {% if site.data.rosters.japan-collection.tsumID[i] == entry %}
                      {% for page in site.pages %}
-                       {% if page.ID == rosterTsum[j] %}
+                       {% if page.ID == entry %}
                          {% unless page.draft %}
                            {% include tsum-card.html page=page %}
                          {% endunless %}
