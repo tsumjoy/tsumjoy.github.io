@@ -70,7 +70,7 @@
 
       {% if category contains missionCategory %}
         {% assign simpleCategory = category | remove: "-" | remove: " " %}
-        {% if jsonItem == "burst" and oneBurstRun or simpleCategory contains jsonItem %}
+        {% if simpleCategory contains jsonItem or jsonItem == "burst" and oneBurstRun %}
   <p> category {{ category }}, jsonItem {{ jsonItem }}, placeName {{ placeName }} </p>
           
           {% if oneBurstRun and jsonItem == "burst" %}
