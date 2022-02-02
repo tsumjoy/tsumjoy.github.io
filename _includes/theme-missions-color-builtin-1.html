@@ -23,7 +23,8 @@
     {% for rosters_hash in site.data.rosters %}
       {% assign category = rosters_hash[1].tag %}
 
-      {% if category contains missionCategory %}
+      {% if category contains "hand" %}
+      {% elsif category contains missionCategory %}
         {% if category contains item.url %}
 
 
