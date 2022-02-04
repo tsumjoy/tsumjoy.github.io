@@ -131,6 +131,7 @@
   $(document).ready(function(){
     $('.ui .item').on('click', function() {
         $('.ui .item').removeClass('active');
+        $('.ui .menu .topnavbar').addClass('active');
         $(this).addClass('active');
         $('.ui .item').tab();
     });             
