@@ -131,7 +131,7 @@
   $(document).ready(function(){
     $('.ui .item').on('click', function() {
         $('.ui .pointing.secondary.menu .item').removeClass('active');
-        $('.ui .tab').removeClass('active');
+        $('.ui.tabular.menu .active.item').removeClass('active');
         $(this).addClass('active');
         $('.ui .item').tab();
     });
