@@ -2,7 +2,7 @@
 layout: tsumtsum
 ---
 
-{% assign firstRun = 1 %}
+{% assign firstRun = true %}
 
 <div style="margin-top: 20px; margin-bottom: 20px" class="ui text container">
  <h1>{{ page.title }}</h1>
@@ -13,7 +13,7 @@ layout: tsumtsum
       {% if page.ID == entry %}
         {% if firstRun %}
           {% assign tagList = rosters_hash[1].tag %}
-          {% assign firstRun = 0 %}
+          {% assign firstRun = false %}
         {% else %}
           {% assign tagList = tagList | concat: rosters_hash[1].tag %}
         {% endif %}
