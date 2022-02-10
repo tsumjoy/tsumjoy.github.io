@@ -13,6 +13,7 @@ layout: tsumtsum
       {% if page.ID == entry %}
         {% if firstRun %}
           {% assign tagList = rosters_hash[1].tag %}
+          {% assign firstRun = 0 %}
         {% else %}
           {% assign tagList = tagList | concat: rosters_hash[1].tag %}
         {% endif %}
@@ -20,7 +21,7 @@ layout: tsumtsum
    {% endfor %}
  {% endfor %}
  
- {%comment%}{% assign tagList = tagList | sort %}{%endcomment%}
+ {% assign tagList = tagList | sort %}
  {% for item in tagList %}
    <p>- <a>{{ item }}</a> </p>
  {% endfor %}
