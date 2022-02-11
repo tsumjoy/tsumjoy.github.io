@@ -12,16 +12,18 @@ layout: tsumtsum
    {% for entry in rosters_hash[1].tsum %}
       {% if page.ID == entry %}
         {% if firstRun %}
-          {% assign tagList = rosters_hash[1].tag %}
+          {% assign tagList = rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","S" %}
           {% assign firstRun = false %}
         {% else %}
-          {% assign tagList = tagList | concat: rosters_hash[1].tag %}
+          {% assign newTag = rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","S" %}
+          {% assign tagList = tagList | concat: newTag %}
         {% endif %}
       {% endif %}
    {% endfor %}
  {% endfor %}
  
- {%comment%}{% assign tagList = tagList | sort %}{%endcomment%}
+ {% assign tagList = tagList | sort %}
+ {% assign tagList = tagList | replace: "W"," " | replace: "C",":" | replace: "S","/" %}
  {% for item in tagList %}
    <p>- <a>{{ item }}</a> </p>
  {% endfor %}
