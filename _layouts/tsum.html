@@ -20,7 +20,7 @@ layout: tsumtsum
    {% endfor %}
  {% endfor %}
  
- {% assign tagList = (tagList | sort) %}
+ {%comment%}{% assign tagList = tagList | sort %}{%endcomment%}
  {% assign tagList = tagList | replace: "W"," " | replace: "C",":" | replace: "Z","/" | replace: "L","[" | replace: "R","]" | replace: "E","&" | replace: "H","-" | replace: "F","'" | replace: ",","O" | replace: ".","R" %}
  {% for item in tagList %}
    <p>- <a>{{ item }}</a> </p>
