@@ -8,7 +8,7 @@ layout: tsumtsum
  {% for rosters_hash in site.data.rosters %}
    {% for entry in rosters_hash[1].tsum %}
       {% if page.ID == entry %}
-        <p>- <a href="{{ rosters_hash[1].url }}">{{ rosters_hash[1].tag }}</a></p>
+        <p>- <a href="{{ rosters_hash[1].url }}">{{ rosters_hash[1].tag }}</a>  {% rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","S" | replace: "[","L" | replace: "]","R" | replace: "&","A" | replace: "-","H" | replace: "'","P" %}</p>
       {% endif %}
    {% endfor %}
  {% endfor %}
