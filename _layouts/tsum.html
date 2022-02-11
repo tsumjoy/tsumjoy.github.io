@@ -14,9 +14,9 @@ layout: tsumtsum
         {% if firstRun %}
           {% assign tagList = rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","S" | replace: "[","L" | replace: "]","R" | replace: "&","A" | replace: "-","H" | replace: "'","P" %}
           {% assign firstRun = false %}
-        {% else %}
+        {%comment%}{% else %}
           {% assign newTag = rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","S" | replace: "[","L" | replace: "]","R" | replace: "&","A" | replace: "-","H" | replace: "'","P" %}
-          {%comment%}{% assign tagList = tagList | concat: newTag %}{%endcomment}
+          {% assign tagList = tagList | concat: newTag %}{%endcomment}
         {% endif %}
       {% endif %}
    {% endfor %}
