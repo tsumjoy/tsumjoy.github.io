@@ -5,12 +5,27 @@ layout: tsumtsum
 <div style="margin-top: 20px; margin-bottom: 20px" class="ui text container">
  <h1>{{ page.title }}</h1>
  <img class="ui image" src="../{{ page.image }}">
+ <br>
  {% for rosters_hash in site.data.rosters %}
    {% for entry in rosters_hash[1].tsum %}
       {% if page.ID == entry %}
-        <p>- <a href="{{ rosters_hash[1].url }}">{{ rosters_hash[1].tag }}</a>  {{ rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","Z" | replace: "[","L" | replace: "]","R" | replace: "&","E" | replace: "-","H" | replace: "'","F" }}</p>
+        {% if firstRun %}
+          {% assign tagList = rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","Z" | replace: "[","L" | replace: "]","R" | replace: "&","E" | replace: "-","H" | replace: "'","F" | replace: ",","O" | replace: ".","R" %}
+          {% assign firstRun = false %}
+        {% else %}
+          {% assign newTag = rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","Z" | replace: "[","L" | replace: "]","R" | replace: "&","E" | replace: "-","H" | replace: "'","F" | replace: ",","O" | replace: ".","R" %}
+          {% assign tagList = tagList | concat: newTag %}
+        {% endif %}
       {% endif %}
    {% endfor %}
  {% endfor %}
+ 
+ {% assign tagList = tagList | sort %}
+ {% assign tagList = tagList | replace: "W"," " | replace: "C",":" | replace: "Z","/" | replace: "L","[" | replace: "R","]" | replace: "E","&" | replace: "H","-" | replace: "F","'" | replace: ",","O" | replace: ".","R" %}
+ {% for item in tagList %}
+   <p>- <a>{{ item }}</a> </p>
+ {% endfor %}
+ 
  {{ content }}
 </div>
+
