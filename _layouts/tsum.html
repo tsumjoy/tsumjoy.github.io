@@ -26,6 +26,7 @@ layout: tsumtsum
  {%comment%}{% assign tagList = tagList | sort %}{%endcomment%}
  {% assign tagList = tagList | replace: "W"," " | replace: "C",":" | replace: "Z","/" | replace: "L","[" | replace: "R","]" | replace: "E","&" | replace: "H","-" | replace: "F","'" | replace: ",","O" | replace: ".","R" %}
  {% for item in tagList %}
+   hello
    <p>- <a>{{ item }}</a> </p>
  {% endfor %}
  
