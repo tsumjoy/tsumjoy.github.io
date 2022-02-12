@@ -11,12 +11,12 @@ layout: tsumtsum
       {% if page.ID == entry %}
         {% if firstRun %}
           {% assign tagList = "" | split: ',' %}
-          {% assign newTag = rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","Z" | replace: "[","L" | replace: "]","R" | replace: "&","E" | replace: "-","H" | replace: "'","F" | replace: ",","O" | replace: ".","R" %}
-          {% assign tagList = tagList | push: newTag %}
+          {% assign newTag = rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","Z" | replace: "[","L" | replace: "]","R" | replace: "&","E" | replace: "-","H" | replace: "'","Q" | replace: ",","O" | replace: ".","R" %}
+          {% assign tagList = tagList | shift: newTag %}
           {% assign firstRun = false %}
         {% else %}
-          {% assign newTag = rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","Z" | replace: "[","L" | replace: "]","R" | replace: "&","E" | replace: "-","H" | replace: "'","F" | replace: ",","O" | replace: ".","R" %}
-          {% assign tagList = tagList | push: newTag %}
+          {% assign newTag = rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","Z" | replace: "[","L" | replace: "]","R" | replace: "&","E" | replace: "-","H" | replace: "'","Q" | replace: ",","O" | replace: ".","R" %}
+          {% assign tagList = tagList | shift: newTag %}
           <p> {{ tagList.size }} </p>
         {% endif %}
       {% endif %}
@@ -24,7 +24,7 @@ layout: tsumtsum
  {% endfor %}
  
  {%comment%}{% assign tagList = tagList | sort %}{%endcomment%}
- {% assign tagList = tagList | replace: "W"," " | replace: "C",":" | replace: "Z","/" | replace: "L","[" | replace: "R","]" | replace: "E","&" | replace: "H","-" | replace: "F","'" | replace: ",","O" | replace: ".","R" %}
+ {% assign tagList = tagList | replace: "W"," " | replace: "C",":" | replace: "Z","/" | replace: "L","[" | replace: "R","]" | replace: "E","&" | replace: "H","-" | replace: "Q","'" | replace: ",","O" | replace: ".","R" %}
  {% for item in tagList %}
    hello
    <p>- <a>{{ item }}</a> </p>
