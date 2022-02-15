@@ -16,7 +16,7 @@ layout: tsumtsum
           {% assign firstRun = false %}
         {% else %}
           {% assign newTag = rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","Z" | replace: "[","L" | replace: "]","R" | replace: "&","E" | replace: "-","H" | replace: "'","Q" | replace: ",","O" | replace: ".","R" %}
-          {% assign tagList = tagList | shift: newTag %}
+          {% assign tagList = tagList | concat: newTag %}
           <p> {{ tagList.size }} </p>
         {% endif %}
       {% endif %}
