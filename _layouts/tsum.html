@@ -12,11 +12,12 @@ layout: tsumtsum
         {% if firstRun %}
           {% assign tagList = "" | split: ',' %}
           {% assign newTag = rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","Z" | replace: "[","L" | replace: "]","R" | replace: "&","E" | replace: "-","H" | replace: "'","Q" | replace: ",","O" | replace: ".","R" %}
-          {% assign tagList = newTag %}
+          {% assign tagList = tagList | push: newTag %}
+          {{ tagList }}
           {% assign firstRun = false %}
         {% else %}
           {% assign newTag = rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","Z" | replace: "[","L" | replace: "]","R" | replace: "&","E" | replace: "-","H" | replace: "'","Q" | replace: ",","O" | replace: ".","R" %}
-          {% assign tagList = tagList | concat: newTag %}
+          {% assign tagList = tagList | push: newTag %}
           <p> {{ tagList.size }} </p>
         {% endif %}
       {% endif %}
