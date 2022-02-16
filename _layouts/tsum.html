@@ -10,11 +10,9 @@ layout: tsumtsum
    {% for entry in rosters_hash[1].tsum %}
       {% if page.ID == entry %}
         {% if firstRun %}
-          {% assign tagList = "" | split: ',' %}
           {% assign newTag = rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","Z" | replace: "[","L" | replace: "]","R" | replace: "&","E" | replace: "-","H" | replace: "'","Q" | replace: ",","O" | replace: ".","R" %}
           {% assign tagList = newTag %}
-          {{ newTag }}
-          {{ tagList }}
+          <p> tagList is {{ tagList }} </p>
           {% assign firstRun = false %}
         {% else %}
           {% assign newTag = rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","Z" | replace: "[","L" | replace: "]","R" | replace: "&","E" | replace: "-","H" | replace: "'","Q" | replace: ",","O" | replace: ".","R" %}
