@@ -22,11 +22,11 @@ layout: tsumtsum
    {% endfor %}
  {% endfor %}
  
+ {{ tagList }}
  {% assign tagList = tagList | split: ", " %}
  {%comment%}{% assign tagList = tagList | sort %}{%endcomment%}
  {% assign tagList = tagList | replace: "W"," " | replace: "C",":" | replace: "Z","/" | replace: "L","[" | replace: "R","]" | replace: "E","&" | replace: "H","-" | replace: "Q","'" | replace: ",","O" | replace: ".","R" %}
  {% for item in tagList %}
-   hello
    <p>- <a>{{ item }}</a> </p>
  {% endfor %}
  
