@@ -25,7 +25,7 @@ layout: tsumtsum
  {{ tagList }}
  {% assign tagList = tagList | split: ", " %}
  {{ tagList }}
- {%comment%}{% assign tagList = tagList | sort %}{%endcomment%}
+{% assign tagList = tagList | sort %}
  
  {% for item in tagList %}
    <p>- <a>{{ item }}</a> </p>
