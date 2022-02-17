@@ -11,11 +11,11 @@ layout: tsumtsum
    {% for entry in rosters_hash[1].tsum %}
       {% if page.ID == entry %}
         {% if firstRun %}
-          {% assign newTag = rosters_hash[1].tag | replace: " ","G" | replace: ":","X" | replace: "/","Y" | replace: "[","V" | replace: "]","R" | replace: "&","E" | replace: "-","J" | replace: "'","Q" | replace: ",","O" | replace: ".","R" %}
+          {% assign newTag = rosters_hash[1].tag | replace: " ","G" | replace: ":","X" | replace: "/","Y" | replace: "[","V" | replace: "]","R" | replace: "&","E" | replace: "-","J" | replace: "'","Q" | replace: ",","O" | replace: ".","U" %}
           {% assign tagList = newTag %}
           {% assign firstRun = false %}
         {% else %}
-          {% assign newTag = rosters_hash[1].tag | replace: " ","G" | replace: ":","X" | replace: "/","Y" | replace: "[","V" | replace: "]","R" | replace: "&","E" | replace: "-","J" | replace: "'","Q" | replace: ",","O" | replace: ".","R" %}
+          {% assign newTag = rosters_hash[1].tag | replace: " ","G" | replace: ":","X" | replace: "/","Y" | replace: "[","V" | replace: "]","R" | replace: "&","E" | replace: "-","J" | replace: "'","Q" | replace: ",","O" | replace: ".","U" %}
           {% assign tagList = tagList | append: ", " | append: newTag %}
         {% endif %}
       {% endif %}
@@ -27,7 +27,7 @@ layout: tsumtsum
 {% assign tagList = tagList | sort %}
  
  {% for item in tagList %}
-   {% assign bulletPoint = item | replace: "G"," " | replace: "X",":" | replace: "Y","/" | replace: "V","[" | replace: "R","]" | replace: "E","&" | replace: "J","-" | replace: "Q","'" | replace: "O","," | replace: "R","." %}
+   {% assign bulletPoint = item | replace: "G"," " | replace: "X",":" | replace: "Y","/" | replace: "V","[" | replace: "R","]" | replace: "E","&" | replace: "J","-" | replace: "Q","'" | replace: "O","," | replace: "U","." %}
    <p>- <a>{{ bulletPoint }}</a> </p>
  {% endfor %}
  
