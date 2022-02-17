@@ -13,20 +13,16 @@ layout: tsumtsum
         {% if firstRun %}
           {% assign newTag = rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","Z" | replace: "[","L" | replace: "]","R" | replace: "&","E" | replace: "-","H" | replace: "'","Q" | replace: ",","O" | replace: ".","R" %}
           {% assign tagList = newTag %}
-          <p> tagList is {{ tagList }} </p>
-          {% assign tagList = tagList | prepend: "remove," %}
-          {% assign tagList = tagList | split: "," %}
           {% assign firstRun = false %}
         {% else %}
           {% assign newTag = rosters_hash[1].tag | replace: " ","W" | replace: ":","C" | replace: "/","Z" | replace: "[","L" | replace: "]","R" | replace: "&","E" | replace: "-","H" | replace: "'","Q" | replace: ",","O" | replace: ".","R" %}
-          {% assign tagList = tagList | concat: newTag %}
-          {{ newTag }}
-          <p> size is {{ tagList.size }} </p>
+          {% assign tagList = tagList | append: ", " | append: newTag %}
         {% endif %}
       {% endif %}
    {% endfor %}
  {% endfor %}
  
+ {% assign tagList = tagList | split: ", " %}
  {%comment%}{% assign tagList = tagList | sort %}{%endcomment%}
  {% assign tagList = tagList | replace: "W"," " | replace: "C",":" | replace: "Z","/" | replace: "L","[" | replace: "R","]" | replace: "E","&" | replace: "H","-" | replace: "Q","'" | replace: ",","O" | replace: ".","R" %}
  {% for item in tagList %}
