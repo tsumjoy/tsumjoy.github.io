@@ -22,9 +22,8 @@ layout: tsumtsum
    {% endfor %}
  {% endfor %}
  
- {{ tagList }}
- {% assign tagList = tagList | split: ", " %}
- {{ tagList }}
+
+{% assign tagList = tagList | split: ", " %}
 {% assign tagList = tagList | sort %}
  
  {% for item in tagList %}
