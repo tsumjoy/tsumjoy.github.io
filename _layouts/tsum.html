@@ -27,7 +27,7 @@ layout: tsumtsum
 {% assign tagList = tagList | sort %}
  
  {% for item in tagList %}
-   {% assign bulletPoint = item | replace: "G"," " | replace: "X",":" | replace: "Y","/" | replace: "V","[" | replace: "R","]" | replace: "E","&" | replace: "J","-" | replace: "Q","'" | replace: ",","O" | replace: ".","R" %}
+   {% assign bulletPoint = item | replace: "G"," " | replace: "X",":" | replace: "Y","/" | replace: "V","[" | replace: "R","]" | replace: "E","&" | replace: "J","-" | replace: "Q","'" | replace: "O","," | replace: "R","." %}
    <p>- <a>{{ bulletPoint }}</a> </p>
  {% endfor %}
  
